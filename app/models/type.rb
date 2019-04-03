@@ -1,3 +1,3 @@
 class Type < ApplicationRecord
-  has_many:, :ingredients
+  has_many :ingredients
 end
