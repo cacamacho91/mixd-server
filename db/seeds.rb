@@ -18,18 +18,18 @@ Ingredient.create([
 ])
 
 Taste.create([
-  {name: 'Savory', color_background: '', color_font: '' },
-  {name: 'Sweet', color_background: '', color_font: '' },
-  {name: 'Sour', color_background: '', color_font: '' },
-  {name: 'Bitter', color_background: '', color_font: '' },
-  {name: 'Aromatic', color_background: '', color_font: '' },
-  {name: 'Spicy', color_background: '', color_font: '' },
-  {name: 'Smoky', color_background: '', color_font: '' },
-  {name: 'Strong', color_background: '', color_font: '' },
-  {name: 'Creamy', color_background: '', color_font: '' },
-  {name: 'Fresh', color_background: '', color_font: '' },
-  {name: 'Dry', color_background: '', color_font: '' },
-  {name: 'Fruity', color_background: '', color_font: '' }
+  {name: 'Savory', color_background: '#c36606', color_font: '#ffffff' },
+  {name: 'Sweet', color_background: '#ead1dc', color_font: '#c27ba0' },
+  {name: 'Sour', color_background: '#d9ead3', color_font: '#38761d' },
+  {name: 'Bitter', color_background: '#f9cb9c', color_font: '#f9cb9c' },
+  {name: 'Aromatic', color_background: '#6aa84f', color_font: '#b6d7a8' },
+  {name: 'Spicy', color_background: '#ea9999', color_font: '#990000' },
+  {name: 'Smoky', color_background: '#666666', color_font: '#efefef' },
+  {name: 'Strong', color_background: '#ffe599', color_font: '#bf9000' },
+  {name: 'Creamy', color_background: '#ffffff', color_font: '#d9d9d9' },
+  {name: 'Fresh', color_background: '#cfe2f3', color_font: '#6fa8dc' },
+  {name: 'Dry', color_background: '#73797d', color_font: '#f2fbff' },
+  {name: 'Fruity', color_background: '#a64d79', color_font: '#ecf8ff' }
 ])
 
 Glass.create([ {name: 'Martini'}, {name: 'Highball'}, {name: 'Rock'}, {name: 'Shot'},
