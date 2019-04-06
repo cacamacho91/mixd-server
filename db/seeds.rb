@@ -14,7 +14,7 @@ martini = Glass.create({name: 'Martini'})
 highball = Glass.create({name: 'Highball'})
 rock = Glass.create({name: 'Rock'})
 shot = Glass.create({name: 'Shot'})
-margarita = Glass.create({name: 'Margarita'})
+margarita_glass = Glass.create({name: 'Margarita'})
 flute = Glass.create({name: 'Flute'})
 hurricane = Glass.create({name: 'Hurricane'})
 coupe = Glass.create({name: 'Coupe'})
@@ -139,6 +139,8 @@ peach_purée = Ingredient.create({name: 'Peach Purée'})
 coconut_milk = Ingredient.create({name: 'Coconut Milk'})
 ginger_beer = Ingredient.create({name: 'Ginger Beer'})
 coffee = Ingredient.create({name: 'Coffee'})
+soda = Ingredient.create({name: 'Soda'})
+water = Ingredient.create({name: 'Water'})
 
 
 #=========  GARNISHES  #=========####
@@ -154,6 +156,7 @@ peychaud_bitters_drops  = Garnish.create({name: 'Peychaud Bitters (drops)'})
 soda_water_drops = Garnish.create({name: 'Soda Water (drops)'})
 plain_water_drops = Garnish.create({name: 'Plain Water (drops)'})
 lemon_peel_drops = Garnish.create({name: 'Lemon Peel Oil (drops)'})
+lime_drops = Garnish.create({name: 'Lime (drops)'})
 strawberry_syrup_drops = Garnish.create({name: 'Strawberry Syrup (drops)'})
 worcestershire_sauce_drops = Garnish.create({name: 'Worcestershire Sauce (drops)'})
 tabasco_drops = Garnish.create({name: 'Tabasco (drops)'})
@@ -169,6 +172,8 @@ sparkling_wine_drops = Garnish.create({name: 'Sparkling Wine (drops)'})
 lemon_slice = Garnish.create({name: 'Lemon (slice)'})
 lime_slice = Garnish.create({name: 'Lime (slice)'})
 orange_slice = Garnish.create({name: 'Orange (slice)'})
+pineapple_slice = Garnish.create({name: 'Pineappe (slice)'})
+
 
 #Wedge
 lemon_wedge = Garnish.create({name: 'Lemon (wedge)'})
@@ -206,11 +211,12 @@ cherry = Garnish.create({name: 'Cherry'})
 olive = Garnish.create({name: 'Olive'})
 sugar_cube = Garnish.create({name: 'Sugar Cube'})
 fire = Garnish.create({name: 'Fire'})
+chilli = Garnish.create({name: 'Chilli'})
 
 
 ####=========  Add Users  =========####
 library = User.create({username: 'library', password: 'password'})
-chris = User.create({username: '@camacho', password: 'password'})
+camacho = User.create({username: 'camacho', password: 'password'})
 
 ####=========  Cocktails  =========####
 ## Template xxx = Cocktail.create({
@@ -419,7 +425,7 @@ margarita = Cocktail.create({
   name: 'Margarita', 
   instructions: 'Pour all ingredients into shaker with ice. Shake well and strain into a margarita glass rimmed with salt.',
   info: "According to cocktail historian David Wondrich, the margarita is merely a popular Mexican and American drink, the Daisy (margarita is Spanish for 'daisy'), remade with tequila instead of brandy, which became popular during Prohibition as people drifted over the border for alcohol. There is an account from 1936 of Iowa newspaper editor James Graham finding such a cocktail in Tijuana, years before any of the other margarita 'creation myths'.",
-  glass: margarita, 
+  glass: margarita_glass, 
   tastes: [bitter, sweet, sour],
   garnishes: [salt_rim],
   user: library})
@@ -961,20 +967,369 @@ cuba_libre.add_ingredients_with_parts([
   {ingredient: lime_juice, parts: 1}
 ])
 
-# xxx = Cocktail.create({
-#   name: 'xxx', 
-#   instructions: '',
-#   info: "",
-#   glass: , 
-#   tastes: [],
-#   garnishes: [],
-#   user: library})
-# xxx.add_ingredients_with_parts([
-#   {ingredient: gran , parts: 3 },
-#   {ingredient: apricot_brandy, parts: 3},
-#   {ingredient: gin, parts: 3},
-#   {ingredient: gin, parts: 3}
-# ])
+dark_n_stormy = Cocktail.create({
+  name: "Dark 'n' Stormy", 
+  instructions: 'Fill glass with ice, add rum and top with ginger beer. Garnish with a lime wedge.',
+  info: "Dark 'n' Stormy has been a registered trademark of Gosling Brothers Ltd of Bermuda since 1991. Gosling's markets the drink through tie-ins to the sailing and sail racing community. Because of Gosling Brothers' threats of litigation, some sources use other variations on the name to describe similar drinks, such as a 'Safe Harbor'.",
+  glass: highball, 
+  tastes: [spicy, sweet],
+  garnishes: [lime_wedge],
+  user: library})
+dark_n_stormy.add_ingredients_with_parts([
+  {ingredient: dark_rum , parts: 6 },
+  {ingredient: ginger_beer, parts: 10}
+])
+
+gin_fizz = Cocktail.create({
+  name: 'Gin Fizz', 
+  instructions: 'Shake all ingredients with ice cubes, except soda water. Pour into a rock glass. Top with soda water.',
+  info: "The first printed reference to 'fizz' is in the 1887 edition of Jerry Thomas's Bartender's Guide, which contains six such recipes. The fizz became widely popular in America between 1900 and the 1940s. Known as a hometown specialty of New Orleans, the gin fizz was so popular that bars would employ teams of bartenders that would take turns shaking the drinks.",
+  glass: rock, 
+  tastes: [fresh, sweet],
+  garnishes: [lemon_slice],
+  user: library})
+gin_fizz.add_ingredients_with_parts([
+  {ingredient: gin , parts: 4.5 },
+  {ingredient: lemon_juice, parts: 3},
+  {ingredient: sugar_syrup, parts: 1},
+  {ingredient: soda, parts: 8}
+])
+
+horses_neck = Cocktail.create({
+  name: "Horse's Neck", 
+  instructions: 'Pour brandy and ginger ale directly into highball glass with ice cubes. Stir gently. Garnish with lemon zest. If desired, add dashes of Angostura Bitters.',
+  info: "Dating back to the 1890s, it was a non-alcoholic mixture of ginger ale, ice and lemon peel. By the 1910s, brandy, or bourbon would be added for a 'Horse's Neck with a Kick' or a 'Stiff Horse's Neck'. The non-alcoholic version was still served in upstate New York in the late 1950s and early 60s, but eventually it was phased out.",
+  glass: highball, 
+  tastes: [spicy, bitter],
+  garnishes: [lemon_peel, angostura_bitters_drops],
+  user: library})
+horses_neck.add_ingredients_with_parts([
+  {ingredient: ginger_ale , parts: 12 },
+  {ingredient: cognac, parts: 4}
+])
+
+john_collins = Cocktail.create({
+  name: 'John Collins', 
+  instructions: 'Pour all ingredients directly into highball glass filled with ice. Stir gently. Garnish. Add a dash of Angostura bitters.',
+  info: "A John Collins is a cocktail which was attested to in 1869, but may be older. It is believed to have originated with a headwaiter of that name who worked at Limmer's Old House in Conduit Street in Mayfair, which was a popular London hotel and coffee house around 1790–1817.",
+  glass: highball, 
+  tastes: [fresh, sweet],
+  garnishes: [lemon_slice, cherry, angostura_bitters_drops],
+  user: library})
+john_collins.add_ingredients_with_parts([
+  {ingredient: soda , parts: 6 },
+  {ingredient: gin, parts: 4.5},
+  {ingredient: lemon_juice, parts: 3},
+  {ingredient: sugar_syrup, parts: 1.5}
+])
+
+
+long_island_iced_tea = Cocktail.create({
+  name: 'long_island_iced_tea', 
+  instructions: 'Add all ingredients into highball glass filled with ice. Stir gently. Garnish with lemon spiral and a dash of Cola. Serve with straw',
+  info: "Robert 'Rosebud' Butt claims to have invented the Long Island Iced Tea as an entry in a contest to create a new mixed drink with triple sec in 1972 while he worked at the Oak Beach Inn on Long Island, New York.",
+  glass: highball, 
+  tastes: [strong, fresh],
+  garnishes: [cola_drops],
+  user: library})
+long_island_iced_tea.add_ingredients_with_parts([
+  {ingredient: gomme_syrup , parts: 3 },
+  {ingredient: lemon_juice, parts: 2.5},
+  {ingredient: gin, parts: 1.5},
+  {ingredient: triple_sec, parts: 1.5},
+  {ingredient: white_rum, parts: 1.5},
+  {ingredient: vodka, parts: 1.5},
+  {ingredient: tequila, parts: 1.5},
+])
+
+mai_tai = Cocktail.create({
+  name: 'Mai Tai', 
+  instructions: 'Shake all ingredients with ice. Strain into glass. Garnish and serve with straw.',
+  info: "Victor J. Bergeron claimed to have invented the Mai Tai in 1944 at his restaurant, Trader Vic's, in Oakland, California. The name was allegedly taken from maita'i, the Tahitian word for 'good' or 'excellence', although the drink is usually spelled as two words, sometimes hyphenated or capitalized.",
+  glass: highball, 
+  tastes: [strong, sour],
+  garnishes: [mint_leaves, lime_peel],
+  user: library})
+mai_tai.add_ingredients_with_parts([
+  {ingredient: white_rum , parts: 4 },
+  {ingredient: dark_rum, parts: 2},
+  {ingredient: orange_curaćo, parts: 1.5},
+  {ingredient: orgeat_syrup, parts: 1.5},
+  {ingredient: lime_juice, parts: 1},
+])
+
+mint_julep = Cocktail.create({
+  name: 'Mint Julep', 
+  instructions: 'In a highball glass gently muddle the mint, sugar and water. Fill the glass with cracked ice, add Bourbon and stir well until the glass is well frosted. Garnish with a mint sprig.',
+  info: "The mint julep originated in the southern United States, probably during the eighteenth century. Senator Henry Clay of Kentucky introduced the drink to Washington, at the Round Robin Bar in the famous Willard Hotel during his residence in the city. The term 'julep' is generally defined as a sweet drink, particularly one used as a vehicle for medicine.",
+  glass: highball, 
+  tastes: [strong, smoky, sweet],
+  garnishes: [mint_leaves, sugar_spoon],
+  user: library})
+mint_julep.add_ingredients_with_parts([
+  {ingredient: bourbon , parts: 7 },
+  {ingredient: water, parts: 1}
+])
+
+mojito = Cocktail.create({
+  name: 'Mojito', 
+  instructions: 'Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish with sprig of mint leaves and lemon slice. Serve with straw.',
+  info: "Havana, Cuba, is the birthplace of the Mojito, although the exact origin of this classic cocktail is the subject of debate. One story traces the Mojito to a similar 16th century drink known as 'El Draque', after Sir Francis Drake. In 1586, after his successful raid at Cartagena de Indias Drake's ships sailed towards Havana but there was an epidemic of dysentery and scurvy on board. The drink was created to ease the side effects of these afflictions using local remedies and ingredients in combination.",
+  glass: highball, 
+  tastes: [fresh, sweet, aromatic],
+  garnishes: [mint_leaves, lime_slice, sugar_spoon],
+  user: library})
+mojito.add_ingredients_with_parts([
+  {ingredient: lime_juice , parts: 3 },
+  {ingredient: white_rum, parts: 4},
+  {ingredient: soda, parts: 1}
+])
+
+
+moscow_mule = Cocktail.create({
+  name: 'Moscow Mule', 
+  instructions: 'Combine vodka and ginger beer in a highball glass filled with ice. Add lime juice. Stir gently. Garnish.',
+  info: "The mule was born in Manhattan but 'stalled' on the West Coast for the duration. The birthplace of 'Little Moscow' was in New York's Chatham Hotel. That was back in 1941 when the first carload of Jack Morgan's Cock 'n' Bull ginger beer was railing over the plains to give New Yorkers a happy surprise…",
+  glass: highball, 
+  tastes: [spicy, sweet],
+  garnishes: [lime_slice],
+  user: library})
+moscow_mule.add_ingredients_with_parts([
+  {ingredient: ginger_beer , parts: 12 },
+  {ingredient: vodka, parts: 4.5},
+  {ingredient: lime_juice, parts: 1}
+])
+
+pina_colada = Cocktail.create({
+  name: 'Pina Colada', 
+  instructions: 'mixed with crushed ice in blender until smooth, then poured into a chilled glass, garnished and served. Alternately, the three main components can simply be added to a cocktail glass with ice cubes.',
+  info: "The earliest known story states that in the 19th century, Puerto Rican pirate Roberto Cofresí, to boost his crew's morale, gave them a beverage or cocktail that contained coconut, pineapple and white rum. This was what would be later known as the famous piña colada. With his death in 1825, the orignial recipe for the piña colada was lost.",
+  glass: hurricane, 
+  tastes: [sweet, fruity, creamy],
+  garnishes: [cherry, pineapple_slice],
+  user: library})
+pina_colada.add_ingredients_with_parts([
+  {ingredient: pineapple_juice , parts: 9 },
+  {ingredient: white_rum, parts: 3},
+  {ingredient: coconut_milk, parts: 3}
+])
+
+planters_punch = Cocktail.create({
+  name: 'Planters Punch', 
+  instructions: 'Pour all ingredients, except the bitters, into shaker filled with ice. Shake well. Pour into large glass, filled with ice. Add Angostura bitters, "on top". Garnish with cocktail cherry and pineapple.',
+  info: "The cocktail has been said to have originated at the Planters Hotel in Charleston, South Carolina in the 1860's",
+  glass: hurricane, 
+  tastes: [sweet, fruity],
+  garnishes: [angostura_bitters_drops, cherry, pineapple_slice],
+  user: library})
+planters_punch.add_ingredients_with_parts([
+  {ingredient: dark_rum , parts: 4.5 },
+  {ingredient: orange_juice, parts: 3.5},
+  {ingredient: pineapple_juice, parts: 3.5},
+  {ingredient: lemon_juice, parts: 2},
+  {ingredient: grenadine, parts: 1},
+  {ingredient: sugar_syrup, parts: 1},
+])
+
+ramos_fizz = Cocktail.create({
+  name: 'Ramos Fizz', 
+  instructions: 'All ingredients except the soda are poured in a mixing glass, dry shaken (no ice) for two minutes, then ice is added and shaken hard for another minute Strained into a highball glass without ice and topped with soda',
+  info: "Henry C. Ramos invented the Ramos gin fizz in 1888 at his bar, the Imperial Cabinet Saloon on Gravier Street, New Orleans, Louisiana. It was originally called a 'New Orleans fizz', and is one of the city's most famous cocktails. Before Prohibition, the drink's popularity and exceptionally long 12-minute mixing time, had over 20 bartenders working at the Imperial at once making nothing but the Ramos gin fizz, and still struggling to keep up with demand.",
+  glass: highball, 
+  tastes: [sweet, creamy],
+  garnishes: [soda_water_drops, vanilla_extract_drops, orange_flower_water_drops],
+  user: library})
+ramos_fizz.add_ingredients_with_parts([
+  {ingredient: gin, parts: 4.5 },
+  {ingredient: lime_juice, parts: 1.5},
+  {ingredient: sugar_syrup, parts: 3},
+  {ingredient: cream, parts: 6},
+  {ingredient: egg_white, parts: 1}
+])
+
+sea_breeze = Cocktail.create({
+  name: 'Sea Breeze', 
+  instructions: 'Build all ingredients in a highball glass filled with ice. Garnish with a lime slice.',
+  info: "The cocktail was born in the late 1920s, but the recipe was different from the one used today, as gin and grenadine were used in the original Sea Breeze. This was near the end of the Prohibition era. In the 1930s, a Sea Breeze had gin, apricot brandy, grenadine, and lemon juice. Later, a Sea Breeze recipe would contain vodka, dry vermouth, Galliano, and blue Curaçao.",
+  glass: highball, 
+  tastes: [fruity, sweet, fresh],
+  garnishes: [lime_slice],
+  user: library})
+sea_breeze.add_ingredients_with_parts([
+  {ingredient: cranberry_juice , parts: 12 },
+  {ingredient: vodka, parts: 4},
+  {ingredient: grapefruit_juice, parts: 3}
+])
+
+sex_on_the_beach = Cocktail.create({
+  name: 'Sex On The Beach', 
+  instructions: 'Build all ingredients in a highball glass filled with ice. Garnish with an orange slice.',
+  info: "The cocktail originated in Florida, USA in the spring of 1987 coinciding with the introduction of peach schnapps. A bartender at Confetti's Bar devised the drink and gave it the name in a nod to the many tourists visiting Florida's beaches each spring.",
+  glass: highball, 
+  tastes: [fruity, fresh, sweet],
+  garnishes: [orange_slice],
+  user: library})
+sex_on_the_beach.add_ingredients_with_parts([
+  {ingredient: vodka , parts: 4},
+  {ingredient: orange_juice, parts: 4},
+  {ingredient: cranberry_juice, parts: 4},
+  {ingredient: peach_schnapps, parts: 2}
+])
+
+singapore_sling = Cocktail.create({
+  name: 'Singapore Sling', 
+  instructions: 'Pour all ingredients into cocktail shaker filled with ice cubes. Shake well. Strain into a hurricane glass. Garnish with pineapple and a cocktail cherry.',
+  info: "By the 1980s, the Singapore Sling was often little more than gin, bottled sweet and sour, and grenadine. With the move towards fresh juices and the re-emergence of quality products like Cherry Heering, the cocktail has begun to resemble its original version.",
+  glass: hurricane, 
+  tastes: [fresh, sour, sweet],
+  garnishes: [cherry, pineapple_slice],
+  user: library})
+singapore_sling.add_ingredients_with_parts([
+  {ingredient: pineapple_juice , parts: 12 },
+  {ingredient: cherry_liqueur, parts: 1.5},
+  {ingredient: lime_juice, parts: 1.5},
+  {ingredient: grenadine, parts: 1},
+  {ingredient: cointreau, parts: 1},
+  {ingredient: bénédictine, parts: 1}
+])
+
+tequila_sunrise = Cocktail.create({
+  name: 'Tequila Sunrise', 
+  instructions: 'Pour the tequila and orange juice into glass over ice. Add the grenadine, which will sink to the bottom. Stir gently to create the sunrise effect. Garnish and serve.',
+  info: "Created by Bobby Lozoff and Billy Rice in the early 1970s while working as young bartenders at the Trident in Sausalito, California north of San Francisco. In 1972, at a private party at the Trident organized by Bill Graham to kick off the Rolling Stones' 1972 tour in America, Mick Jagger had one of the cocktails, liked it, and he and his entourage started drinking them. They later ordered them all across America, even dubbing the tour itself their 'cocaine and tequila sunrise tour'.",
+  glass: highball, 
+  tastes: [sweet, fruity],
+  garnishes: [orange_slice, cherry],
+  user: library})
+tequila_sunrise.add_ingredients_with_parts([
+  {ingredient: orange_juice , parts: 9 },
+  {ingredient: tequila, parts: 4.5},
+  {ingredient: grenadine, parts: 1.5}
+])
+
+vampiro = Cocktail.create({
+  name: 'Vampiro', 
+  instructions: 'Pour ingredients into glass rimmed with salt. Stir.',
+  info: "The Vampiro is popular in Mexico and is the national drink. Mexicans named the cocktail Vampiro ('vampire') because the Viuda de Sanchez juice mixer's red colour is reminiscent of blood.",
+  glass: highball, 
+  tastes: [spicy, savory],
+  garnishes: [honey_spoon, worcestershire_sauce_drops, onion_sprinkle, salt_rim, chilli],
+  user: library})
+vampiro.add_ingredients_with_parts([
+  {ingredient: tomato_juice , parts: 7 },
+  {ingredient: tequila_silver, parts: 5},
+  {ingredient: orange_juice, parts: 3},
+  {ingredient: lime_juice, parts: 1}
+])
+
+champagne_cocktail = Cocktail.create({
+  name: 'Champagne Cocktail', 
+  instructions: 'Add dash of Angostura bitter onto sugar cube and drop it into champagne flute. Add cognac followed by gently pouring chilled champagne. Garnish with orange slice and maraschino cherry.',
+  info: "A recipe for the cocktail appears as early as 'Professor' Jerry Thomas' Bon Vivant's Companion (1862), which omits the brandy or cognac and is considered to be the 'classic' American version. Harry Johnson was one of the bartenders who revved the model by adding other fruit to the mix.",
+  glass: flute, 
+  tastes: [sweet, fresh],
+  garnishes: [sugar_cube, angostura_bitters_drops, cherry, orange_slice],
+  user: library})
+champagne_cocktail.add_ingredients_with_parts([
+  {ingredient: champagne , parts: 9},
+  {ingredient: cognac, parts: 1}
+])
+
+barracuda = Cocktail.create({
+  name: 'Barracuda', 
+  instructions: 'Shake ingredients with ice. Strain into glass, top with prosecco.',
+  info: "The Barracuda is an alcoholic cocktail based on Gold rum, Galliano liqueur, pineapple juice, fresh lime juice and top with Prosecco, per IBA specified ingredients.",
+  glass: margarita_glass, 
+  tastes: [sweet, fruity],
+  garnishes: [lime_drops, prosecco_drops],
+  user: library})
+barracuda.add_ingredients_with_parts([
+  {ingredient: gold_rum , parts: 4.5 },
+  {ingredient: galliano, parts: 1.5},
+  {ingredient: pineapple_juice, parts: 6}
+])
+
+bellini = Cocktail.create({
+  name: 'Bellini', 
+  instructions: 'Pour peach purée into chilled glass, add sparkling wine. Stir gently.',
+  info: "The Bellini was invented sometime between 1934 and 1948 by Giuseppe Cipriani, founder of Harry's Bar in Venice, Italy. He named the drink the Bellini because its unique pink color reminded him of the toga of a saint in a painting by 15th-century Venetian artist Giovanni Bellini.",
+  glass: flute, 
+  tastes: [fruity, fresh],
+  user: library})
+bellini.add_ingredients_with_parts([
+  {ingredient: prosecco , parts: 10 },
+  {ingredient: peach_purée, parts: 5}
+])
+
+french_75 = Cocktail.create({
+  name: 'French 75', 
+  instructions: 'Combine gin, syrup, and lemon juice in a cocktail shaker filled with ice. Shake vigorously and strain into a chilled champagne flute. Top up with Champagne. Stir gently.',
+  info: "The recipe took its now-classic form and 'French 75' name in Here’s How, by Judge Jr. (1927), consisting of gin, sugar, lemon juice, and champagne. This recipe was republished with the name French 75 in The Savoy Cocktail Book (1930), which helped popularize the drink.",
+  glass: flute, 
+  tastes: [sweet, fresh],
+  garnishes: [sugar_syrup_drops],
+  user: library})
+french_75.add_ingredients_with_parts([
+  {ingredient: champagne , parts: 6 },
+  {ingredient: gin, parts: 3},
+  {ingredient: lemon_juice, parts: 1.5}
+])
+
+mimosa = Cocktail.create({
+  name: 'Mimosa', 
+  instructions: 'Ensure both ingredients are well chilled, then mix into the glass. Serve cold.',
+  info: "This combination was used in Spain, centuries ago, especially in the east where orange and sparkling wines (cava and others) are typical.",
+  glass: flute, 
+  tastes: [fruity, fresh],
+  garnishes: [orange_slice],
+  user: library})
+mimosa.add_ingredients_with_parts([
+  {ingredient: champagne , parts: 3 },
+  {ingredient: orange_juice, parts: 3}
+])
+
+russian_spring_punch = Cocktail.create({
+  name: 'russian_spring_punch', 
+  instructions: 'Pour the ingredients into an highball glass, top with Sparkling wine.',
+  info: "The Russian Spring Punch was created in London, England by Dick Bradsell in the 1980s. He claims not to remember which bar he was working at at the time, but tells the story of how he created the recipe for personal friends wishing to hold a cocktail party while minimizing the amount of money they had to spend on alcohol.",
+  glass: highball, 
+  tastes: [ fresh, sweet],
+  garnishes: [lemon_slice, blackberries, sparkling_wine_drops],
+  user: library})
+russian_spring_punch.add_ingredients_with_parts([
+  {ingredient: vodka , parts: 2.5 },
+  {ingredient: lemon_juice, parts: 2.5},
+  {ingredient: creme_de_cassis, parts: 1.5},
+  {ingredient: sugar_syrup, parts: 1}
+])
+
+spritz_veneziano = Cocktail.create({
+  name: 'Spritz Veneziano', 
+  instructions: 'Build into glass over ice, garnish and serve.',
+  info: "The drink originated in Venice while it was part of the Austrian Empire (see Kingdom of Lombardy–Venetia), and is based on the Austrian spritzer, a combination of equal parts white wine and soda water.",
+  glass: rock, 
+  tastes: [sweet, bitter, fresh],
+  garnishes: [orange_slice, soda_water_drops],
+  user: library})
+spritz_veneziano.add_ingredients_with_parts([
+  {ingredient: prosecco , parts: 6 },
+  {ingredient: aperol, parts: 4}
+])
+
+white_russian = Cocktail.create({
+  name: 'white_russian', 
+  instructions: 'Pour coffee liqueur and vodka into a rock glass filled with ice. Float fresh cream on top and stir slowly.',
+  info: "The traditional cocktail known as a Black Russian, which first appeared in 1949, becomes a White Russian with the addition of cream. Neither drink is Russian in origin, but both are so named due to vodka being the primary ingredient. It is unclear which drink preceded the other.",
+  glass: rock, 
+  tastes: [creamy, bitter],
+  garnishes: [],
+  user: library})
+white_russian.add_ingredients_with_parts([
+  {ingredient: vodka , parts: 5 },
+  {ingredient: coffee_liqueur, parts: 2},
+  {ingredient: cream, parts: 3}
+])
+
 
 # xxx = Cocktail.create({
 #   name: 'xxx', 
@@ -991,186 +1346,8 @@ cuba_libre.add_ingredients_with_parts([
 #   {ingredient: gin, parts: 3}
 # ])
 
-# xxx = Cocktail.create({
-#   name: 'xxx', 
-#   instructions: '',
-#   info: "",
-#   glass: , 
-#   tastes: [],
-#   garnishes: [],
-#   user: library})
-# xxx.add_ingredients_with_parts([
-#   {ingredient: gran , parts: 3 },
-#   {ingredient: apricot_brandy, parts: 3},
-#   {ingredient: gin, parts: 3},
-#   {ingredient: gin, parts: 3}
-# ])
-
-# xxx = Cocktail.create({
-#   name: 'xxx', 
-#   instructions: '',
-#   info: "",
-#   glass: , 
-#   tastes: [],
-#   garnishes: [],
-#   user: library})
-# xxx.add_ingredients_with_parts([
-#   {ingredient: gran , parts: 3 },
-#   {ingredient: apricot_brandy, parts: 3},
-#   {ingredient: gin, parts: 3},
-#   {ingredient: gin, parts: 3}
-# ])
 
 
-# xxx = Cocktail.create({
-#   name: 'xxx', 
-#   instructions: '',
-#   info: "",
-#   glass: , 
-#   tastes: [],
-#   garnishes: [],
-#   user: library})
-# xxx.add_ingredients_with_parts([
-#   {ingredient: gran , parts: 3 },
-#   {ingredient: apricot_brandy, parts: 3},
-#   {ingredient: gin, parts: 3},
-#   {ingredient: gin, parts: 3}
-# ])
-
-# xxx = Cocktail.create({
-#   name: 'xxx', 
-#   instructions: '',
-#   info: "",
-#   glass: , 
-#   tastes: [],
-#   garnishes: [],
-#   user: library})
-# xxx.add_ingredients_with_parts([
-#   {ingredient: gran , parts: 3 },
-#   {ingredient: apricot_brandy, parts: 3},
-#   {ingredient: gin, parts: 3},
-#   {ingredient: gin, parts: 3}
-# ])
-
-# xxx = Cocktail.create({
-#   name: 'xxx', 
-#   instructions: '',
-#   info: "",
-#   glass: , 
-#   tastes: [],
-#   garnishes: [],
-#   user: library})
-# xxx.add_ingredients_with_parts([
-#   {ingredient: gran , parts: 3 },
-#   {ingredient: apricot_brandy, parts: 3},
-#   {ingredient: gin, parts: 3},
-#   {ingredient: gin, parts: 3}
-# ])
-
-# xxx = Cocktail.create({
-#   name: 'xxx', 
-#   instructions: '',
-#   info: "",
-#   glass: , 
-#   tastes: [],
-#   garnishes: [],
-#   user: library})
-# xxx.add_ingredients_with_parts([
-#   {ingredient: gran , parts: 3 },
-#   {ingredient: apricot_brandy, parts: 3},
-#   {ingredient: gin, parts: 3},
-#   {ingredient: gin, parts: 3}
-# ])
-
-# xxx = Cocktail.create({
-#   name: 'xxx', 
-#   instructions: '',
-#   info: "",
-#   glass: , 
-#   tastes: [],
-#   garnishes: [],
-#   user: library})
-# xxx.add_ingredients_with_parts([
-#   {ingredient: gran , parts: 3 },
-#   {ingredient: apricot_brandy, parts: 3},
-#   {ingredient: gin, parts: 3},
-#   {ingredient: gin, parts: 3}
-# ])
-
-# xxx = Cocktail.create({
-#   name: 'xxx', 
-#   instructions: '',
-#   info: "",
-#   glass: , 
-#   tastes: [],
-#   garnishes: [],
-#   user: library})
-# xxx.add_ingredients_with_parts([
-#   {ingredient: gran , parts: 3 },
-#   {ingredient: apricot_brandy, parts: 3},
-#   {ingredient: gin, parts: 3},
-#   {ingredient: gin, parts: 3}
-# ])
-
-# xxx = Cocktail.create({
-#   name: 'xxx', 
-#   instructions: '',
-#   info: "",
-#   glass: , 
-#   tastes: [],
-#   garnishes: [],
-#   user: library})
-# xxx.add_ingredients_with_parts([
-#   {ingredient: gran , parts: 3 },
-#   {ingredient: apricot_brandy, parts: 3},
-#   {ingredient: gin, parts: 3},
-#   {ingredient: gin, parts: 3}
-# ])
-
-# xxx = Cocktail.create({
-#   name: 'xxx', 
-#   instructions: '',
-#   info: "",
-#   glass: , 
-#   tastes: [],
-#   garnishes: [],
-#   user: library})
-# xxx.add_ingredients_with_parts([
-#   {ingredient: gran , parts: 3 },
-#   {ingredient: apricot_brandy, parts: 3},
-#   {ingredient: gin, parts: 3},
-#   {ingredient: gin, parts: 3}
-# ])
-
-# xxx = Cocktail.create({
-#   name: 'xxx', 
-#   instructions: '',
-#   info: "",
-#   glass: , 
-#   tastes: [],
-#   garnishes: [],
-#   user: library})
-# xxx.add_ingredients_with_parts([
-#   {ingredient: gran , parts: 3 },
-#   {ingredient: apricot_brandy, parts: 3},
-#   {ingredient: gin, parts: 3},
-#   {ingredient: gin, parts: 3}
-# ])
-
-# xxx = Cocktail.create({
-#   name: 'xxx', 
-#   instructions: '',
-#   info: "",
-#   glass: , 
-#   tastes: [],
-#   garnishes: [],
-#   user: library})
-# xxx.add_ingredients_with_parts([
-#   {ingredient: gran , parts: 3 },
-#   {ingredient: apricot_brandy, parts: 3},
-#   {ingredient: gin, parts: 3},
-#   {ingredient: gin, parts: 3}
-# ])
 
 
 
