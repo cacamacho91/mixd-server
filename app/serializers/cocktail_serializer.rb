@@ -4,5 +4,5 @@
   has_many :cocktail_ingredients
   has_many :tastes
 
-  attributes :id, :name, :instructions, :published
+  attributes :id, :name, :instructions, :published, :info
  end

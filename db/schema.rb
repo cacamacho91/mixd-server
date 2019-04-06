@@ -10,10 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_02_165003) do
+ActiveRecord::Schema.define(version: 2019_04_06_084429) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cocktail_garnishes", force: :cascade do |t|
+    t.integer "cocktail_id"
+    t.integer "garnish_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "cocktail_ingredients", force: :cascade do |t|
     t.integer "cocktail_id"
@@ -38,6 +45,13 @@ ActiveRecord::Schema.define(version: 2019_04_02_165003) do
     t.integer "glass_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "info"
+  end
+
+  create_table "garnishes", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "glasses", force: :cascade do |t|
@@ -48,21 +62,11 @@ ActiveRecord::Schema.define(version: 2019_04_02_165003) do
 
   create_table "ingredients", force: :cascade do |t|
     t.string "name"
-    t.string "color_background"
-    t.integer "type_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "tastes", force: :cascade do |t|
-    t.string "name"
-    t.string "color_background"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "color_font"
-  end
-
-  create_table "types", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
