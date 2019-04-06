@@ -220,14 +220,9 @@ salt_sprinkle = Garnish.create({name: 'Salt', garnish_type: 'sprinkle'})
 onion_sprinkle = Garnish.create({name: 'Chopped Onion', garnish_type: 'sprinkle'})
 coffee_sprinkle = Garnish.create({name: 'Coffee',garnish_type: 'sprinkle'})
 
-#Peel
-lemon_peel = Garnish.create({name: 'Lemon Peel', garnish_type: 'peel'})
-lime_peel = Garnish.create({name: 'Lime Peel', garnish_type: 'peel'})
-orange_peel = Garnish.create({name: 'Orange Peel', garnish_type: 'peel'})
-
 #Other
 blackberries = Garnish.create({name: 'Blackberries', garnish_type: 'berry'})
-mint_leaves = Garnish.create({name: 'Mint Leaves', garnish_type: 'leaf'})
+mint_leaves = Garnish.create({name: 'Mint Leaves', garnish_type: 'mint'})
 cherry = Garnish.create({name: 'Cherry', garnish_type: 'cherry'})
 olive = Garnish.create({name: 'Olive', garnish_type: 'olive'})
 sugar_cube = Garnish.create({name: 'Sugar Cube', garnish_type: 'sugarcube'})
@@ -288,7 +283,7 @@ between_the_sheets = Cocktail.create({
   info: "The origin of the cocktail is usually credited to Harry MacElhone at Harry's New York Bar in Paris in the 1930s as a derivative of the sidecar. However, competing theories exist that claim the cocktail was created at The Berkeley in approximately 1921, or in French brothels as an apéritif for consumption by the prostitutes",
   glass: coupe, 
   tastes: [strong, sweet],
-  garnishes: [orange_peel],
+  garnishes: [orange_slice],
   user: library})
 between_the_sheets.add_ingredients_with_parts([
   {ingredient: white_rum , parts: 3 },
@@ -558,7 +553,7 @@ tuxedo = Cocktail.create({
   info: "Related to the martini, the Tuxedo has had many variations since its inception in the 1880s. The cocktail is named after the Tuxedo Club in Orange County, New York where it was first mixed.",
   glass: martini, 
   tastes: [strong, sweet],
-  garnishes: [lemon_peel, cherry, absinthe_drops],
+  garnishes: [lemon_slice, cherry, absinthe_drops],
   user: library})
 tuxedo.add_ingredients_with_parts([
   {ingredient: old_tom_gin , parts: 3 },
@@ -600,7 +595,7 @@ americano = Cocktail.create({
   info: "It is the first drink ordered by James Bond in the first novel in Ian Fleming's series, Casino Royale. In the short story 'From a View to a Kill' Bond chooses an Americano as an appropriate drink for a mere café; suggesting that 'in cafés you have to drink the least offensive of the musical comedy drinks'. Bond always stipulates Perrier, for in his opinion expensive soda water was the cheapest way to improve a poor drink.",
   glass: highball, 
   tastes: [strong, sweet, fresh],
-  garnishes: [orange_slice, lemon_peel, soda_water_drops],
+  garnishes: [orange_slice, lemon_slice, soda_water_drops],
   user: library})
 americano.add_ingredients_with_parts([
   {ingredient: campari , parts: 3 },
@@ -655,7 +650,7 @@ dry_martini = Cocktail.create({
   info: "A dry martini is made with dry, white vermouth. By the Roaring Twenties, it became common to ask for them. Over the course of the century, the amount of vermouth steadily dropped. During the 1930s the ratio was 3:1 (gin to vermouth), and during the 1940s the ratio was 4:1.",
   glass: martini, 
   tastes: [strong, dry],
-  garnishes: [lemon_peel, lemon_peel_drops],
+  garnishes: [lemon_slice, lemon_peel_drops],
   user: library})
 dry_martini.add_ingredients_with_parts([
   {ingredient: gin , parts: 6 },
@@ -669,7 +664,7 @@ french_martini = Cocktail.create({
   info: "The French Martini was invented in the 1980s at one of Keith McNally's New York City bars. It next appeared on the drinks menu at McNally's Balthazar in SoHo in 1996. The cocktail was produced during the 1980s-1990s cocktail Renaissance.",
   glass: martini, 
   tastes: [sweet, fruity, strong],
-  garnishes: [lemon_peel, lemon_peel_drops],
+  garnishes: [lemon_slice, lemon_peel_drops],
   user: library})
 french_martini.add_ingredients_with_parts([
   {ingredient: vodka , parts: 4.5 },
@@ -739,7 +734,7 @@ vesper = Cocktail.create({
   info: "The drink was invented and named by Ian Fleming in the 1953 James Bond novel Casino Royale. Bond: 'I never have more than one drink before dinner. But I do like that one to be large and very strong and very cold and very well-made. I hate small portions of anything, particularly when they taste bad.'",
   glass: coupe, 
   tastes: [strong],
-  garnishes: [lemon_peel],
+  garnishes: [lemon_slice],
   user: library})
 vesper.add_ingredients_with_parts([
   {ingredient: gin , parts: 6 },
@@ -927,7 +922,7 @@ sazerac = Cocktail.create({
   info: "The Sazerac is a local New Orleans variation of a cognac or whiskey cocktail, named for the Sazerac de Forge et Fils brand of cognac brandy that served as its original main ingredient. Some claim it is the oldest known American cocktail, with origins in pre-Civil War New Orleans.",
   glass: rock, 
   tastes: [aromatic, strong],
-  garnishes: [sugar_cube, peychaud_bitters_drops, lemon_peel, strawberry_syrup_drops],
+  garnishes: [sugar_cube, peychaud_bitters_drops, lemon_slice, strawberry_syrup_drops],
   user: library})
 sazerac.add_ingredients_with_parts([
   {ingredient: cognac , parts: 5 },
@@ -1022,7 +1017,7 @@ horses_neck = Cocktail.create({
   info: "Dating back to the 1890s, it was a non-alcoholic mixture of ginger ale, ice and lemon peel. By the 1910s, brandy, or bourbon would be added for a 'Horse's Neck with a Kick' or a 'Stiff Horse's Neck'. The non-alcoholic version was still served in upstate New York in the late 1950s and early 60s, but eventually it was phased out.",
   glass: highball, 
   tastes: [spicy, bitter],
-  garnishes: [lemon_peel, angostura_bitters_drops],
+  garnishes: [lemon_slice, angostura_bitters_drops],
   user: library})
 horses_neck.add_ingredients_with_parts([
   {ingredient: ginger_ale , parts: 12 },
@@ -1069,7 +1064,7 @@ mai_tai = Cocktail.create({
   info: "Victor J. Bergeron claimed to have invented the Mai Tai in 1944 at his restaurant, Trader Vic's, in Oakland, California. The name was allegedly taken from maita'i, the Tahitian word for 'good' or 'excellence', although the drink is usually spelled as two words, sometimes hyphenated or capitalized.",
   glass: highball, 
   tastes: [strong, sour],
-  garnishes: [mint_leaves, lime_peel],
+  garnishes: [mint_leaves, lime_slice],
   user: library})
 mai_tai.add_ingredients_with_parts([
   {ingredient: white_rum , parts: 4 },
