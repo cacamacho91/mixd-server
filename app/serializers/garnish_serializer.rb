@@ -1,3 +1,3 @@
 class GarnishSerializer < ActiveModel::Serializer
-  attributes :name, :garnish_type
+  attributes :name, :img_url
 end
