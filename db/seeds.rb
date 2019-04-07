@@ -1047,7 +1047,7 @@ john_collins.add_ingredients_with_parts([
 
 
 long_island_iced_tea = Cocktail.create({
-  name: 'long_island_iced_tea', 
+  name: 'Long Island Iced Tea', 
   instructions: 'Add all ingredients into highball glass filled with ice. Stir gently. Garnish with lemon spiral and a dash of Cola. Serve with straw',
   info: "Robert 'Rosebud' Butt claims to have invented the Long Island Iced Tea as an entry in a contest to create a new mixed drink with triple sec in 1972 while he worked at the Oak Beach Inn on Long Island, New York.",
   glass: highball, 
@@ -1311,7 +1311,7 @@ mimosa.add_ingredients_with_parts([
 ])
 
 russian_spring_punch = Cocktail.create({
-  name: 'russian_spring_punch', 
+  name: 'Russian Spring Punch', 
   instructions: 'Pour the ingredients into an highball glass, top with Sparkling wine.',
   info: "The Russian Spring Punch was created in London, England by Dick Bradsell in the 1980s. He claims not to remember which bar he was working at at the time, but tells the story of how he created the recipe for personal friends wishing to hold a cocktail party while minimizing the amount of money they had to spend on alcohol.",
   glass: highball, 
