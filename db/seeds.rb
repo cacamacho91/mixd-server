@@ -147,87 +147,79 @@ water = Ingredient.create({name: 'Water'})
 ##  TEMPLATE  ##
 #xxx = Garnish.create({name: 'xxx'})
 
+drop_image = 'https://lh3.googleusercontent.com/VNV2fsP5ZcYVvIy2ExAfBMQAbfW8HryLAqkn-cAJ0wc7t6K8_Vz-FsvshUzaRtbz_IKAH_-Oj9ilFenBfaec0PdCzwjKdMdqbBXYa5Z3N8IHDpZ3ZHec84HCSqPb8CQQh0qnvvWD5ycsqqsfjg2Kl3bXBRCxGf2xrSv_lxqW6gE7FkE0KnVSGQSHIgcxd9tancLDDrf0el3FJbkhe_1VH16nVyM2XpGeT5zmZRudNVFgoGe9oskHsLLg6jyM4uJBSykKsaoC_MF8mJXRIZkCfnksOa90v_DV_e9ZCneeNG06W6JiwFfVu5IdsxNtpZNM7Mki6Cx1LMQav5GKQRmrs3zsjg1IxAOMHpqY3MwONMVvEtLX4RZydfQw1i9-COVLi--w6NkRwJqFSu1xhitFP0AaNuHyZJCXT4NS-SzQFU-6-8c4xhqHsvXMEcTijDxtFC9TnrYLyJcifWRkw6InE3TOv42P2nUk6glEHOu3eKK2QAxGTVSG8ewPRXsAXWPN-aFqVnR-Z7eBziy7KTj1JAyzGaaX6Oc7t_FR6wbss5XjTvIUu7hPV1rqMTb0fu0mnh3bMFPg7I3S7XYL8pDzAscjVEY_aBKIUzQ4J0jH65b1ILVh9y5j9ahmHwSwlpoeYzxgt58M1TQJTYokpyUxiRzDhamezvY=s512-no'
+slice_image = 'https://lh3.googleusercontent.com/JosviWw_MF8WpkH53iuvkhl0CNyR9ywX0spPNQ-MKgRM4cFYtAQYkCqOxhgYR_622SRNV51QdD_U-ZaqJQtuZLMlpfxKqJSXq4zHqpLt5GqEyZBkWDDo9O6i_Dg0H4HIe7HzB5NH0DGMp2-pSyjaGwSb29uLY-vW0vpkOE-0O4v9TR_g2ASzWdCQ_L-RlpD7me7G9WSWnsVnOlxFtcS3e9jE_pPPoWdCaOmjwd32iJixWIW0IwMuALJtngdVTA1BtDn7Dhni8_hiAFH7Taxz0FRxS5KAGXMawXGU5B_IvU34JYquJR7XDZeQDpHiw5BVcWqUfkKRKibKaAaecvl7TPB1ObnKVMts5gxMLJgtoJX6bHaGxS7S3D3xvRK1qIQqVE-Bo9JbCzDcVIsr2JWuEGiJS6BYyXqPvS-dJtgUSELP7Pw28Gte284t5pTd4SO5cyQ_2L_3WwL3U64Vy_EVi8fBLqUFa2JcwUKhrhjv3FfiCLR0NdLeG7PYaTU-yx99T26TT9bYrSB09gnMxnwy3PnU-D00RQSr7u2mDN7MEa_yqIt1p3eC17Zsw61G29XhSasaalNS_pyqHc8A4RbE-3iUUDpFjgZqV4NR9ZVPU8GWSndFTAhiPz9eRPIPn-Rl6Av1TAxg61m2i93LLTv6UKyufUbK2Js=s512-no'
+wedge_image = 'https://lh3.googleusercontent.com/OXOEAEINjrVuWfKMJ8C3pM_L5jaF99a92wB7Smn4oKQSwKDDbGx5_eUF-iV0nRnjEBf6NIzq7hQmrwxSNDZhVuA7vOoZk-ZNSjopGzjLzQZWFz0_Mb4_hMWTnR9L3zuWOG0SSnZE1c6h_PnhswLF_OgX-0o4SQyi1TFJjD4AtjBFJoXwALcY5Tk4Q8kkrqIptwRSa662oK9ZJEUyfS_5NjdCm9uPXbtZ49Gpf2321KtB4ja1gnH1rypQm2xSCw6gYalciw0MaHb9-CaMvYfe5nR5PNlct8SH9aOBGFGH_9XbA0zatrbV_au2CvkwDCS_Fmx5u7Sl_IOyMpBKlm_5Kl-5sKOhNfJ-Elg6fdAwHvobYlqXU6NlFGL08ROboyHWpvejjKj7_iFfP42W1d2LIsy-cvIoWEd5QZzfl0CKggQi85bIX3JYwRWlE1s0zSl8tjnkzEy4TrOdGqrr2YVuuUDaDvJa_RNoe6rnOHxMChayXRZVZ6mThOZE57EXwChF3n0Csepiqi2KjxMLBMHGL1dbGfaHxucDSXCOVZ5gUot1XrDaNMLIkDoANqhYeN0tqaJE-v0RXz-DOyVvHuSB9K4BVT9yUwL2O86ZU0HwHnPN1brFUoNqCudoqQNbdIwzeAU-g3b7Zp5slqsxljgK25MSoc2aIhM=s512-no'
+sprinkle_image = 'https://lh3.googleusercontent.com/0R7-pCkb8FbDlICXoP2IhgBcEgbA6dzzykC0a0S5kIKOgEM6swHn5tVFbWS1IN9XwOeNoEp8D0gF35TQBNO3uuv5DVAX_NjjJHGzgdx0tRpaurbWiSInvRmAc39cw-4em7s1oVHa3DUs10Xz9f_1DdqfnxKSAi1Nn3GLj6jzkDyte-Km1KHAtW3hkc8YuhVUxSeBL5Hiq_3IeDRVeJ_q8N6Jij-K0kRfzvJv0irCArm4x_iHxYY2DhI4mHwKaghHoTZYQuVBGOyHU1REPDnkX-wQs1bCcDo2UQ-v-DAUUTKgDGv2HovDgLN91CQ4hfgZoGqy1zQJ1TgxAPAPADjxh8viqrSHYW5rHVPE5-Ko-gF2yStkWc1sanbfefV3kxcd9j7ejDFqZD1IjnF6VP1zrHqfds53_Wv_AGnqMo3xCDRStlGFUrNCEvSnzKAEiU1GJX4W_QlZAKHfoS4W7aju-jg2nXKhD8nS_jm31wGnXEGN7lzR040nBdSkqgQLebZ-Vo3aJGkHS1CYWA0X6eDya9RjuAjJbBtMBE6Ny_W0wMj4Y-uehLIQNFxq8jIwJgA0aL86fPKXwt3N6pJB0rFHgYCZdf2J2PLZRsHhgtqIdVoz0OJ1QNNeCSmrOc8uN4t37NyTLxRWY_CSyZQG9BUAvvVaDzdky7Y=s512-no'
+rim_image = 'https://lh3.googleusercontent.com/D6yw5iZZD09aJjdn4iXVQWx9lXzCnBWsOr604V2lc_XWtxXnx5qD4NKk16T_SlTPVRRTruDfdFVXQekp22M2uZG9TuxX8GZQ0PwuFDIjY4GC_lERkHCS-B8jswgZX7YZs68vBkaDCefOck5XoEvOSxZGMSHHWScb2S7V60prEu8uzrxC3LqOraatanlDePIuhTMzlY2SyjQtgSWkFWy6SYwu86X9EHZB0dBa3bLv60zsHs6RPSmLwkqRhkPUmr6KZyqNLC39tDiUfuSYjJ-LxXcS-G5gtnZXrwH2YVli2L8kNBPBt6Hum3y_DhuRsrlgKz8Se3ElClzTauFAWCQQgyRZB5z3C5sNFlUhgIwXoPaDMtwLlr0njl7_Nrex-lhXmstfR99effYJPp9DfmGrq3jjcuORDapuMJljeJTSqUXSFj_aN9vJRWFgEc-6Zph-pIISMXaC3iNGtak9pfFLcA3M43ZSFudu5zv-sHrjz_Z4jffiPevvF22OJkbcuuUgr8-CmPgNb2jiKoPyePlkIa1HVys7Oj-lik8CLfdKXXaAggtTHxzU0_ejcuyRKkmwBKo6ExA-504ePwW-d5uOh-x0g3ORoGBGW4sJr79EvusWtlmBA19Vkl82IDT1V27VtFg1KY9zizQwykdzKCsu3RPypbSg0YQ=s512-no'
+spoon_image = 'https://lh3.googleusercontent.com/A7Uqkeq7TjflQJRIZk-m3_skWpLhZlFiEQvq9fMS7iJpGlVO62jkwAE8QgtABnZymfPp0IjKxxEX8aFy4ZVT-N26NbE7PVBQdmHGhcbM_tepz6JOgAMv2AzSQiV2pa3ZqK86U6H_Brx_y2IfY5_Czfg__eiPjIBh9Znm1CS-bsQqVPvgB_Nz7xdPjOt4WdEk6NgeAFR1KpuczgZUbmqT5SiHd2Vr-0WCpc7HxkPtyRLfT1St2slM4yXe6u6GRxtUMu7Pd0LlOfuStB7sdoXxUCWTe1qs4MnAetpOISWjOb4majxaYn7EaAoJfSVc3pBHGaOkhtTuTr44s9XoSXnbygw2s3k6ihTaEE4OiFpyG9pQ7l1l7cF2Cp8ajKfG28pgjJ7VcMkfmkaL6gk8ryEKBrSRJbXS5_fleaz8p2jnXme0XIbOoYHVzwVZryBH1wA5iTh8ASB5bWD6PxY6vms60MOu94RfntEdEksylybosQPoCjvX9jnCDpWVsW8K8DH1eYIQ_-IGt-d6Q8p8Er0VjlK5T0QrOkMFwRmz8Gdfii25MwA7XW690m-KW-LLseAlf7W6uKh46VMcIwxKFQNM1yGjuF_Qh58SEpHtf0QXfQUHFUgCzpkzNjkBY6L3ik5EoskuUfcDMGbnC49eDxT_6rWuHCeKVI8=s512-no'
+berry_image = 'https://lh3.googleusercontent.com/7Y4z6PaDT5Qk3ek1tE8l39lu9dx9NURiaoTLcZCo3P2iJkivlIf9nsVR7FYOjCrpI4lAcjkd-E-tCNoXXGgu31CZgRl7S9pFfqlskdF10wr0GGznnhlTEQzsMoCMCpzhtmmC_uycfi3d3Hk9SALwE6HQP5vB4uIXr5IwvXPC3RQbPyKRByut-s5oHJDl0x1hSC0MnBvkmIPdrhVNmlQxbMKH0pfVUtBSytFs_AuGwFcVSGoLZe0YQSv9MaSfZJOKr08lFT9_rRcpSTbbE3VbwJjQFBveD2DApVE22qwtiwyR2L7cSM1Z-IWI90jB3CCxc0prDQ91VzeIripOoisPO2MnNdjwYRGU3osQ6F9mBWwz2rX4xGk1yUtKPHAgmbZ0kpHmBnhpdU9HGIbWrEGLwYJfE3B238uBDqM9uuq2sSUL45OhbprLabnzxMHPVQW8RPQ7oG0mami86lqbtL6lpcQQuvR8c6tw1wbPFOvZ8tYmADzRak9DcKcej6ZXoNSu_Gxp4-LZWtQpPr58no_hbQ4GEWdmmT9v1xv8t0fxQP-poM_Wdcz5FAxUZdiqj-7v2HOlMv-Da5fUFMm-gp2_WTxZXgyXHGh3irM5OVC-GTiAOgm57SyJlklvkv8fedZ3cvZdos1ncBiPIQu-tPRO29trL7fne8s=s512-no'
+leaf_image = 'https://lh3.googleusercontent.com/vcPngyJ0MRWD6EhmE8X6kIpYgQSuYpCNXzhipBpLMtwWBWHZVAJ7Inx12vzDvXEVKP5Q3vY31iS7lMChHaeEUhd6VZTMDZ55F-aYwEaCtWcfM9n2s6_wBMJ_J0kmU546fd5gsW69bxPguiQik7u7yr2BMsQfSVQ1iYSc7ObTCCTJcK6jV9jZaP3tAwPIBn52uwFuLa7dr60dMMDsvoMT8qIsD5u_X0eMulqmkUrTxGhhkKIImbcrAP8eFpB5diKDhwD_P6mo79659JfFkIGaBocmVSK-PUArqQ8ETdnK4aU-eBxAPZtB9eN4ATH4PI0m33yxV0qOEPfCOZVpj8HApsNt3eOT73tpkSNu9u5KqT3IsLSQbkVlcS5Vuemr9TcwMft6D_EQScI2QLFS4JIi4czOO4dCjdPTtrQdE0CDSo9Ol0dzCtv6BBuX40PRnsbK29wvBGmbmscvRUbZ4vbJF_1TdIBZ1SsuUV9ohKe58cUnzJZD0w7P9_nVOGDCDX4UZzTTgfxRzQFl-mpEI1_Qd84rotX4CFJnhwyv-emwOu5luleFAJK_L9NYvlSyVop-naE3qBZfLck2g3CyH1nW2Y6RWja0L2TRnYxWxeKlTDzv0Sqv8UEJLCgiCQ9D4aFFTRBKBg6l1U1Fa_vlOp8rAPgv8uSg-Os=s512-no'
+cherry_image = 'https://photos.google.com/photo/AF1QipNJoZSmJtyOiM48DRJzHzXtlTpx2-K1hDMyJOSD'
+olive_image = 'https://lh3.googleusercontent.com/myTvjFtOziHvV9U6NBdPIhEij38VkhNzmLbXg1CmaXKLpdOILaPxz92vKl2HHaWbtbGLEPLGXkkGk6KmgiX-XhnRkV3x28bkhN4HPYiJ1yVA39y_VCxaKBpqaAGi6GEcSoTCjZyJsNf8lsmgnihJ6FH2rAnGhyxKnupENiWu54pkM-_mWl_da3Py2ypMWNJlYcepMESMmHIbAuHPBPh7E_RqN8_DgMCpCpHCvIS9vX7aBiMoVCcniPOGEcRXDwkfcUObywljygOB9rO7SfpJOVEOTw3RQS3BRWUq43wzOWCGmB_z_PGwKCZ3D9tS4d4s8Q79MnoezQSQZ_bDW6hk8qrHvcEbrWz8fQ-TKgOtseWclVhoLJSZNWwBVohS7z7ZaQg-uI78JsJoALsvusVzZngCsVHycH5SQ2L2gytyk1RqkhZDdiNWkk_3U7y4PAhizES-68epNeHs_fie7V1SvNoqP2LQcwYRK9_84Ma2g33fCrYPIMgZZbhlQPMDQqRZOU_ckCNOPpNri2DqaR_Q8swfyO3PRODND90uTOIuzu1B5i0TCcjw5u-5m1u9ouNqgGy4T6ZSGsg2yZhCgXTrw-jcsdiMb6OLeRuEKPqiLKJMstHLHtbdJgeblWTjx-0hUQPuXOm_YtM6bbjx3WDt5nGad4NRMQU=s512-no'
+sugarcube_image = 'https://lh3.googleusercontent.com/BNW1HOw0_cCxaLn-0ejjEb4zhBZmo-g9Jh32mgDOmzobxE3L1kE9nmrewhudGGWQ1kRwSuiAUqIq_T5kFBmrbhDRXcVEoPCYxgqR-jdJWMFgzLuarWtWCFrV-PXbrIfqav8oENrQj0GM4aRjzv5Kexj4TO8jx_KqY3sAQVnmGY-NMHowa00s3EiBin_nR-1dq7pbvQMakc8qugOZ7rMcnWG4NPPtjKW9RWjyv3TI0v_zn25eJVFTNgBFKRukZh0vvHAfGAqYnks4Ltv2ATt7awpX8tpUruirFTt6EXlpQObJiTrYzFI747PWX20SykRbUZP4Es3gsKiYaSOSN0FHBY0YIwMAhZrnUE4wA-lMr6XrVTFso4TlAjE6SEPuKBTaGU57Y6a6DFniTlw26CuwXIU6ALVDZ0j9JPkFfzJPfWZ_UYR2KC2WCRdskdaCUUy7m_5eJ2wuQAoozMBm4Md_dcjezNqRrzFqQAyYFwWMpap1_gBJ90g5JhryQbabAVmJxe_RDIcCbCMjQrvMaP42Qqq9ooe7eOfwceZXOwpmH1v9fHQSVv24AyclzSG4-TuZkQAOUT6odu9gpAKXZcinWx8MLvPADoDXt--6YnIkT3-DO-sRMpc57RCvngy2bN-YSlGYgI3xMSFT8zAaVSQfNS1nW5R_jEA=s512-no'
+fire_image = 'https://lh3.googleusercontent.com/xaEJ5YScI8I3tqVFrY0LPKJm0m18F9rEGju0EMrRTgHSw44-PT9pCScGdFeQdY_nYrophcFnlcKEDGX4Vwjg2E5cQOHLEU-pdujUpRUmMyNDsx3rqbvg6BAIA0CThygz02aFzaVq1ciV-Nm6V6e8Na6h1HMKM2y8b4Jiqj2xP8-JbI1-Hwof3cGATOvpGwb-qGenU47kifm_g0nbAZWGAdZUN6l1tVJplrYGcmphfBf6AhZyxIQQLbRbeuqwN1X_k-1IuROZX8U6ujmbSuOWKri9RBBqD4KkqKDoQLMphRCr432BfGVSrND42cmrbIrVGD6v1uhmihjQW9eSoUv4MqN2_gv9oUrrPOcvyh7aSDIbh39M6nIWl6Joplpv_UwNFJa-9Ocg8hOxeMFFbHp36-6qt114JHto8eTbSMHth-Yxav7FVyNe_Fayy9F4PYh8GVve1XsBfUiV9QoeEhT2OOqSAPlSO4LletnzNRigoBWiX42JNaC9Xkuq0UXix28Q1ZxikBENZqs1V5kbfRu5TPm93Fdp7WEWsM4uos4cNC5WmO0cFwtkV0L3wa1r1mm0YoXp3juSFcHcg5bwlhPaWO14LiUssxQ-02lW4Ktbu4SLZHQUrdJPFL8A6wyFaR8LiaRTRIkz4KwMbUZE-pS7EDe_tSW5hlk=s512-no'
+chilli_image = 'https://lh3.googleusercontent.com/3dloP7DBHNB4uY4-vbcryKWlW-5Z75acFuu3dhGmeY2z9yAUtbdiElH-VoUb27vRjsAlsfE-1QCgW5cBHe-ZU4VqRkqBvHrCSt7xyvSjUPYSnULVOR24b2W9ZhxVVYPIrpZI9uQERJOKrPujTU2f8AFwZqdEnn3sJay73innKeZ2cX747AYY9ZNRxROZVGr62jTCy8D9Nnnk8-ejC6esrzXxDAlZHjEVdzipCF9DHZJq1HaAPkBXkjHQjB1bkpXen-vaIeqGoLbVS2VvUMMvTLCDqLTP6yQLUn53krv9uORjTCnUWTfjzpDgX7TURnQDhbsqS7QsY8-jvCuC268kjDGzfJWO5vz79-0yf7aVqYnSKwLRvCLV-Q1OlCrg_6N510juQmRHHxAJ2htaMXP80U7G_y1r-jNPDtuzk0V3k7orGcPTNLWmXcim3anICQP5bBJEmneby-ohj0HfMPTCvweuEEHE451CqUtXEAIBZr4MIMClTx93XMco-QnxdS3KDLlOe_MDl8SzKXHqP_WnsUPP9KzUs1jcZScVYvZIQnoqGSbCFKh19v769JKzEcatapdqrQ2MyUpN2_nP4G17-W2ES4jtHS1v8_TS9YfbiOFeluLSVYU51xDXWO8s35pkumc49Zm8GISmdeZEMbAukbExFrxXvqk=s512-no'
+
 #Drops
-peach_bitter_drops = Garnish.create({name: 'Peach Bitters', garnish_type: 'drop'})
-peach_bitter_drops = Garnish.create({name: 'Peach Bitters', garnish_type: 'drop'})
-grenadine_drops = Garnish.create({name: 'Grenadine', garnish_type: 'drop'})
-grenadine_drops = Garnish.create({name: 'Grenadine', garnish_type: 'drop'})
-absinthe_drops = Garnish.create({name: 'Absinthe', garnish_type: 'drop'})
-absinthe_drops = Garnish.create({name: 'Absinthe', garnish_type: 'drop'})
-angostura_bitters_drops  = Garnish.create({name: 'Angostura Bitters', garnish_type: 'drop'})
-angostura_bitters_drops  = Garnish.create({name: 'Angostura Bitters', garnish_type: 'drop'})
-peychaud_bitters_drops  = Garnish.create({name: 'Peychaud Bitters', garnish_type: 'drop'})
-peychaud_bitters_drops  = Garnish.create({name: 'Peychaud Bitters', garnish_type: 'drop'})
-soda_water_drops = Garnish.create({name: 'Soda Water', garnish_type: 'drop'})
-soda_water_drops = Garnish.create({name: 'Soda Water', garnish_type: 'drop'})
-plain_water_drops = Garnish.create({name: 'Plain Water', garnish_type: 'drop'})
-plain_water_drops = Garnish.create({name: 'Plain Water', garnish_type: 'drop'})
-lemon_peel_drops = Garnish.create({name: 'Lemon Peel Oi', garnish_type: 'drop'})
-lemon_peel_drops = Garnish.create({name: 'Lemon Peel Oi', garnish_type: 'drop'})
-lime_drops = Garnish.create({name: 'Lime', garnish_type: 'drop'})
-lime_drops = Garnish.create({name: 'Lime', garnish_type: 'drop'})
-strawberry_syrup_drops = Garnish.create({name: 'Strawberry Syrup', garnish_type: 'drop'})
-strawberry_syrup_drops = Garnish.create({name: 'Strawberry Syrup', garnish_type: 'drop'})
-worcestershire_sauce_drops = Garnish.create({name: 'Worcestershire Sauce', garnish_type: 'drop'})
-worcestershire_sauce_drops = Garnish.create({name: 'Worcestershire Sauce', garnish_type: 'drop'})
-tabasco_drops = Garnish.create({name: 'Tabasco', garnish_type: 'drop'})
-tabasco_drops = Garnish.create({name: 'Tabasco', garnish_type: 'drop'})
-cola_drops = Garnish.create({name: 'Cola', garnish_type: 'drop'})
-cola_drops = Garnish.create({name: 'Cola', garnish_type: 'drop'})
-vanilla_extract_drops = Garnish.create({name: 'Vanilla Extract', garnish_type: 'drop'})
-vanilla_extract_drops = Garnish.create({name: 'Vanilla Extract', garnish_type: 'drop'})
-orange_flower_water_drops = Garnish.create({name: 'Orange Flower Water', garnish_type: 'drop'})
-orange_flower_water_drops = Garnish.create({name: 'Orange Flower Water', garnish_type: 'drop'})
-prosecco_drops = Garnish.create({name: 'Prosecco', garnish_type: 'drop'})
-prosecco_drops = Garnish.create({name: 'Prosecco', garnish_type: 'drop'})
-sugar_syrup_drops = Garnish.create({name: 'Sugar Syrup', garnish_type: 'drop'})
-sugar_syrup_drops = Garnish.create({name: 'Sugar Syrup', garnish_type: 'drop'})
-sparkling_wine_drops = Garnish.create({name: 'Sparkling Wine', garnish_type: 'drop'})
-sparkling_wine_drops = Garnish.create({name: 'Sparkling Wine', garnish_type: 'drop'})
+peach_bitter_drops = Garnish.create({name: 'Peach Bitters', img_url: drop_image })
+absinthe_drops = Garnish.create({name: 'Absinthe', img_url: drop_image })
+grenadine_drops = Garnish.create({name: 'Grenadine', img_url: drop_image })
+angostura_bitters_drops  = Garnish.create({name: 'Angostura Bitters', img_url: drop_image })
+peychaud_bitters_drops  = Garnish.create({name: 'Peychaud Bitters', img_url: drop_image })
+soda_water_drops = Garnish.create({name: 'Soda Water', img_url: drop_image })
+plain_water_drops = Garnish.create({name: 'Plain Water', img_url: drop_image })
+lemon_peel_drops = Garnish.create({name: 'Lemon Peel Oi', img_url: drop_image })
+lime_drops = Garnish.create({name: 'Lime', img_url: drop_image })
+strawberry_syrup_drops = Garnish.create({name: 'Strawberry Syrup', img_url: drop_image })
+worcestershire_sauce_drops = Garnish.create({name: 'Worcestershire Sauce', img_url: drop_image })
+tabasco_drops = Garnish.create({name: 'Tabasco', img_url: drop_image })
+cola_drops = Garnish.create({name: 'Cola', img_url: drop_image })
+vanilla_extract_drops = Garnish.create({name: 'Vanilla Extract', img_url: drop_image })
+orange_flower_water_drops = Garnish.create({name: 'Orange Flower Water', img_url: drop_image })
+prosecco_drops = Garnish.create({name: 'Prosecco', img_url: drop_image })
+sugar_syrup_drops = Garnish.create({name: 'Sugar Syrup', img_url: drop_image })
+sparkling_wine_drops = Garnish.create({name: 'Sparkling Wine', img_url: drop_image })
 
 
 #Slice
-lemon_slice = Garnish.create({name: 'Lemon', garnish_type: 'slice'})
-lemon_slice = Garnish.create({name: 'Lemon', garnish_type: 'slice'})
-lime_slice = Garnish.create({name: 'Lime', garnish_type: 'slice'})
-lime_slice = Garnish.create({name: 'Lime', garnish_type: 'slice'})
-orange_slice = Garnish.create({name: 'Orange', garnish_type: 'slice'})
-orange_slice = Garnish.create({name: 'Orange', garnish_type: 'slice'})
-pineapple_slice = Garnish.create({name: 'Pineappe', garnish_type: 'slice'})
-pineapple_slice = Garnish.create({name: 'Pineappe', garnish_type: 'slice'})
+lemon_slice = Garnish.create({name: 'Lemon', img_url: slice_image})
+lime_slice = Garnish.create({name: 'Lime', img_url: slice_image})
+orange_slice = Garnish.create({name: 'Orange', img_url: slice_image})
+pineapple_slice = Garnish.create({name: 'Pineappe', img_url: slice_image})
 
 #Wedge
-lemon_wedge = Garnish.create({name: 'Lemon', garnish_type: 'wedge'})
-lime_wedge = Garnish.create({name: 'Lime', garnish_type: 'wedge'})
-orange_wedge = Garnish.create({name: 'Orange', garnish_type: 'wedge'})
+lemon_wedge = Garnish.create({name: 'Lemon', img_url:wedge_image })
+lime_wedge = Garnish.create({name: 'Lime', img_url: wedge_image})
+orange_wedge = Garnish.create({name: 'Orange', img_url: wedge_image})
 
 #Rim
-sugar_rim = Garnish.create({name: 'Sugar', garnish_type: 'rim'})
-salt_rim = Garnish.create({name: 'Salt', garnish_type: 'rim'})
+sugar_rim = Garnish.create({name: 'Sugar', img_url: rim_image})
+salt_rim = Garnish.create({name: 'Salt', img_url: rim_image })
 
 #Spoon
-agave_nectar_spoon = Garnish.create({name: 'Agave Nectar', garnish_type: 'spoon'})
-absinthe_spoon = Garnish.create({name: 'Absinthe', garnish_type: 'spoon'})
-maraschino_spoon = Garnish.create({name: 'Maraschino', garnish_type: 'spoon'})
-sugar_spoon = Garnish.create({name: 'Sugar', garnish_type: 'spoon'})
-honey_spoon = Garnish.create({name: 'Honey', garnish_type: 'spoon'})
+agave_nectar_spoon = Garnish.create({name: 'Agave Nectar', img_url: spoon_image})
+absinthe_spoon = Garnish.create({name: 'Absinthe', img_url: spoon_image})
+maraschino_spoon = Garnish.create({name: 'Maraschino', img_url: spoon_image})
+sugar_spoon = Garnish.create({name: 'Sugar', img_url: spoon_image})
+honey_spoon = Garnish.create({name: 'Honey', img_url:spoon_image })
 
 #Sprinkle
-nutmeg_sprinkle = Garnish.create({name: 'Nutmeg', garnish_type: 'sprinkle'})
-pepper_sprinkle = Garnish.create({name: 'Pepper' ,garnish_type: 'sprinkle'})
-celery_salt_sprinkle = Garnish.create({name: 'Celery Salt', garnish_type: 'sprinkle'})
-salt_sprinkle = Garnish.create({name: 'Salt', garnish_type: 'sprinkle'})
-onion_sprinkle = Garnish.create({name: 'Chopped Onion', garnish_type: 'sprinkle'})
-coffee_sprinkle = Garnish.create({name: 'Coffee',garnish_type: 'sprinkle'})
+nutmeg_sprinkle = Garnish.create({name: 'Nutmeg', img_url:sprinkle_image })
+pepper_sprinkle = Garnish.create({name: 'Pepper' ,img_url: sprinkle_image})
+celery_salt_sprinkle = Garnish.create({name: 'Celery Salt', img_url:sprinkle_image })
+salt_sprinkle = Garnish.create({name: 'Salt', img_url: sprinkle_image})
+onion_sprinkle = Garnish.create({name: 'Chopped Onion', img_url: sprinkle_image})
+coffee_sprinkle = Garnish.create({name: 'Coffee',img_url: sprinkle_image})
 
 #Other
-blackberries = Garnish.create({name: 'Blackberries', garnish_type: 'berry'})
-mint_leaves = Garnish.create({name: 'Mint Leaves', garnish_type: 'mint'})
-cherry = Garnish.create({name: 'Cherry', garnish_type: 'cherry'})
-olive = Garnish.create({name: 'Olive', garnish_type: 'olive'})
-sugar_cube = Garnish.create({name: 'Sugar Cube', garnish_type: 'sugarcube'})
-fire = Garnish.create({name: 'Fire', garnish_type: 'fire'})
-chilli = Garnish.create({name: 'Chilli', garnish_type: 'chilli'})
+blackberries = Garnish.create({name: 'Blackberries', img_url: berry_image})
+mint_leaves = Garnish.create({name: 'Mint Leaves', img_url: leaf_image})
+cherry = Garnish.create({name: 'Cherry', img_url: cherry_image})
+olive = Garnish.create({name: 'Olive', img_url: olive_image})
+sugar_cube = Garnish.create({name: 'Sugar Cube', img_url: sugarcube_image})
+fire = Garnish.create({name: 'Fire', img_url: fire_image})
+chilli = Garnish.create({name: 'Chilli', img_url: chilli_image})
 
 
 ####=========  Add Users  =========####
