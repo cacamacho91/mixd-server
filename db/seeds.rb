@@ -6,6 +6,7 @@ CocktailIngredient.destroy_all
 User.destroy_all
 Taste.destroy_all
 CocktailTaste.destroy_all
+Garnish.destroy_all
 
 ####=========  Glasses  =========####
 ##  TEMPLATE  ##
@@ -56,39 +57,43 @@ dry_white_wine = Ingredient.create({name: 'Dry White Wine'})
 kirsch = Ingredient.create({name: 'Kirsch'})
 creme_de_cacao_white = Ingredient.create({name: 'Creme de Cacao (white)'})
 lillet_blanc = Ingredient.create({name: 'Lillet Blanc'})
-lillet_blonde = Ingredient.create({name: 'Lillet Blonde'})
 maraschino = Ingredient.create({name: 'Maraschino'})
 old_tom_gin = Ingredient.create({name: 'Old Tom Gin'})
 
-#Yellow/Peach Liquor
-prosecco = Ingredient.create({name: 'Prosecco'})
-champagne = Ingredient.create({name: 'Champagne'})
+#Yellow Liquor
 galliano = Ingredient.create({name: 'Galliano'})
-peach_schnapps = Ingredient.create({name: 'Peach Schnapps'})
 citron_vodka = Ingredient.create({name: 'Citron Vodka'})
 
-#Orange / Red Liquor
+#Peach Liquor
+lillet_blonde = Ingredient.create({name: 'Lillet Blonde'})
+prosecco = Ingredient.create({name: 'Prosecco'})
+champagne = Ingredient.create({name: 'Champagne'})
+peach_schnapps = Ingredient.create({name: 'Peach Schnapps'})
+
+#Red Liquor
 rasperry_liqueur = Ingredient.create({name: 'Rasperry Liqueur'})
-aperol = Ingredient.create({name: 'Aperol'})
-orange_curaćo = Ingredient.create({name: 'Orange curaćo'})
 red_port = Ingredient.create({name: 'Red Port'})
-brandy = Ingredient.create({name: 'brandy'})
-apricot_brandy = Ingredient.create({name: 'Apricot Brandy'})
 campari = Ingredient.create({name: 'Campari'})
 red_vermouth = Ingredient.create({name: 'Red Vermouth'}) 
 blackberry_liqueur = Ingredient.create({name: 'Blackberry Liqueur'})
+cherry_liqueur = Ingredient.create({name: 'Cherry Liqueur'})
+
+#Orange Liquor
+aperol = Ingredient.create({name: 'Aperol'})
+orange_curaćo = Ingredient.create({name: 'Orange curaćo'})
+brandy = Ingredient.create({name: 'Brandy'})
+apricot_brandy = Ingredient.create({name: 'Apricot Brandy'})
+ginger_ale = Ingredient.create({name: 'Ginger Ale'})
+gold_rum = Ingredient.create({name: 'Gold Rum'})
+cointreau = Ingredient.create({name: 'Cointreau'})
 
 #Brown Liquor
-cherry_liqueur = Ingredient.create({name: 'Cherry Liqueur'})
 cognac = Ingredient.create({name: 'Cognac'})
-gold_rum = Ingredient.create({name: 'Gold Rum'})
 creme_de_cassis = Ingredient.create({name: 'Creme de Cassis'})
 rye_whisky = Ingredient.create({name: 'Rye Whisky'})
 bénédictine = Ingredient.create({name: 'Bénédictine'})
-cointreau = Ingredient.create({name: 'Cointreau'})
 dark_rum = Ingredient.create({name: 'Dark Rum'})
 bourbon = Ingredient.create({name: 'Bourbon'})
-ginger_ale = Ingredient.create({name: 'Ginger Ale'})
 irish_whiskey = Ingredient.create({name: 'Irish Whiskey'})
 scotch = Ingredient.create({name: 'Scotch'})
 coffee_liqueur = Ingredient.create({name: 'Coffee Liqueur'})
@@ -105,42 +110,52 @@ pisco = Ingredient.create({name: 'Pisco'})
 creme_de_menthe = Ingredient.create({name: 'Creme de Menthe'})
 absinthe = Ingredient.create({name: 'Absinthe'})
 
-
 ##==== Mixers ====##
-#Juices
-lime_juice = Ingredient.create({name: 'Lime Juice'})
-lemon_juice = Ingredient.create({name: 'Lemon Juice'})
-orange_juice = Ingredient.create({name: 'Orange Juice'})
-cranberry_juice = Ingredient.create({name: 'Cranberry Juice'})
-grapefruit_juice = Ingredient.create({name: 'Grapefruit Juice'})
-pineapple_juice = Ingredient.create({name: 'Pineapple Juice'})
-olive_juice = Ingredient.create({name: 'Olive Juice'})
-tomato_juice = Ingredient.create({name: 'Tomato Juice'})
-
-#Syrups
-sugar_syrup = Ingredient.create({name: 'Sugar Syrup'})
-rasperry_syrup = Ingredient.create({name: 'Rasperry Syrup'})
-simple_syrup = Ingredient.create({name: 'Simple Syrup'})
-orgeat_syrup = Ingredient.create({name: 'Orgeat Syrup'})
+#Pale Mixers
 gomme_syrup = Ingredient.create({name: 'Gomme Syrup'})
-grenadine = Ingredient.create({name: 'Grenadine'})
-
-#Bitters
-orange_bitters = Ingredient.create({name: 'Orange Bitters'})
-peach_bitters = Ingredient.create({name: 'Peach Bitters'})
-angostura_bitters = Ingredient.create({name: 'Angostura Bitters'})
-
-#Other
 cream = Ingredient.create({name: 'Cream'})
-cola = Ingredient.create({name: 'Cola'})
 egg_white = Ingredient.create({name: 'Egg White'})
-egg_yolk = Ingredient.create({name: 'Egg Yolk'})
-peach_purée = Ingredient.create({name: 'Peach Purée'})
 coconut_milk = Ingredient.create({name: 'Coconut Milk'})
-ginger_beer = Ingredient.create({name: 'Ginger Beer'})
-coffee = Ingredient.create({name: 'Coffee'})
 soda = Ingredient.create({name: 'Soda'})
 water = Ingredient.create({name: 'Water'})
+
+
+#Yellow Mixers
+lemon_juice = Ingredient.create({name: 'Lemon Juice'})
+egg_yolk = Ingredient.create({name: 'Egg Yolk'})
+
+
+#Peach Mixers
+peach_purée = Ingredient.create({name: 'Peach Purée'})
+grapefruit_juice = Ingredient.create({name: 'Grapefruit Juice'})
+pineapple_juice = Ingredient.create({name: 'Pineapple Juice'})
+sugar_syrup = Ingredient.create({name: 'Sugar Syrup'})
+simple_syrup = Ingredient.create({name: 'Simple Syrup'})
+orgeat_syrup = Ingredient.create({name: 'Orgeat Syrup'})
+peach_bitters = Ingredient.create({name: 'Peach Bitters'})
+ginger_beer = Ingredient.create({name: 'Ginger Beer'})
+
+
+#Red Mixers
+cranberry_juice = Ingredient.create({name: 'Cranberry Juice'})
+tomato_juice = Ingredient.create({name: 'Tomato Juice'})
+rasperry_syrup = Ingredient.create({name: 'Rasperry Syrup'})
+grenadine = Ingredient.create({name: 'Grenadine'})
+
+
+#Orange Mixers
+orange_juice = Ingredient.create({name: 'Orange Juice'})
+orange_bitters = Ingredient.create({name: 'Orange Bitters'})
+angostura_bitters = Ingredient.create({name: 'Angostura Bitters'})
+
+#Brown Mixers
+cola = Ingredient.create({name: 'Cola'})
+coffee = Ingredient.create({name: 'Coffee'})
+
+#Green Mixers
+lime_juice = Ingredient.create({name: 'Lime Juice'})
+olive_juice = Ingredient.create({name: 'Olive Juice'})
+
 
 
 #=========  GARNISHES  #=========####
@@ -180,20 +195,20 @@ lime_slice_image = 'https://lh3.googleusercontent.com/zGpZ4n7Y1f5rnnUFFIrUckhXBZ
 pineapple_slice_image = 'https://lh3.googleusercontent.com/csyuLpuTM-VEQh5a0MnGrcXDqaxHtDB9gckK1xmRsKFcz4gn3NCxXOWMQqYlYgusLYHeI1GQ5lqJ0iMJOedBnvHjck-IZUK5EkKT3j0REjdTEuZX4G1dK4ofuU5ItsBTjSKTekYbxQjFOa-IlWvcA4eqNpJDAAJ4izGNxo29iSaFIHkc4yl_QQ5BQco7Kjoc8FPemikibYI5GlZUpHsvGHaq76xcuzCA3Mx90xnjMI6MsPl9N3mcQTGAh-dquMCYnDGq1Dp04PKlp8pgzW9qF0PMviyNnEetf7TB5wBSpr0goQQFUrL3pgKp8VxUhfKbGOinXYE_RT2aWSvYS1HYNOdJIaN7THQtEtzl745ZJw4VEdTJ9XIFn1Lb9tykjPSLf1uHRatxplxWGwU9sxVLljmWNMaIpiZNGddV840bMMHnsWmB-h9YAu7u72tGLJ-90gUOSmKlzYnXrd7xoevponAFp9NYaX5z7nG7e7K3_XDQZUcZzPkUS-QNe-N6TCnIx6FqXLcmdy_5BGc_DB0TnKHuvQLwitXNlHYNvru5tcGJQPii-_yXkohx6BiTfdynEIVXVZJJ-KNNe4pxpbkVMfe5zMeVEHDutHB_BZCuoXreUg_GCRusaDuJjhiXUOx4bSoW3HdIAAwOA_XRQWOGOlx9ZFRfe7I=s512-no'
 grapefruit_slice_image = 'https://lh3.googleusercontent.com/Fc5rUsWDymfUKUqJcN0uxyQfNzO5u8Vet7EutG5azo_IJ0HNvsql29d_j8RKFFpD6-Og00PlU6j4CWMy13grZ4VD2vhfLYSZ2ypWrI_hQS7qE2TgvphvR4xoeyVtKJCaZ3LqFGOVqi28rEbyYDKBzeusZH2BYibGnKClOoZiq0KZyutgIzGHBOOngkj9vw53oAcwskQxbuDEDnwbyIMw8RFwB-2MvI21T8ESY5B4_LrcTPYcHR0rkAWfVXecVznzbx1PJSpVLaj9mvfNh0zUfrMLmUS-lDC7OgoRvDsqb7PadDXVHQ-zuODNi8B7gF-3LVq3WmwM1XZvoP3Ugo5csO0vRmFImU4it36LwKpN3H89HoK1XyMHzWijDknSVdXoj9SHaOiv2fYvjaNdr_We30P5BMRP6HQF6ycO6g8HV8VTaae0VBkUITYLYh7muU6miKSHmFB6MQZfYRxhpVuQ_rdKivsBCEWWnfQHg7lBFbgdSluNrs7pzKzQbTyFQFjgh7YPWWwrI-ytt2jS4-WijbtiXLFpLl0BFIyMIhTQTaWV6wlhjZaXPDvJDPrPK1-FsAeiFpUUoVHnFtffUugZ66ZH1huDbUVZWl08cEoKcsD9UpXX1VNhWePPo1gX6BGlqHGDalQ4iN_pBZHsHHR3lI1wJts_I04=s512-no'
 lemon_slice_image = 'https://lh3.googleusercontent.com/9WpRTwIPHw-NiSvXhyeniDgdhokrAPLfUUeftlB0GeKA0mpUPqQqfaIQIVtvELlgxLjHZB7iAK20yb0r6LI4BLN1-W254nMcG1od6DKQPNhk4DYY8d74Cd8SU70petT-9C5A4wtlvUBUrt7bhzdvRR6VkCL6TreM5W-G9UWfjWDSZBdHXY-MvIz53OqgCkKxlA4UG-j1vzD1si3zKTb5b3YGjFX1Nf25IL6OYqNAcr3H9JzcTO3QUDfsO4tIabuxZuFCBudbONw2xnqHbcbN7oD95WmRhSpnXPjLCWGi8ZqwrzjN_2UMiiRgdBq0ibBvyckEO6pTr2_28cDCRA9NvtM5o1ahjwiETlRwHx1QoJcewuBkcD2RKWC3y2XL81sCZR85uxQDeTLno1NnotpsMJpRIUsX-LCeNsA9glAAr0AS-vUSynEl3b_OHbxArEvRu9lT2WGo9Mp290HxmJrHLNX4HM-icyYXFRHEPl20nqenBKTjCMg-T-kmSG05lFzjz1G-XHKi_-a8f1Ng6QPcpbk5aYACT78XUhNW3xoTPkT5woiNogZIZMEqR82KtStbOhLpdv99yKv68HRhT3VtbsXHQcOzRQQVoae1eSf9uN8oqRgCqJbdPgmvCxqDqSEGL-sk7WXFJPfilIuYr-E3h5i1XPkkRsg=s512-no'
-lemon_slice = Garnish.create({name: 'Lemon', img_url: lemon_slice_image})
-lime_slice = Garnish.create({name: 'Lime', img_url: lime_slice_image})
-orange_slice = Garnish.create({name: 'Orange', img_url: orange_slice_image})
-blood_orange_slice = Garnish.create({name: 'Blood Orange', img_url: orange_slice_image})
-pineapple_slice = Garnish.create({name: 'Pineappe', img_url: pineapple_slice_image})
-grapefruit_slice = Garnish.create({name: 'Grapefruit', img_url: grapefruit_slice_image})
+lemon_slice = Garnish.create({name: 'Lemon (slice)', img_url: lemon_slice_image})
+lime_slice = Garnish.create({name: 'Lime (slice)', img_url: lime_slice_image})
+orange_slice = Garnish.create({name: 'Orange (slice)', img_url: orange_slice_image})
+blood_orange_slice = Garnish.create({name: 'Blood Orange (slice)', img_url: orange_slice_image})
+pineapple_slice = Garnish.create({name: 'Pineappe (slice)', img_url: pineapple_slice_image})
+grapefruit_slice = Garnish.create({name: 'Grapefruit (slice)', img_url: grapefruit_slice_image})
 
 #Wedge
 green_wedge_image='https://lh3.googleusercontent.com/-3mZPn9WfyRNDCsgjPeF42C9nauGZ_e9CSSb0-tyA5dznSxvmvef_dVKnF1NaHeCiit3fwumTmZptOBHNMo03-elyfewSnwC3oRuHYogHRdxofgTgTHw5IfHQ5lFFV2a6jAOs34mmm8PR8d2s6rvOpf7PAzfkHuga9w1wW0wz_uoBk0f-4DBGwHou5Wwbz7hmgH0uj7STiOc7b7IhGSkEiIp0Fnntf8v7_nku5CTDJ_h6TsN4DXb2NblO0l3AyT3zWBGwVqTrRjAmMkINUMYCwqIGmQr26vUTNcAjpfWoFgMsDyNeGmq6mUZCyEWXty33mOwITSAVeVJJeiPkTVNSL4WU2k21HoAyJdryjTQhHJkChUCp8b9eFGj6QJ0ZyHpUfuTXmLfWguBa44alg1XJAdk0WoIQZVm2EuTyO3BesgOGhnkhlW1nGe-MUYD2Pk0YYd06N2W9pe3gtdiZzjwDRdv0k8hqZ52-EZHye0Gl1vE8SxFnQ_vutY4snBFueqYA7H08S1027hUFiLVCqXtzFCw5bFXUEVruhLw7vqwGMhmiDMhl-FkEbmfKh2yUTDrHYNOeEri80GAN7vdVX0ddL_dUHRv8r9oxYq2N6JieuvYoJAQizdzG4evC2G1dyJo8XuYAemUVj8hgtPjnEXLssJkUO9VpEQ=s512-no'
 yellow_wedge_image='https://lh3.googleusercontent.com/wRY2f1Y7zWdhD-vu1j_U4r3_dIebkfngWf2pqto_7xA9VQXv2DcBE2_aSmVwfiLrK1U0W2XPWdGL7jyCmkflOeKu3WdrJX1ykv_22x9KV8b3YUndVdN3mgv2yTwtuBIA4whmU85CBkeYSt5MQTp0gJppqApINmXxzmzwlLUswYOJgvNY0L1BrrfpJbw8tK2Jpto8BWuJROP0RCJNI36Cq8Tv1cKUuEdTXQUTvYMC8c8KMnEV7luBQtXa0GM_hc-J6uGd2QmqfPZBmkvPx4JYzMytjUiTU-eIfRmY0AGcsd3mIQWtEwPJFoyhKX9P7PeeXt7rJOuCIQAK5hQAAUD_D9Mfwk-9L3PztmEVes0yQWYslKLaGrfxPy-jHqPp_TJB0SMpZ08VGbib3qyxY0gj57VmpU8cAb92Gcyrbrrx4-IsskKOIKQGgta9hqJsbrU1GL2H4rRKX4KiFiIpijAP9vA1ihIs9Kesn6MY6UQ_tCV-_Bow3tlumyb7JX-qspZBAGPEdyamKeF-Tcxwcf5ZPUgg2ffMXDvEWqOYxgBsAf1-ekGWYbEKN_IT3hO_FSREIJcEZAStuxlzAQja69heZS0Xl-La08ljUexPAjgUgcNEI6LYAYlS5OFk1pnEq3UIwqjTqVdoWDR-XJfBBxIru9UgrFPv9iY=s512-no'
 orange_wedge_image='https://lh3.googleusercontent.com/9if97jzKTkNEF4IewOJNoSiKQ4eR8TetwcIdG4AoGJRx08L_-wbl7Y89Q1Dvh-6HV9F-IFK6WG-LbsMdQIkD8XZX8qFLPph8Zg1qsINKZgQqd3Et0KnDDbmhjCITuIUisdwca002e-vYknOYsTh6sQt8VAotcTn98zB3lqy6t6Q2kjQmc6uoRjivxIzewl3QOOMJ1mW-k2N1xWL0tVKFl-te-ctK5b_gdKxSNNv8BgoKXTpBXH1Smcc2GSnY6aKYH6fk43uuo3lcXnCKXAE_XLrCxz3ifsFB_W05LvnE8HGZhryaCX0xBgkYQOXCU8QJlUAf6stb2U0f6IcpCVUN373pqtxyoI6rTQt49D60IDmCTT8ixGLmHV1U4WVar4Jkot2Qbds6PdQ0x1wvfsR3VhWg7aWSl7VVsiavscWrnE8kQEQksGdJxc3vbvj5sO_rNA7wzWlgG6V0S_ukXaI3jYPQDVdVkKVSmWy9OI6a_4pamC-9cuhFMFx6FLSyH0rBlkCq5TEq4iMVK4wm0t_NYJ_-chanRPDn7afNag3I8bex6yyBxuvXz7-hMYiGcSUl8BpUG6AUDSEKkDveDsgw3IbN-D4o1_Eynwmh-4-LlflQ1ngCTS0RicfAZjQ4RbUiEYGh0lJFB597x0LozVv9RQKXkYE2Tm0=s512-no'
-lemon_wedge = Garnish.create({name: 'Lemon', img_url:yellow_wedge_image })
-lime_wedge = Garnish.create({name: 'Lime', img_url: green_wedge_image})
-orange_wedge = Garnish.create({name: 'Orange', img_url: orange_wedge_image})
+lemon_wedge = Garnish.create({name: 'Lemon (wedge)', img_url:yellow_wedge_image })
+lime_wedge = Garnish.create({name: 'Lime (wedge)', img_url: green_wedge_image})
+orange_wedge = Garnish.create({name: 'Orange (wedge)', img_url: orange_wedge_image})
 
 #Spoon
 spoon_white_image = 'https://lh3.googleusercontent.com/wEdnGPiGvrXRnJKk5L1b3CFc08KGs5BOkzEOdNuvICygh-QRSMTX6r9poU48MKdaa7oxGEFL-r5SAtrFe_1JJX40GR-BwRPsbojmhndFit63dreMKaotoltNAIn-8M8o6qxV8yIU7hKSqoJqCZuppNQDWu15RUFlOoUJh0S_DhLTDxQFlxw5dHizNSati2dHy9sd5t0_l2iaaTmaZPdZ4-8RJ_Ue_2o98w2d1-NNsUqnDx9n0NnfCL6ulMcYnZ1nxRxlQ9aWR3UxL__qrzSS3pP6uE_Gh-ogCDCQLxaEklr2XAmsn9K_uxVvAbN2zew3Dtd8qxpuSR1-uitJdo5nXR-5cH5NDMGprTAD9Vjo5KPfjWKb8iLNJOD-TfFli1SbpJghZLGp79xYdpfywP6dSw2VevBEkRqE3zeQ_t5Q06QYZsAqabiK8FzmkCszxoMZ0sezUM6vDJHZIv7UDANVVlIg5D6SFeTsDMOPRkU80Tpfwrej-x8rjSFJer3pNTFE-ChC7uzGkfl6SHOGyTXc6aI039y6uDyK4NRy_UrV-oGHX19Hdw9Ki78bcQGhEKtRC2BSPWLLOO6d-aCWlKyeyidLXmP4R6TCqJjuBbX1HUI2wb-wiO4s1AbqjS5ZE81r1UsTXWN5FwtjyWp5cUe_RiyEyMXvccY=s512-no'
@@ -202,7 +217,7 @@ spoon_yellow_image = 'https://lh3.googleusercontent.com/O10sga71yUXGfwUZdZLS19TO
 maraschino_spoon = Garnish.create({name: 'Maraschino', img_url: spoon_white_image})
 sugar_spoon = Garnish.create({name: 'Sugar', img_url: spoon_white_image})
 sugar_rim = Garnish.create({name: 'Sugar (rim)', img_url: spoon_white_image})
-absinthe_spoon = Garnish.create({name: 'Absinthe', img_url: spoon_green_image})
+absinthe_spoon = Garnish.create({name: 'Absinthe (spoon)', img_url: spoon_green_image})
 honey_spoon = Garnish.create({name: 'Honey', img_url: spoon_yellow_image })
 agave_nectar_spoon = Garnish.create({name: 'Agave Nectar', img_url: spoon_yellow_image})
 

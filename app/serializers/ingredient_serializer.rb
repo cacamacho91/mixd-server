@@ -1,3 +1,3 @@
 class IngredientSerializer < ActiveModel::Serializer
-  attributes :name, :color_background
+  attributes :id, :name
 end
