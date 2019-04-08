@@ -160,7 +160,7 @@ peychaud_bitters_drops  = Garnish.create({name: 'Peychaud Bitters', img_url: ora
 angostura_bitters_drops  = Garnish.create({name: 'Angostura Bitters', img_url: orange_drop_image })
 vanilla_extract_drops = Garnish.create({name: 'Vanilla Extract', img_url: orange_drop_image })
 orange_flower_water_drops = Garnish.create({name: 'Orange Flower Water', img_url: orange_drop_image })
-prosecco_drops = Garnish.create({name: 'Prosecco', img_url: orange_drop_image })
+prosecco_drops = Garnish.create({name: 'Prosecco', img_url: yellow_drop_image })
 sugar_syrup_drops = Garnish.create({name: 'Sugar Syrup', img_url: orange_drop_image })
 sparkling_wine_drops = Garnish.create({name: 'Sparkling Wine', img_url: orange_drop_image })
 grenadine_drops = Garnish.create({name: 'Grenadine', img_url: red_drop_image })
@@ -220,10 +220,10 @@ onion_sprinkle = Garnish.create({name: 'Chopped Onion', img_url: onion_image})
 coffee_sprinkle = Garnish.create({name: 'Coffee',img_url: coffee_image})
 
 #Other
+olive_image = 'https://lh3.googleusercontent.com/BXvc6rK87F9tRewsXsmXHYE_RXHU0c2FkSnRhyQVJQuVRM1uEbQvQw4kwHftErAyyS70k43LIF_shE3_Y2wkzKE_KyTJaxhcUYErPp1iOuov0f5RQLqWlm3kL_jPEu8j8Bgi1W1YwsZIh5St6jIiPzeiTGGwpQb8pF4d6Dypxj1N7RftNSBiUpxUlhZvva67BfzrOOWkECatSylPwtajNRVob7lwfB0S6zmFSGOHDBqXORC_xBqUXxm4V_eJKJoHmIDt8vdu4ebeETX9NPbNIdVAtmzaxo0B-OMaSQfOYse0co2cZpwVobkwP2A5DNkjB3_kGrmLNcS3yHbIna6LS-O7_AiRQC_URJNtc2XKJl6NGRlBCN07aQQB49gt139B98dyWmbmguj88t2S1XGgcbdv5C9Ukpg8-O66xR6TS53b_TYWXzGEhSTd4P7TX6vKO_GOK9wztViYyc8N3zKFQSQmAzuC5YB5KyVPRnT5va54ElJq0Gil5FI1bp9rGnLmaqDi8OPXIc1KYweqcmh6hLRJy9wbCy97FpAVSa8Iq-uDSQNaviEZQyirvU8RRA8_KQt69s9P2DPBB5oVjcJQdLdyOjN50XJOiRDCbAB_M3SJhP7ecN12NINO8a0nuLOySccL2G-bElvaZPrtZAzhVoZMN7FuMFc=s512-no'
 berry_image = 'https://lh3.googleusercontent.com/CQbu-Jqo59ABdlfoq3cS5hUWk2SragdVifEArvAe3hoO9UcdGW5hKN7-mApZo5ZX9nlCzyQoR8n2-hATYDaT2qyA9V8dAe2hrSy_SIE2dpyeH0Pav7YDXCPVeKchQ6NkaEknUQGGPKk2CHvNg38OYGCrTPtm-TPO8VYaXsdRZ4nmoF2JvubZc8nNYUfWOPCcFqmOu9LEC51HXpocC3dShNjd1OTMvpuqbnLGLIm1izrSdNRZ0tRzz-vUBKU9pasTOzuaUYoVQaEhO1y0xNIigzdfUv-recc8UNXXQGMhrc9bi-Zu7BIStGcRU9YPCnhMuuRgmQfjHwuidv64o401eHwvrYZ8KTCBLn9scnaexDp3d_wnFyWmvIomKtP41BVP-j3WZv9_aHVnZTAVNcHgD7xBrvB5URvrlUabqc9BqMkre526otGDM_ezjOuGEfhs8545KEoQwRTopA66a19aLndTj_PiXJYJPK4JdrIIC3V3nMxjzTykxPyay5B09bm7hnv2Jbeh660FBJRDZWPnpvefJWA_pDzQWaHBOaqdzpkdaFwsDuNpE1VEIyZ-QLt41LskaWj55tdiYCA9da6VkZRB5ncZdxGk68IKE3g3fMmyCNIL4AzARbU0zKkmPnfRckSkNycHnGhlZ7GGbdU9XBXfVCv7D-I=s262-no'
 leaf_image = 'https://lh3.googleusercontent.com/vcPngyJ0MRWD6EhmE8X6kIpYgQSuYpCNXzhipBpLMtwWBWHZVAJ7Inx12vzDvXEVKP5Q3vY31iS7lMChHaeEUhd6VZTMDZ55F-aYwEaCtWcfM9n2s6_wBMJ_J0kmU546fd5gsW69bxPguiQik7u7yr2BMsQfSVQ1iYSc7ObTCCTJcK6jV9jZaP3tAwPIBn52uwFuLa7dr60dMMDsvoMT8qIsD5u_X0eMulqmkUrTxGhhkKIImbcrAP8eFpB5diKDhwD_P6mo79659JfFkIGaBocmVSK-PUArqQ8ETdnK4aU-eBxAPZtB9eN4ATH4PI0m33yxV0qOEPfCOZVpj8HApsNt3eOT73tpkSNu9u5KqT3IsLSQbkVlcS5Vuemr9TcwMft6D_EQScI2QLFS4JIi4czOO4dCjdPTtrQdE0CDSo9Ol0dzCtv6BBuX40PRnsbK29wvBGmbmscvRUbZ4vbJF_1TdIBZ1SsuUV9ohKe58cUnzJZD0w7P9_nVOGDCDX4UZzTTgfxRzQFl-mpEI1_Qd84rotX4CFJnhwyv-emwOu5luleFAJK_L9NYvlSyVop-naE3qBZfLck2g3CyH1nW2Y6RWja0L2TRnYxWxeKlTDzv0Sqv8UEJLCgiCQ9D4aFFTRBKBg6l1U1Fa_vlOp8rAPgv8uSg-Os=s512-no'
-cherry_image = 'https://photos.google.com/photo/AF1QipNJoZSmJtyOiM48DRJzHzXtlTpx2-K1hDMyJOSD'
-olive_image = 'https://lh3.googleusercontent.com/myTvjFtOziHvV9U6NBdPIhEij38VkhNzmLbXg1CmaXKLpdOILaPxz92vKl2HHaWbtbGLEPLGXkkGk6KmgiX-XhnRkV3x28bkhN4HPYiJ1yVA39y_VCxaKBpqaAGi6GEcSoTCjZyJsNf8lsmgnihJ6FH2rAnGhyxKnupENiWu54pkM-_mWl_da3Py2ypMWNJlYcepMESMmHIbAuHPBPh7E_RqN8_DgMCpCpHCvIS9vX7aBiMoVCcniPOGEcRXDwkfcUObywljygOB9rO7SfpJOVEOTw3RQS3BRWUq43wzOWCGmB_z_PGwKCZ3D9tS4d4s8Q79MnoezQSQZ_bDW6hk8qrHvcEbrWz8fQ-TKgOtseWclVhoLJSZNWwBVohS7z7ZaQg-uI78JsJoALsvusVzZngCsVHycH5SQ2L2gytyk1RqkhZDdiNWkk_3U7y4PAhizES-68epNeHs_fie7V1SvNoqP2LQcwYRK9_84Ma2g33fCrYPIMgZZbhlQPMDQqRZOU_ckCNOPpNri2DqaR_Q8swfyO3PRODND90uTOIuzu1B5i0TCcjw5u-5m1u9ouNqgGy4T6ZSGsg2yZhCgXTrw-jcsdiMb6OLeRuEKPqiLKJMstHLHtbdJgeblWTjx-0hUQPuXOm_YtM6bbjx3WDt5nGad4NRMQU=s512-no'
+cherry_image = 'https://lh3.googleusercontent.com/029qB7hKQzMPsvAjJUSLBTt9yEzugyCIULSoEdkgcBPxv7rlkV2LbB8tT4Bw_PSEZfr9_iP30s8Ik3ntlV2H2PqeotCvB-_b9RRfO5IQK0IvM1VKs0oFt2SaBJY12_cuS2IOrm8Q3IDKCOvhh-AvLiSLb7gWKo-3_mgRGRURBjPAoSv8Nf4jIkzlkOVp5XGKc2eI4mQY6KBbVf4tUk_UIUPBtJSR_gPACjKVgfFo4qXG-axDziSbJYkWZVQ79qXzc57B9u6N_lGgpD9RfPAJn4SMsB81MiKtYRHZeR2OVIwroCqJvxaHQbNsBvWBNyYc8S7cQzSk0mwfiKCjcHI4zuk_xiR3JgTKbgB7Zrsn6hV9sCQFl5gvFlSY1yoyGF2qem-rOjf3eiY34n3q_uIpsvZs4CccxhYNSPoUqm_BeNpM_9sTgrS4DCN0HJGeKOCyfNDkupaaMXg9501OJOTEMGKnZWjoY0-M4tQw8Lfqmgs9ZP1AtjHh2pnpa2_ZUuf-3fGhTlyeEA7kRUJc3PBezbZJPV4YJoHea5kbUrRhnPmvk7V6zjAGMPAEeToogypNXhVJytz8PxWD84bD-3edOCQXXynWd7nlCaTs6GYFJAlhn9rRDEw7zbe6tmGwisPD5eM1FHxwAApjv27aCcsFi0mOG52ErEk=s512-no'
 sugarcube_image = 'https://lh3.googleusercontent.com/BNW1HOw0_cCxaLn-0ejjEb4zhBZmo-g9Jh32mgDOmzobxE3L1kE9nmrewhudGGWQ1kRwSuiAUqIq_T5kFBmrbhDRXcVEoPCYxgqR-jdJWMFgzLuarWtWCFrV-PXbrIfqav8oENrQj0GM4aRjzv5Kexj4TO8jx_KqY3sAQVnmGY-NMHowa00s3EiBin_nR-1dq7pbvQMakc8qugOZ7rMcnWG4NPPtjKW9RWjyv3TI0v_zn25eJVFTNgBFKRukZh0vvHAfGAqYnks4Ltv2ATt7awpX8tpUruirFTt6EXlpQObJiTrYzFI747PWX20SykRbUZP4Es3gsKiYaSOSN0FHBY0YIwMAhZrnUE4wA-lMr6XrVTFso4TlAjE6SEPuKBTaGU57Y6a6DFniTlw26CuwXIU6ALVDZ0j9JPkFfzJPfWZ_UYR2KC2WCRdskdaCUUy7m_5eJ2wuQAoozMBm4Md_dcjezNqRrzFqQAyYFwWMpap1_gBJ90g5JhryQbabAVmJxe_RDIcCbCMjQrvMaP42Qqq9ooe7eOfwceZXOwpmH1v9fHQSVv24AyclzSG4-TuZkQAOUT6odu9gpAKXZcinWx8MLvPADoDXt--6YnIkT3-DO-sRMpc57RCvngy2bN-YSlGYgI3xMSFT8zAaVSQfNS1nW5R_jEA=s512-no'
 fire_image = 'https://lh3.googleusercontent.com/xaEJ5YScI8I3tqVFrY0LPKJm0m18F9rEGju0EMrRTgHSw44-PT9pCScGdFeQdY_nYrophcFnlcKEDGX4Vwjg2E5cQOHLEU-pdujUpRUmMyNDsx3rqbvg6BAIA0CThygz02aFzaVq1ciV-Nm6V6e8Na6h1HMKM2y8b4Jiqj2xP8-JbI1-Hwof3cGATOvpGwb-qGenU47kifm_g0nbAZWGAdZUN6l1tVJplrYGcmphfBf6AhZyxIQQLbRbeuqwN1X_k-1IuROZX8U6ujmbSuOWKri9RBBqD4KkqKDoQLMphRCr432BfGVSrND42cmrbIrVGD6v1uhmihjQW9eSoUv4MqN2_gv9oUrrPOcvyh7aSDIbh39M6nIWl6Joplpv_UwNFJa-9Ocg8hOxeMFFbHp36-6qt114JHto8eTbSMHth-Yxav7FVyNe_Fayy9F4PYh8GVve1XsBfUiV9QoeEhT2OOqSAPlSO4LletnzNRigoBWiX42JNaC9Xkuq0UXix28Q1ZxikBENZqs1V5kbfRu5TPm93Fdp7WEWsM4uos4cNC5WmO0cFwtkV0L3wa1r1mm0YoXp3juSFcHcg5bwlhPaWO14LiUssxQ-02lW4Ktbu4SLZHQUrdJPFL8A6wyFaR8LiaRTRIkz4KwMbUZE-pS7EDe_tSW5hlk=s512-no'
 chilli_image = 'https://lh3.googleusercontent.com/3dloP7DBHNB4uY4-vbcryKWlW-5Z75acFuu3dhGmeY2z9yAUtbdiElH-VoUb27vRjsAlsfE-1QCgW5cBHe-ZU4VqRkqBvHrCSt7xyvSjUPYSnULVOR24b2W9ZhxVVYPIrpZI9uQERJOKrPujTU2f8AFwZqdEnn3sJay73innKeZ2cX747AYY9ZNRxROZVGr62jTCy8D9Nnnk8-ejC6esrzXxDAlZHjEVdzipCF9DHZJq1HaAPkBXkjHQjB1bkpXen-vaIeqGoLbVS2VvUMMvTLCDqLTP6yQLUn53krv9uORjTCnUWTfjzpDgX7TURnQDhbsqS7QsY8-jvCuC268kjDGzfJWO5vz79-0yf7aVqYnSKwLRvCLV-Q1OlCrg_6N510juQmRHHxAJ2htaMXP80U7G_y1r-jNPDtuzk0V3k7orGcPTNLWmXcim3anICQP5bBJEmneby-ohj0HfMPTCvweuEEHE451CqUtXEAIBZr4MIMClTx93XMco-QnxdS3KDLlOe_MDl8SzKXHqP_WnsUPP9KzUs1jcZScVYvZIQnoqGSbCFKh19v769JKzEcatapdqrQ2MyUpN2_nP4G17-W2ES4jtHS1v8_TS9YfbiOFeluLSVYU51xDXWO8s35pkumc49Zm8GISmdeZEMbAukbExFrxXvqk=s512-no'
@@ -278,9 +278,9 @@ aviation = Cocktail.create({
   garnishes: [cherry],
   user: library})
 aviation.add_ingredients_with_parts([
-  {ingredient: gin , parts: 4.5 },
-  {ingredient: lemon_juice, parts: 1.5},
-  {ingredient: maraschino, parts: 1.5}
+  {ingredient: gin , parts: 5 },
+  {ingredient: lemon_juice, parts: 2},
+  {ingredient: maraschino, parts: 2}
 ])
 
 between_the_sheets = Cocktail.create({
@@ -308,9 +308,9 @@ bramble = Cocktail.create({
   user: library})
 bramble.add_ingredients_with_parts([
   {ingredient: gin , parts: 4 },
-  {ingredient: lemon_juice, parts: 1.5},
+  {ingredient: lemon_juice, parts: 2},
   {ingredient: sugar_syrup, parts: 1}, 
-  {ingredient: blackberry_liqueur, parts: 1.5}
+  {ingredient: blackberry_liqueur, parts: 2}
 ])
 
 caipirinha = Cocktail.create({
@@ -348,10 +348,10 @@ clover_club = Cocktail.create({
   tastes: [sweet, fresh],
   user: library})
 clover_club.add_ingredients_with_parts([
-  {ingredient: gin , parts: 4.5 },
-  {ingredient: lemon_juice, parts: 1.5},
-  {ingredient: rasperry_syrup, parts: 1.5},
-  {ingredient: egg_white, parts: 1},
+  {ingredient: gin , parts: 7 },
+  {ingredient: lemon_juice, parts: 2},
+  {ingredient: rasperry_syrup, parts: 2},
+  {ingredient: egg_white, parts: 2},
 ])
 
 
@@ -366,8 +366,8 @@ cosmpolitan = Cocktail.create({
 cosmpolitan.add_ingredients_with_parts([
   {ingredient: citron_vodka , parts: 4 },
   {ingredient: cranberry_juice, parts: 3},
-  {ingredient: cointreau, parts: 1.5},
-  {ingredient: lime_juice, parts: 1.5}
+  {ingredient: cointreau, parts: 2},
+  {ingredient: lime_juice, parts: 2}
 ])
 
 
@@ -381,7 +381,7 @@ derby = Cocktail.create({
   user: library})
 derby.add_ingredients_with_parts([
   {ingredient: gin , parts:6 },
-  {ingredient: peach_bitters, parts: 0.5}
+  {ingredient: peach_bitters, parts: 1}
 ])
 
 
@@ -395,8 +395,8 @@ harvey_wallbanger = Cocktail.create({
   user: library})
 harvey_wallbanger.add_ingredients_with_parts([
   {ingredient: orange_juice , parts: 9 },
-  {ingredient: vodka, parts: 4.5},
-  {ingredient: galliano, parts: 1.5}
+  {ingredient: vodka, parts:5},
+  {ingredient: galliano, parts: 2}
 ])
 
 
@@ -408,10 +408,10 @@ hemingway_special = Cocktail.create({
   tastes: [bitter, sour, strong],
   user: library})
 hemingway_special.add_ingredients_with_parts([
-  {ingredient: white_rum , parts: 6 },
+  {ingredient: white_rum , parts: 7 },
   {ingredient: grapefruit_juice, parts: 4},
-  {ingredient: maraschino, parts: 1.5},
-  {ingredient: lime_juice, parts: 1.5}
+  {ingredient: maraschino, parts: 2},
+  {ingredient: lime_juice, parts: 2}
 ])
 
 
@@ -438,9 +438,9 @@ lemon_drop_martini = Cocktail.create({
   garnishes: [lime_slice, sugar_rim],
   user: library})
 lemon_drop_martini.add_ingredients_with_parts([
-  {ingredient: citron_vodka , parts: 2.5 },
-  {ingredient: triple_sec, parts: 2},
-  {ingredient: lemon_juice, parts: 1.5}
+  {ingredient: citron_vodka , parts: 4 },
+  {ingredient: triple_sec, parts: 3},
+  {ingredient: lemon_juice, parts: 2}
 ])
 
 margarita = Cocktail.create({
@@ -452,9 +452,9 @@ margarita = Cocktail.create({
   garnishes: [salt_rim],
   user: library})
 margarita.add_ingredients_with_parts([
-  {ingredient: tequila , parts: 3.5 },
-  {ingredient: cointreau, parts: 2},
-  {ingredient: lime_juice, parts:1.5}
+  {ingredient: tequila , parts: 5 },
+  {ingredient: cointreau, parts: 3},
+  {ingredient: lime_juice, parts:2}
 ])
 
 mary_pickford = Cocktail.create({
@@ -494,9 +494,9 @@ paradise = Cocktail.create({
   garnishes: [],
   user: library})
 paradise.add_ingredients_with_parts([
-  {ingredient: gin , parts: 3.5 },
+  {ingredient: gin , parts: 4 },
   {ingredient: apricot_brandy, parts: 2},
-  {ingredient: orange_juice, parts: 1.5}
+  {ingredient: orange_juice, parts: 2}
 ])
 
 pisco_sour = Cocktail.create({
@@ -508,7 +508,7 @@ pisco_sour = Cocktail.create({
   garnishes: [angostura_bitters_drops],
   user: library})
 pisco_sour.add_ingredients_with_parts([
-  {ingredient: pisco , parts: 4.5 },
+  {ingredient: pisco , parts: 5 },
   {ingredient: lemon_juice, parts: 3},
   {ingredient: sugar_syrup, parts: 2},
   {ingredient: egg_white, parts: 1}
@@ -549,8 +549,8 @@ tommys_margarita = Cocktail.create({
   tastes: [bitter, sweet, fresh],
   user: library})
 tommys_margarita.add_ingredients_with_parts([
-  {ingredient: tequila , parts: 4.5 },
-  {ingredient: lime_juice, parts: 1.5}
+  {ingredient: tequila , parts: 5},
+  {ingredient: lime_juice, parts: 2}
 ])
 
 tuxedo = Cocktail.create({
@@ -565,7 +565,7 @@ tuxedo.add_ingredients_with_parts([
   {ingredient: old_tom_gin , parts: 3 },
   {ingredient: dry_vermouth, parts: 3},
   {ingredient: orange_bitters, parts: 1},
-  {ingredient: maraschino, parts: 0.5}
+  {ingredient: maraschino, parts: 1}
 ])
 
 white_lady = Cocktail.create({
@@ -589,10 +589,10 @@ yellow_bird = Cocktail.create({
   tastes: [strong, fresh, sweet],
   user: library})
 yellow_bird.add_ingredients_with_parts([
-  {ingredient: white_rum , parts: 3 },
-  {ingredient: galliano, parts: 1.5},
-  {ingredient: triple_sec, parts: 1.5},
-  {ingredient: lime_juice, parts: 1.5}
+  {ingredient: white_rum , parts: 5 },
+  {ingredient: galliano, parts: 2},
+  {ingredient: triple_sec, parts: 2},
+  {ingredient: lime_juice, parts: 2}
 ])
 
 americano = Cocktail.create({
@@ -617,7 +617,7 @@ bacardi = Cocktail.create({
   garnishes: [lime_slice],
   user: library})
 bacardi.add_ingredients_with_parts([
-  {ingredient: white_rum , parts: 4.5 },
+  {ingredient: white_rum , parts:5 },
   {ingredient: lime_juice, parts: 2},
   {ingredient: grenadine, parts: 1}
 ])
@@ -630,9 +630,9 @@ daiquiri = Cocktail.create({
   tastes: [sweet, strong],
   user: library})
 daiquiri.add_ingredients_with_parts([
-  {ingredient: white_rum , parts: 4.5 },
-  {ingredient: lime_juice, parts: 2.5},
-  {ingredient: simple_syrup, parts: 1.5}
+  {ingredient: white_rum , parts:6 },
+  {ingredient: lime_juice, parts: 3},
+  {ingredient: simple_syrup, parts: 2}
 ])
 
 dirty_martini = Cocktail.create({
@@ -673,9 +673,9 @@ french_martini = Cocktail.create({
   garnishes: [lemon_slice, lemon_peel_drops],
   user: library})
 french_martini.add_ingredients_with_parts([
-  {ingredient: vodka , parts: 4.5 },
-  {ingredient: rasperry_liqueur, parts: 1.5},
-  {ingredient: pineapple_juice, parts: 1.5}
+  {ingredient: vodka , parts: 5},
+  {ingredient: rasperry_liqueur, parts: 2},
+  {ingredient: pineapple_juice, parts: 2}
 ])
 
 
@@ -744,7 +744,7 @@ vesper = Cocktail.create({
   user: library})
 vesper.add_ingredients_with_parts([
   {ingredient: gin , parts: 6 },
-  {ingredient: vodka, parts: 1.5},
+  {ingredient: vodka, parts:2},
   {ingredient: lillet_blonde, parts: 1}
 ])
 
@@ -758,9 +758,9 @@ whiskey_sour = Cocktail.create({
   garnishes: [orange_slice, cherry],
   user: library})
 whiskey_sour.add_ingredients_with_parts([
-  {ingredient: bourbon , parts: 4.5 },
+  {ingredient: bourbon , parts: 5 },
   {ingredient: lemon_juice, parts: 3},
-  {ingredient: sugar_syrup, parts: 1.5}
+  {ingredient: sugar_syrup, parts: 2}
 ])
 
 alexander = Cocktail.create({
@@ -815,10 +815,10 @@ espresso_martini = Cocktail.create({
   garnishes: [coffee_sprinkle],
   user: library})
 espresso_martini.add_ingredients_with_parts([
-  {ingredient: vodka , parts: 5 },
-  {ingredient: kahlúa, parts: 1},
-  {ingredient: coffee, parts: 1},
-  {ingredient: sugar_syrup, parts: 0.5}
+  {ingredient: vodka , parts: 6 },
+  {ingredient: kahlúa, parts: 2},
+  {ingredient: coffee, parts: 2},
+  {ingredient: sugar_syrup, parts: 1}
 ])
 
 french_connection = Cocktail.create({
@@ -829,8 +829,8 @@ french_connection = Cocktail.create({
   tastes: [sweet, strong],
   user: library})
 french_connection.add_ingredients_with_parts([
-  {ingredient: cognac , parts: 3.5 },
-  {ingredient: disaronno, parts: 3.5}
+  {ingredient: cognac , parts: 3 },
+  {ingredient: disaronno, parts:3}
 ])
 
 godfather = Cocktail.create({
@@ -841,8 +841,8 @@ godfather = Cocktail.create({
   tastes: [strong, smoky, sweet],
   user: library})
 godfather.add_ingredients_with_parts([
-  {ingredient: scotch , parts: 3.5 },
-  {ingredient: disaronno, parts: 3.5}
+  {ingredient: scotch , parts: 3 },
+  {ingredient: disaronno, parts: 3}
 ])
 
 godmother = Cocktail.create({
@@ -853,8 +853,8 @@ godmother = Cocktail.create({
   tastes: [strong, sweet],
   user: library})
 godmother.add_ingredients_with_parts([
-  {ingredient: vodka , parts: 3.5 },
-  {ingredient: disaronno, parts: 3.5}
+  {ingredient: vodka , parts: 3 },
+  {ingredient: disaronno, parts: 3}
 ])
 
 golden_dream = Cocktail.create({
@@ -891,8 +891,8 @@ porto_flip = Cocktail.create({
   tastes: [savory],
   user: library})
 porto_flip.add_ingredients_with_parts([
-  {ingredient: red_port , parts: 4.5 },
-  {ingredient: brandy, parts: 1.5},
+  {ingredient: red_port , parts: 5 },
+  {ingredient: brandy, parts: 2},
   {ingredient: egg_yolk, parts: 1}
 ])
 
@@ -918,8 +918,8 @@ rusty_nail = Cocktail.create({
   garnishes: [lemon_slice],
   user: library})
 rusty_nail.add_ingredients_with_parts([
-  {ingredient: scotch , parts: 4.5 },
-  {ingredient: drambuie, parts: 2.5}
+  {ingredient: scotch , parts: 5 },
+  {ingredient: drambuie, parts: 3}
 ])
 
 sazerac = Cocktail.create({
@@ -970,9 +970,9 @@ bloody_mary = Cocktail.create({
   garnishes: [pepper_sprinkle, tabasco_drops, celery_salt_sprinkle, worcestershire_sauce_drops],
   user: library})
 bloody_mary.add_ingredients_with_parts([
-  {ingredient: tomato_juice , parts: 9 },
-  {ingredient: vodka, parts: 4.5},
-  {ingredient: lemon_juice, parts: 1.5}
+  {ingredient: tomato_juice , parts: 10 },
+  {ingredient: vodka, parts: 5},
+  {ingredient: lemon_juice, parts: 2}
 ])
 
 cuba_libre = Cocktail.create({
@@ -1011,7 +1011,7 @@ gin_fizz = Cocktail.create({
   garnishes: [lemon_slice],
   user: library})
 gin_fizz.add_ingredients_with_parts([
-  {ingredient: gin , parts: 4.5 },
+  {ingredient: gin , parts: 5 },
   {ingredient: lemon_juice, parts: 3},
   {ingredient: sugar_syrup, parts: 1},
   {ingredient: soda, parts: 8}
@@ -1039,10 +1039,10 @@ john_collins = Cocktail.create({
   garnishes: [lemon_slice, cherry, angostura_bitters_drops],
   user: library})
 john_collins.add_ingredients_with_parts([
-  {ingredient: soda , parts: 6 },
-  {ingredient: gin, parts: 4.5},
+  {ingredient: soda , parts: 7 },
+  {ingredient: gin, parts: 5},
   {ingredient: lemon_juice, parts: 3},
-  {ingredient: sugar_syrup, parts: 1.5}
+  {ingredient: sugar_syrup, parts:2}
 ])
 
 
@@ -1055,13 +1055,13 @@ long_island_iced_tea = Cocktail.create({
   garnishes: [cola_drops],
   user: library})
 long_island_iced_tea.add_ingredients_with_parts([
-  {ingredient: gomme_syrup , parts: 3 },
-  {ingredient: lemon_juice, parts: 2.5},
-  {ingredient: gin, parts: 1.5},
-  {ingredient: triple_sec, parts: 1.5},
-  {ingredient: white_rum, parts: 1.5},
-  {ingredient: vodka, parts: 1.5},
-  {ingredient: tequila, parts: 1.5},
+  {ingredient: gomme_syrup , parts: 4 },
+  {ingredient: lemon_juice, parts: 3},
+  {ingredient: gin, parts: 2},
+  {ingredient: triple_sec, parts: 2},
+  {ingredient: white_rum, parts: 2},
+  {ingredient: vodka, parts: 2},
+  {ingredient: tequila, parts: 2},
 ])
 
 mai_tai = Cocktail.create({
@@ -1075,8 +1075,8 @@ mai_tai = Cocktail.create({
 mai_tai.add_ingredients_with_parts([
   {ingredient: white_rum , parts: 4 },
   {ingredient: dark_rum, parts: 2},
-  {ingredient: orange_curaćo, parts: 1.5},
-  {ingredient: orgeat_syrup, parts: 1.5},
+  {ingredient: orange_curaćo, parts:2},
+  {ingredient: orgeat_syrup, parts: 2},
   {ingredient: lime_juice, parts: 1},
 ])
 
@@ -1118,7 +1118,7 @@ moscow_mule = Cocktail.create({
   user: library})
 moscow_mule.add_ingredients_with_parts([
   {ingredient: ginger_beer , parts: 12 },
-  {ingredient: vodka, parts: 4.5},
+  {ingredient: vodka, parts: 5},
   {ingredient: lime_juice, parts: 1}
 ])
 
@@ -1145,9 +1145,9 @@ planters_punch = Cocktail.create({
   garnishes: [angostura_bitters_drops, cherry, pineapple_slice],
   user: library})
 planters_punch.add_ingredients_with_parts([
-  {ingredient: dark_rum , parts: 4.5 },
-  {ingredient: orange_juice, parts: 3.5},
-  {ingredient: pineapple_juice, parts: 3.5},
+  {ingredient: dark_rum , parts: 5 },
+  {ingredient: orange_juice, parts: 4},
+  {ingredient: pineapple_juice, parts: 4},
   {ingredient: lemon_juice, parts: 2},
   {ingredient: grenadine, parts: 1},
   {ingredient: sugar_syrup, parts: 1},
@@ -1162,8 +1162,8 @@ ramos_fizz = Cocktail.create({
   garnishes: [soda_water_drops, vanilla_extract_drops, orange_flower_water_drops],
   user: library})
 ramos_fizz.add_ingredients_with_parts([
-  {ingredient: gin, parts: 4.5 },
-  {ingredient: lime_juice, parts: 1.5},
+  {ingredient: gin, parts: 5 },
+  {ingredient: lime_juice, parts: 2},
   {ingredient: sugar_syrup, parts: 3},
   {ingredient: cream, parts: 6},
   {ingredient: egg_white, parts: 1}
@@ -1207,9 +1207,9 @@ singapore_sling = Cocktail.create({
   garnishes: [cherry, pineapple_slice],
   user: library})
 singapore_sling.add_ingredients_with_parts([
-  {ingredient: pineapple_juice , parts: 12 },
-  {ingredient: cherry_liqueur, parts: 1.5},
-  {ingredient: lime_juice, parts: 1.5},
+  {ingredient: pineapple_juice , parts: 13 },
+  {ingredient: cherry_liqueur, parts: 2},
+  {ingredient: lime_juice, parts: 2},
   {ingredient: grenadine, parts: 1},
   {ingredient: cointreau, parts: 1},
   {ingredient: bénédictine, parts: 1}
@@ -1224,9 +1224,9 @@ tequila_sunrise = Cocktail.create({
   garnishes: [orange_slice, cherry],
   user: library})
 tequila_sunrise.add_ingredients_with_parts([
-  {ingredient: orange_juice , parts: 9 },
-  {ingredient: tequila, parts: 4.5},
-  {ingredient: grenadine, parts: 1.5}
+  {ingredient: orange_juice , parts: 10 },
+  {ingredient: tequila, parts: 5},
+  {ingredient: grenadine, parts: 2}
 ])
 
 vampiro = Cocktail.create({
@@ -1266,8 +1266,8 @@ barracuda = Cocktail.create({
   garnishes: [lime_drops, prosecco_drops],
   user: library})
 barracuda.add_ingredients_with_parts([
-  {ingredient: gold_rum , parts: 4.5 },
-  {ingredient: galliano, parts: 1.5},
+  {ingredient: gold_rum , parts: 5 },
+  {ingredient: galliano, parts: 2},
   {ingredient: pineapple_juice, parts: 6}
 ])
 
@@ -1294,7 +1294,7 @@ french_75 = Cocktail.create({
 french_75.add_ingredients_with_parts([
   {ingredient: champagne , parts: 6 },
   {ingredient: gin, parts: 3},
-  {ingredient: lemon_juice, parts: 1.5}
+  {ingredient: lemon_juice, parts: 2}
 ])
 
 mimosa = Cocktail.create({
@@ -1319,9 +1319,9 @@ russian_spring_punch = Cocktail.create({
   garnishes: [lemon_slice, blackberries, sparkling_wine_drops],
   user: library})
 russian_spring_punch.add_ingredients_with_parts([
-  {ingredient: vodka , parts: 2.5 },
-  {ingredient: lemon_juice, parts: 2.5},
-  {ingredient: creme_de_cassis, parts: 1.5},
+  {ingredient: vodka , parts: 3 },
+  {ingredient: lemon_juice, parts: 3},
+  {ingredient: creme_de_cassis, parts: 2},
   {ingredient: sugar_syrup, parts: 1}
 ])
 
@@ -1339,7 +1339,7 @@ spritz_veneziano.add_ingredients_with_parts([
 ])
 
 white_russian = Cocktail.create({
-  name: 'white_russian', 
+  name: 'White Russian', 
   instructions: 'Pour coffee liqueur and vodka into a rock glass filled with ice. Float fresh cream on top and stir slowly.',
   info: "The traditional cocktail known as a Black Russian, which first appeared in 1949, becomes a White Russian with the addition of cream. Neither drink is Russian in origin, but both are so named due to vodka being the primary ingredient. It is unclear which drink preceded the other.",
   glass: rock, 
