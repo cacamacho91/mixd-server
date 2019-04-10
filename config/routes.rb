@@ -11,6 +11,7 @@ Rails.application.routes.draw do
       
       #Custom Routes
       post 'login', to: 'users#login'
+      post 'signup', to: 'users#create'
       get 'validate', to: 'users#validate'
       get 'ingredients/all-attributes',  to: 'ingredients#all_attributes' 
 
