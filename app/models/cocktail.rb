@@ -7,6 +7,8 @@ class Cocktail < ApplicationRecord
   has_many :garnishes, through: :cocktail_garnishes
   belongs_to :glass
   belongs_to :user
+  has_many :starred
+  has_many :users, through: :starred
 
   #INGREDIENTS COME IN FORMAT ([{ingredient, part}])
   def add_ingredients_with_parts(cocktail_ingredients)

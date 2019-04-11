@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cocktail_id: 1
+  user_id: 1
+  drank: false
+  favorited: false
+
+two:
+  cocktail_id: 1
+  user_id: 1
+  drank: false
+  favorited: false

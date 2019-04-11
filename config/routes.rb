@@ -13,6 +13,9 @@ Rails.application.routes.draw do
       post 'login', to: 'users#login'
       post 'signup', to: 'users#create'
       get 'validate', to: 'users#validate'
+      get 'my-creations', to: 'users#my_creations'
+      get 'my-starred', to: 'users#my_starred'
+
       get 'ingredients/all-attributes',  to: 'ingredients#all_attributes' 
 
     end

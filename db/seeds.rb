@@ -298,6 +298,8 @@ aviation.add_ingredients_with_parts([
   {ingredient: maraschino, parts: 2}
 ])
 
+Starred.create([{user: camacho, cocktail: angel_face}, {user:camacho, cocktail: aviation}])
+
 between_the_sheets = Cocktail.create({
   name: 'Between The Sheets', 
   instructions: 'Add all the ingredients to a shaker and fill with ice. Shake, and strain into a chilled coupe glass.',
