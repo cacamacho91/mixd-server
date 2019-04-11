@@ -252,8 +252,8 @@ chilli = Garnish.create({name: 'Chilli', img_url: chilli_image})
 
 
 ####=========  Add Users  =========####
-library = User.create({username: 'library', password: 'password'})
-camacho = User.create({username: 'camacho', password: 'password'})
+library = User.create({username: 'Library', password: 'password'})
+camacho = User.create({username: 'Camacho', password: 'password'})
 
 ####=========  Cocktails  =========####
 ## Template xxx = Cocktail.create({
