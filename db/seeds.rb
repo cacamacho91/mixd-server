@@ -38,6 +38,17 @@ fresh = Taste.create({name: 'Fresh'})
 dry = Taste.create({name: 'Dry'})
 fruity = Taste.create({name: 'Fruity'})
 
+####=========  Bases  =========####
+##  TEMPLATE  ##
+#xxx = Base.create({name: 'xxx', img_url: ''})
+grape_base = Base.create({name: 'Grape', img_url: 'https://i.ibb.co/gSwZLJv/Whats-App-Image-2019-04-13-at-10-06-06.jpg'})
+gin_base = Base.create({name: 'Gin', img_url: 'https://i.ibb.co/F7jHJ6W/0da932d3-ee83-4e29-98b6-f5c178b2bd65.jpg'})
+vodka_base = Base.create({name: 'Vodka', img_url: 'https://i.ibb.co/fY1t2zz/5c66837d-14a4-413f-9592-1825df42b38e.jpg'})
+whiskey_base = Base.create({name: 'Whiskey', img_url: 'https://i.ibb.co/mh85Gzy/a8e519b1-ea10-43eb-90df-9a1aacca3120.jpg'})
+rum_base = Base.create({name: 'Rum', img_url: 'https://i.ibb.co/PNnpdFL/ebc7aabb-336e-42c6-a329-f688fe6f86fa.jpg'})
+tequila_base = Base.create({name: 'Tequila', img_url: 'https://i.ibb.co/t8N3Wp9/0a8aae2e-ed86-4991-a81e-11b87b87107d.jpg'})
+other_base = Base.create({name: 'Other', img_url: 'https://i.ibb.co/v3fm9JH/fd3c74e8-a106-497a-83d3-7881d6b85fad.jpg'})
+
 
 ####=========  INGREDIENTS  #=========####
 ##  TEMPLATE  ##
@@ -262,6 +273,7 @@ camacho = User.create({username: 'Camacho', password: 'password'})
 #   info: "",
 #   glass: coupe, 
 #   tastes: [bitter, sour],
+#   base: other_base,
 #   garnishes: [],
 #   user: library})
 # xxx.add_ingredients_with_parts([
@@ -276,6 +288,7 @@ angel_face = Cocktail.create({
   instructions: 'Pour all ingredients into a shaker with ice. Shake. Strain into a coupe glass.',
   info: 'The cocktail first appears in the Savoy Cocktail Book compiled by Harry Craddock in 1930.',
   glass: coupe, 
+  base: gin_base,
   tastes: [strong, sweet], 
   user: library})
 angel_face.add_ingredients_with_parts([
@@ -289,6 +302,7 @@ aviation = Cocktail.create({
   instructions: 'Add all ingredients into a shaker with ice and shake. Strain into a coupe glass. Garnish with a brandied cherry.',
   info: 'The Aviation was created by Hugo Ensslin, head bartender at the Hotel Wallick in New York, in the early twentieth century.',
   glass: coupe, 
+  base: gin_base,
   tastes: [fresh, dry, strong],
   garnishes: [cherry],
   user: library})
@@ -305,6 +319,7 @@ between_the_sheets = Cocktail.create({
   instructions: 'Add all the ingredients to a shaker and fill with ice. Shake, and strain into a chilled coupe glass.',
   info: "The origin of the cocktail is usually credited to Harry MacElhone at Harry's New York Bar in Paris in the 1930s as a derivative of the sidecar. However, competing theories exist that claim the cocktail was created at The Berkeley in approximately 1921, or in French brothels as an apéritif for consumption by the prostitutes",
   glass: coupe, 
+  base: rum_base,
   tastes: [strong, sweet],
   garnishes: [orange_slice],
   user: library})
@@ -320,6 +335,7 @@ bramble = Cocktail.create({
   instructions: 'Fill glass with crushed ice. Build gin, lemon juice and sugar syrup over. Stir, and then pour blackberry liqueur over in a circular fashion to create marbling effect. Garnish with two blackberries and lemon slice.',
   info: "The Bramble was created in London, in 1984, by Dick Bradsell. At the time, Bradsell worked at a bar in Soho called Fred's Club, and he wanted to create a British cocktail. Memories of going blackberrying in his childhood on the Isle of Wight provided the inspiration for the Bramble.",
   glass: rock, 
+  base: gin_base,
   tastes: [sweet, fruity],
   garnishes: [lemon_slice, blackberries],
   user: library})
@@ -335,6 +351,7 @@ caipirinha = Cocktail.create({
   instructions: 'Place lime and sugar into a rock glass and muddle (mash the two ingredients together using a muddler or a wooden spoon). Fill the glass with ice and add the Cachaça.',
   info: "According to historians, the caipirinha, as it is known nowadays, was invented by landowning farmers in the region of Piracicaba, interior of the State of São Paulo, during the 19th century, as a local drink for high standard events and parties, being a reflection of the strong sugarcane culture in the region. The caipirinha is the strongest national cocktail of Brazil",
   glass: rock, 
+  base: other_base,
   tastes: [fresh, strong],
   garnishes: [lime_slice, sugar_spoon ],
   user: library})
@@ -347,6 +364,7 @@ casino = Cocktail.create({
   instructions: 'Pour all ingredients into shaker with ice cubes. Shake well. Strain into chilled martini glass. Garnish with a lemon slice and a maraschino cherry. Serve without a straw.',
   info: "The cocktail first appears in the Savoy Cocktail Book compiled by Harry Craddock in 1930",
   glass: coupe, 
+  base: gin_base,
   tastes: [bitter, fresh, strong],
   garnishes: [cherry, lemon_slice],
   user: library})
@@ -361,7 +379,8 @@ clover_club = Cocktail.create({
   name: 'Clover Club', 
   instructions: 'Dry shake ingredients to emulsify, add ice, shake and served straight up.',
   info: "The Clover Club Cocktail is a drink that pre-dates Prohibition in the United States, and is named for the Philadelphia men's club of the same name, which met in the Bellevue-Stratford Hotel on South Broad Street.",
-  glass: coupe, 
+  glass: coupe,
+  base: gin_base,
   tastes: [sweet, fresh],
   user: library})
 clover_club.add_ingredients_with_parts([
@@ -377,6 +396,7 @@ cosmpolitan = Cocktail.create({
   instructions: 'Shake all ingredients in cocktail shaker filled with ice. Strain into a large martini glass. Garnish with lime slice.',
   info: "While the cocktail is widely perceived to be a more modern creation, there is a strikingly similar recipe for a cosmopolitan which appears in Pioneers of Mixing at Elite Bars 1903-1933. The cosmopolitan gained popularity in the 1990s among young women, due to its frequent mention on the television series Sex and the City.",
   glass: martini, 
+  base: vodka_base,
   tastes: [sweet, fresh],
   garnishes: [lime_slice],
   user: library})
@@ -393,6 +413,7 @@ derby = Cocktail.create({
   instructions: 'Pour gin and peach bitters into a mixing glass with ice. Stir then strain into a martini glass. Garnish with a sprig of fresh mint.',
   info: "The Derby is an IBA Official Cocktail composed of gin, peach bitters and mint leaves. It is unclear when the IBA version was created.",
   glass: martini, 
+  base: gin_base,
   tastes: [dry, strong],
   garnishes: [mint_leaves],
   user: library})
@@ -407,6 +428,7 @@ harvey_wallbanger = Cocktail.create({
   info: "Belived to originate from the McKesson Imports Company and its marketing team. The company commissioned a graphic artist to develop a 'Harvey Wallbanger' sandal-clad surfer mascot in the late 1960s. It is known that McKesson executive George Bednar was instrumental in promoting the drink as a means of selling its component Galliano liqueur.",
   instructions: 'Stir the vodka and orange juice with ice in the glass, then float the Galliano on top. Garnish and serve.',
   glass: highball, 
+  base: vodka_base,
   tastes: [sweet, fruity],
   garnishes: [orange_slice, cherry],
   user: library})
@@ -422,6 +444,7 @@ hemingway_special = Cocktail.create({
   instructions: 'Pour all ingredients into a shaker with ice. Shake and Serve.',
   info: "While he was staying in Cuba, Ernest Hemingway tried the Floridita's signature drink, the Floridita Daiquiri, and said 'That's good but I prefer it without sugar and double rum', creating a cocktail now known as the Hemingway Daiquiri or the Papa Doble. This recipe was later modified further, adding grapefruit juice to the mix, at which point the drink was dubbed the Hemingway Special.",
   glass: coupe, 
+  base: rum_base,
   tastes: [bitter, sour, strong],
   user: library})
 hemingway_special.add_ingredients_with_parts([
@@ -437,6 +460,7 @@ kamikaze = Cocktail.create({
   instructions: 'Shake all ingredients together with ice. Strain into glass, garnish and serve.',
   info: "According to cocktail historian David Wondrich, the Kamikaze shot first appeared in 1976 and may have been the original 'shooter' cocktail.",
   glass: martini, 
+  base: vodka_base,
   tastes: [sour, fresh, strong],
   garnishes: [lime_slice],
   user: library})
@@ -450,7 +474,8 @@ lemon_drop_martini = Cocktail.create({
   name: 'Lemon Drop Martini', 
   instructions: 'Shake and strain into a chilled martini glass rimmed with sugar.',
   info: "The drink was invented sometime in the 1970s by Norman Jay Hobday, the founder and proprietor of Henry Africa's bar in San Francisco, California.",
-  glass: martini, 
+  glass: martini,
+  base: vodka_base, 
   tastes: [sour, fresh, strong],
   garnishes: [lime_slice, sugar_rim],
   user: library})
@@ -465,6 +490,7 @@ margarita = Cocktail.create({
   instructions: 'Pour all ingredients into shaker with ice. Shake well and strain into a margarita glass rimmed with salt.',
   info: "According to cocktail historian David Wondrich, the margarita is merely a popular Mexican and American drink, the Daisy (margarita is Spanish for 'daisy'), remade with tequila instead of brandy, which became popular during Prohibition as people drifted over the border for alcohol. There is an account from 1936 of Iowa newspaper editor James Graham finding such a cocktail in Tijuana, years before any of the other margarita 'creation myths'.",
   glass: margarita_glass, 
+  base: tequila_base,
   tastes: [bitter, sweet, sour],
   garnishes: [salt_rim],
   user: library})
@@ -479,6 +505,7 @@ mary_pickford = Cocktail.create({
   instructions: 'Shake and strain into a chilled large coupe glass.',
   info: "A Mary Pickford is a Prohibition Era cocktail, named for Canadian-American film actress Mary Pickford (1892–1979), it is said to have been created for her in the 1920s by either Eddie Woelke or Fred Kaufmann at the Hotel Nacional de Cuba.",
   glass: coupe, 
+  base: rum_base,
   tastes: [sweet, sour, fresh],
   garnishes: [],
   user: library})
@@ -494,6 +521,7 @@ monkey_gland = Cocktail.create({
   instructions: 'Shake all ingredients and drops well over ice cubes, strain into a chilled martini glass.',
   info: "Named after the pseudo-scientific idea that grafting monkey testicle tissue into humans would increase longevity, the idea developed by the Russian doctor Serge Voronoff.",
   glass: martini, 
+  base: gin_base,
   tastes: [fruity, strong],
   garnishes: [absinthe_drops, grenadine_drops],
   user: library})
@@ -507,6 +535,7 @@ paradise = Cocktail.create({
   instructions: 'Shake together over ice. Strain into coupe glass and serve chilled with no ice.',
   info: "The Paradise cocktail plays a key part in the 1933 Warner Bros. romantic film One Way Passage as the drink of the two star-crossed lovers played by Kay Francis and William Powell. On May 27, 2018, Snoop Dogg set the world record for the largest 'Gin and Juice', a 500 litre paradise cocktail.",
   glass: coupe, 
+  base: gin_base,
   tastes: [fruity, sweet],
   garnishes: [],
   user: library})
@@ -521,6 +550,7 @@ pisco_sour = Cocktail.create({
   instructions: 'Vigorously shake contents in a cocktail shaker with ice cubes, then strain into a coupe glass and garnish with bitters',
   info: "Although the preparation of pisco-based mixed beverages possibly dates back to the 1700s, historians and drink experts agree that the cocktail as it is known today was invented in the early 1920s in Lima, the capital of Peru, by the American bartender Victor Vaughen Morris.",
   glass: coupe, 
+  base: other_base,
   tastes: [sour, sweet, bitter],
   garnishes: [angostura_bitters_drops],
   user: library})
@@ -536,6 +566,7 @@ screwdriver = Cocktail.create({
   instructions: 'Mix in a highball glass with ice. Garnish and serve.',
   info: "The screwdriver goes back to at least 1944. A drink compounded of vodka and orange juice and supposedly invented by interned American fliers",
   glass: highball, 
+  base: vodka_base,
   tastes: [fruity, sweet],
   garnishes: [orange_slice],
   user: library})
@@ -549,6 +580,7 @@ sidecar = Cocktail.create({
   instructions: 'Pour all ingredients into cocktail shaker filled with ice. Shake well and strain into a coupe glass.',
   info: "The exact origin of the sidecar is unclear, but it is thought to have been invented around the end of World War I in either London or Paris. The drink was directly named for the motorcycle attachment.",
   glass: coupe, 
+  base: grape_base,
   tastes: [strong, sweet, fresh],
   user: library})
 sidecar.add_ingredients_with_parts([
@@ -562,6 +594,7 @@ tommys_margarita = Cocktail.create({
   instructions: 'Shake and with 2 spoons of agave nectar. Strain into a chilled rock glass with ice.',
   info: "Tommy's Margarita was conceived in San Francisco in 1990 by Julio Bermejo at his parents restaurant called Tommy's.",
   glass: rock, 
+  base: tequila_base,
   garnishes: [agave_nectar_spoon],
   tastes: [bitter, sweet, fresh],
   user: library})
@@ -575,6 +608,7 @@ tuxedo = Cocktail.create({
   instructions: 'Stir all ingredients with ice and strain into a martini glass. Garnish with a cherry and a twist of lemon zest.',
   info: "Related to the martini, the Tuxedo has had many variations since its inception in the 1880s. The cocktail is named after the Tuxedo Club in Orange County, New York where it was first mixed.",
   glass: martini, 
+  base: gin_base,
   tastes: [strong, sweet],
   garnishes: [lemon_slice, cherry, absinthe_drops],
   user: library})
@@ -590,6 +624,7 @@ white_lady = Cocktail.create({
   instructions: 'Add all ingredients into cocktail shaker filled with ice. Shake well and strain into a coupe glass.',
   info: "Devised by Harry MacElhone in 1919 at Ciro's Club in London. He originally used crème de menthe, but replaced it with gin at Harry's New York Bar in Paris in 1929.",
   glass: coupe, 
+  base: gin_base,
   tastes: [fresh, strong],
   user: library})
 white_lady.add_ingredients_with_parts([
@@ -603,6 +638,7 @@ yellow_bird = Cocktail.create({
   instructions: 'Shake and strain into a chilled coupe glass',
   info: "The cocktail was named after the Haitian tune 'Yellow Bird', that was first rewritten in English in 1957 and later became a sort of national anthem of the Caribbean due to the popularity of Harry Belafonte's recording.",
   glass: coupe, 
+  base: rum_base,
   tastes: [strong, fresh, sweet],
   user: library})
 yellow_bird.add_ingredients_with_parts([
@@ -617,6 +653,7 @@ americano = Cocktail.create({
   instructions: 'Pour the Campari and vermouth over ice into a highball glass, add a splash of soda water and garnish with half orange slice and a lemon twist.',
   info: "It is the first drink ordered by James Bond in the first novel in Ian Fleming's series, Casino Royale. In the short story 'From a View to a Kill' Bond chooses an Americano as an appropriate drink for a mere café; suggesting that 'in cafés you have to drink the least offensive of the musical comedy drinks'. Bond always stipulates Perrier, for in his opinion expensive soda water was the cheapest way to improve a poor drink.",
   glass: highball, 
+  base: grape_base,
   tastes: [strong, sweet, fresh],
   garnishes: [orange_slice, lemon_slice, soda_water_drops],
   user: library})
@@ -630,6 +667,7 @@ bacardi = Cocktail.create({
   instructions: 'Shake together with ice. Strain into a coupe glass and serve.',
   info: "The Bacardi Cocktail was originally the same as the Daiquiri, containing rum, lime juice, and sugar. The Grenadine version of the Bacardi Cocktail originated in the US, while the original non-red Bacardi company recipe originated from Cuba.",
   glass: coupe, 
+  base: rum_base,
   tastes: [strong, fresh],
   garnishes: [lime_slice],
   user: library})
@@ -643,7 +681,8 @@ daiquiri = Cocktail.create({
   name: 'Daiquiri', 
   instructions: 'Pour all ingredients into shaker with ice cubes. Shake well. Double Strain in chilled martini glass.',
   info: "The drink was supposedly invented by an American mining engineer, named Jennings Cox, who was in Cuba at the time of the Spanish–American War. It is also possible that William A. Chanler, a US congressman who purchased the Santiago iron mines in 1902, introduced the daiquiri to clubs in New York in that year.",
-  glass: martini, 
+  glass: martini,
+  base: rum_base, 
   tastes: [sweet, strong],
   user: library})
 daiquiri.add_ingredients_with_parts([
@@ -657,6 +696,7 @@ dirty_martini = Cocktail.create({
   instructions: 'Pour all ingredients into mixing glass with ice cubes. Stir well. Strain in chilled martini glass, garnish with an olive.',
   info: "A traditional dirty martini is made of gin, vermouth, olives and a small quantity of olive brine. Expert bartender Gary Regan says that 'this is probably one of the worst drinks when made incorrectly, but when properly prepared, with not too much olive brine added, it can be a sterling potion'.",
   glass: martini, 
+  base: rum_base,
   tastes: [dry, strong],
   garnishes: [olive],
   user: library})
@@ -672,6 +712,7 @@ dry_martini = Cocktail.create({
   instructions: 'Pour all ingredients into mixing glass with ice cubes. Stir well. Strain in chilled martini glass. Squeeze oil from lemon peel onto the drink.',
   info: "A dry martini is made with dry, white vermouth. By the Roaring Twenties, it became common to ask for them. Over the course of the century, the amount of vermouth steadily dropped. During the 1930s the ratio was 3:1 (gin to vermouth), and during the 1940s the ratio was 4:1.",
   glass: martini, 
+  base: gin_base,
   tastes: [strong, dry],
   garnishes: [lemon_slice, lemon_peel_drops],
   user: library})
@@ -686,6 +727,7 @@ french_martini = Cocktail.create({
   instructions: 'Pour all ingredients into shaker with ice cubes. Shake well and strain into a chilled martini glass. Squeeze oil from lemon peel onto the drink.',
   info: "The French Martini was invented in the 1980s at one of Keith McNally's New York City bars. It next appeared on the drinks menu at McNally's Balthazar in SoHo in 1996. The cocktail was produced during the 1980s-1990s cocktail Renaissance.",
   glass: martini, 
+  base: vodka_base,
   tastes: [sweet, fruity, strong],
   garnishes: [lemon_slice, lemon_peel_drops],
   user: library})
@@ -701,6 +743,7 @@ kir = Cocktail.create({
   instructions: 'Add the crème de cassis to the bottom of the glass, then top up with wine.',
   info: "It used to be called blanc-cassis, but it is now named after Félix Kir (1876–1968), mayor of Dijon in Burgundy. Kir was a pioneer of the twinning movement in the aftermath of the Second World War, and popularized the drink by offering it at receptions to visiting delegations.",
   glass: wine, 
+  base: grape_base,
   tastes: [fruity, sweet],
   user: library})
 kir.add_ingredients_with_parts([
@@ -714,6 +757,7 @@ manhattan = Cocktail.create({
   instructions: 'Stirred over ice, strained into a chilled martini glass, garnish and served up.',
   info: "A popular history suggests that the drink originated at the Manhattan Club in New York City in the early 1870s, where it was invented by Dr. Iain Marshall for a banquet hosted by Jennie Jerome (Lady Randolph Churchill, mother of Winston) in honor of presidential candidate Samuel J. Tilden.",
   glass: martini, 
+  base: whiskey_base,
   tastes: [strong, aromatic, bitter],
   garnishes: [cherry, angostura_bitters_drops],
   user: library})
@@ -728,6 +772,7 @@ negroni = Cocktail.create({
   instructions: 'Stir into a rock glass over ice, garnish and serve.',
   info: "First mixed in Florence, Italy, in 1919, at Caffè Casoni, now called Caffè Roberto Cavalli. Count Camillo Negroni concocted it by asking the bartender, Fosco Scarselli, to strengthen his favorite cocktail, the Americano, by adding gin rather than the normal soda water. The bartender also added an orange garnish rather than the typical lemon garnish of the Americano to signify that it was a different drink",
   glass: rock, 
+  base: gin_base,
   tastes: [bitter, sweet, strong],
   garnishes: [orange_slice],
   user: library})
@@ -743,6 +788,7 @@ old_fashioned = Cocktail.create({
   instructions: 'Place the sugar cube in a rock glass and saturate with bitters, add a dash of plain water. Muddle until dissolved. Fill the rock glass with ice cubes and add whiskey. Garnish with orange twist, and a cocktail cherry.',
   info: "The first use of the name 'Old Fashioned' for a Bourbon whiskey cocktail was said to have been at the Pendennis Club, a gentlemen's club founded in 1881 in Louisville, Kentucky. The recipe was said to have been invented by a bartender at that club in honor of Colonel James E. Pepper, a prominent bourbon distiller, who brought it to the Waldorf-Astoria Hotel bar in New York City.",
   glass: rock, 
+  base: whiskey_base,
   tastes: [strong, smoky, aromatic],
   garnishes: [sugar_cube, angostura_bitters_drops, plain_water_drops, cherry, orange_slice],
   user: library})
@@ -756,6 +802,7 @@ vesper = Cocktail.create({
   instructions: 'Shake and strain into a chilled coupe glass. Add the garnish.',
   info: "The drink was invented and named by Ian Fleming in the 1953 James Bond novel Casino Royale. Bond: 'I never have more than one drink before dinner. But I do like that one to be large and very strong and very cold and very well-made. I hate small portions of anything, particularly when they taste bad.'",
   glass: coupe, 
+  base: gin_base,
   tastes: [strong],
   garnishes: [lemon_slice],
   user: library})
@@ -771,6 +818,7 @@ whiskey_sour = Cocktail.create({
   instructions: 'Shake with ice. Strain into chilled glass, garnish and serve. Can be served on the rocks (in a rock glass) or straight up (in a martini glass).',
   info: "The oldest historical mention of a whiskey sour was published in the Wisconsin newspaper, Waukesha Plain Dealer, in 1870.",
   glass: rock, 
+  base: whiskey_base,
   tastes: [sour, fresh],
   garnishes: [orange_slice, cherry],
   user: library})
@@ -785,6 +833,7 @@ alexander = Cocktail.create({
   instructions: 'Shake all ingredients with ice and strain contents into a coupe glass. Sprinkle nutmeg on top and serve.',
   info: "Thought to have originated before 1915, evidenced by an equal parts recipie appearing in Hugo Ensslin's 1916 'Recipies for Mixed Drinks'.",
   glass: coupe, 
+  base: grape_base,
   tastes: [creamy, sweet],
   garnishes: [nutmeg_sprinkle],
   user: library})
@@ -800,6 +849,7 @@ b52 = Cocktail.create({
   instructions: 'Layer ingredients into a shot glass. Serve with a stirrer.',
   info: "The name refers to the band The B-52's and not the US B-52 bomber. The B-52 was invented by Peter Fich, a head bartender at the Banff Springs Hotel in Banff, Alberta. He named all of his new drinks after his favourite bands, albums and songs.",
   glass: shot, 
+  base: other_base,
   tastes: [creamy, savory],
   garnishes: [fire],
   user: library})
@@ -815,6 +865,7 @@ black_russian = Cocktail.create({
   instructions: '	Pour the ingredients into a rock glass filled with ice cubes. Stir gently.',
   info: "This combination first appeared in 1949 and is ascribed to Gustave Tops, a Belgian barman, who created it at the Hotel Metropole in Brussels in honor of Perle Mesta, then United States Ambassador to Luxembourg.",
   glass: rock, 
+  base: vodka_base,
   tastes: [strong, bitter],
   user: library})
 black_russian.add_ingredients_with_parts([
@@ -828,6 +879,7 @@ espresso_martini = Cocktail.create({
   instructions: 'Pour ingredients into shaker filled with ice, shake vigorously, and strain into chilled martini glass',
   info: "Created by Dick Bradsell in the late 1980s while at Freds Club in London for a young lady who asked for something that would, 'Wake me up, and then fuck me up.'' Bradsell has confirmed this in a widely-circulated video.",
   glass: martini, 
+  base: vodka_base,
   tastes: [sweet, bitter, savory],
   garnishes: [coffee_sprinkle],
   user: library})
@@ -842,6 +894,7 @@ french_connection = Cocktail.create({
   name: 'French Connection', 
   instructions: 'Pour all ingredients directly into rock glass filled with ice cubes. Stir gently.',
   info: "The cocktail is named for the Gene Hackman film of the same name.",
+  base: grape_base,
   glass: rock, 
   tastes: [sweet, strong],
   user: library})
@@ -855,6 +908,7 @@ godfather = Cocktail.create({
   instructions: 'Pour all ingredients directly into rock glass filled with ice cubes. Stir gently.',
   info: "The amaretto brand Disaronno claims the drink was the favorite cocktail of American actor Marlon Brando, known for playing the titular character in the popular American film adaptation of Mario Puzo's The Godfather.",
   glass: rock, 
+  base: whiskey_base,
   tastes: [strong, smoky, sweet],
   user: library})
 godfather.add_ingredients_with_parts([
@@ -867,6 +921,7 @@ godmother = Cocktail.create({
   instructions: 'Pour all ingredients directly into a rock glass filled with ice cubes. Stir gently.',
   info: "A variation on popular cocktail The Godfather.",
   glass: rock, 
+  base: vodka_base,
   tastes: [strong, sweet],
   user: library})
 godmother.add_ingredients_with_parts([
@@ -879,6 +934,7 @@ golden_dream = Cocktail.create({
   instructions: 'Shake with cracked ice. Strain into glass and serve.',
   info: "The Golden Dream originated at the Old King Bar in Miami, mixed by Raimundo Alvarez. The cocktail was dedicated to actress Joan Crawford and became quite popular at the end of the 1960s on the east coast of the United States",
   glass: coupe, 
+  base: other_base,
   tastes: [fruity, sweet],
   user: library})
 golden_dream.add_ingredients_with_parts([
@@ -893,6 +949,7 @@ grasshopper = Cocktail.create({
   instructions: 'Pour ingredients into a cocktail shaker with ice. Shake briskly and then strain into a chilled coupe glass.',
   info: "The name of the drink derives from its green color, which comes from crème de menthe. A bar in the French Quarter of New Orleans, Louisiana, Tujague's, claims the drink was invented in 1918 by its owner, Philip Guichet.",
   glass: coupe, 
+  base: other_base,
   tastes: [creamy, sweet],
   user: library})
 grasshopper.add_ingredients_with_parts([
@@ -905,6 +962,7 @@ porto_flip = Cocktail.create({
   instructions: 'Shake ingredients together in a mixer with ice. Strain into a coupe glass, garnish and serve',
   info: "The Porto Flip was first recorded by Jerry Thomas in his 1862 book The Bartender’s Guide: How to Mix Drinks; A Bon Vivant’s Companion (albeit under the name coffee cocktail).",
   glass: coupe, 
+  base: grape_base,
   tastes: [savory],
   user: library})
 porto_flip.add_ingredients_with_parts([
@@ -918,6 +976,7 @@ rose = Cocktail.create({
   instructions: 'Shake together in a cocktail shaker, then strain into a chilled coupe glass. Garnish and serve.',
   info: "The Rose cocktail was popular in 1920's Paris and was created by Johnny Mitta, barman at the Chatham Hotel.",
   glass: coupe, 
+  base: grape_base,
   tastes: [dry, fruity],
   garnishes: [nutmeg_sprinkle, strawberry_syrup_drops],
   user: library})
@@ -931,6 +990,7 @@ rusty_nail = Cocktail.create({
   instructions: 'Pour all ingredients directly into a rock glass filled with ice. Stir gently. Garnish with a lemon slice.',
   info: "According to cocktail historian David Wondrich, 'the Rusty Nail took a while to find its proper place in the world'. The combination of Drambuie, 'the world's most distinguished Scotch-based liqueur' and the whisky it is made from first appears in 1937.",
   glass: rock,
+  base: whiskey_base,
   tastes: [strong, smoky],
   garnishes: [lemon_slice],
   user: library})
@@ -944,6 +1004,7 @@ sazerac = Cocktail.create({
   instructions: 'Rinse a chilled rock glass with the absinthe, add crushed ice, and set it aside. Stir the remaining ingredients over ice and set it aside. Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass. Add the lemon peel for garnish',
   info: "The Sazerac is a local New Orleans variation of a cognac or whiskey cocktail, named for the Sazerac de Forge et Fils brand of cognac brandy that served as its original main ingredient. Some claim it is the oldest known American cocktail, with origins in pre-Civil War New Orleans.",
   glass: rock, 
+  base: grape_base,
   tastes: [aromatic, strong],
   garnishes: [sugar_cube, peychaud_bitters_drops, lemon_slice, strawberry_syrup_drops],
   user: library})
@@ -957,6 +1018,7 @@ stinger = Cocktail.create({
   instructions: 'Pour in a mixing glass with ice, stir and strain into a rock glass.',
   info: "The Stinger originated about 1890. The cocktail may have been derived from The Judge, a cocktail made with brandy, crème de menthe, and simple syrup found in William Schmidt's 1892 cocktail book The Flowing Bowl.",
   glass: rock, 
+  base: grape_base,
   tastes: [strong, fresh],
   user: library})
 stinger.add_ingredients_with_parts([
@@ -969,6 +1031,7 @@ irish_coffee = Cocktail.create({
   instructions: 'Heat the coffee, whiskey and sugar; do not boil. Pour into glass (ideally an irish coffee mug) and top with cream; serve hot.',
   info: "Attributed to Joe Sheridan, head chef at the restaurant and coffee shop in the Foynes Airbase Flying boat terminal building, County Limerick. In 1942 or 1943, he added whiskey to the coffee of some disembarking passengers.",
   glass: highball, 
+  base: whiskey_base,
   tastes: [creamy, bitter],
   garnishes: [sugar_spoon],
   user: library})
@@ -982,7 +1045,8 @@ bloody_mary = Cocktail.create({
   name: 'Bloody Mary', 
   instructions: 'Stirring gently, pour all ingredients into highball glass with ice. Garnish.',
   info: "Fernand Petiot claimed to have invented the Bloody Mary in 1921. He was working at the New York Bar in Paris at the time, which later became Harry's New York Bar.",
-  glass: highball, 
+  glass: highball,
+  base: vodka_base,
   tastes: [savory, spicy],
   garnishes: [pepper_sprinkle, tabasco_drops, celery_salt_sprinkle, worcestershire_sauce_drops],
   user: library})
@@ -997,6 +1061,7 @@ cuba_libre = Cocktail.create({
   instructions: 'Build all ingredients in a highball glass filled with ice. Garnish with lime wedge.',
   info: "The drink was created in Cuba in the early 1900s. It became popular, when bottled Coca-Cola was first imported into Cuba from the United States. Its origin is associated with the heavy US presence in Cuba following the Spanish–American War of 1898; the drink's traditional name, 'Cuba Libre' (Free Cuba), was the slogan of the Cuban independence movement.",
   glass: highball, 
+  base: rum_base,
   tastes: [sweet, fruity],
   garnishes: [lime_wedge],
   user: library})
@@ -1011,6 +1076,7 @@ dark_n_stormy = Cocktail.create({
   instructions: 'Fill glass with ice, add rum and top with ginger beer. Garnish with a lime wedge.',
   info: "Dark 'n' Stormy has been a registered trademark of Gosling Brothers Ltd of Bermuda since 1991. Gosling's markets the drink through tie-ins to the sailing and sail racing community. Because of Gosling Brothers' threats of litigation, some sources use other variations on the name to describe similar drinks, such as a 'Safe Harbor'.",
   glass: highball, 
+  base: rum_base,
   tastes: [spicy, sweet],
   garnishes: [lime_wedge],
   user: library})
@@ -1024,6 +1090,7 @@ gin_fizz = Cocktail.create({
   instructions: 'Shake all ingredients with ice cubes, except soda water. Pour into a rock glass. Top with soda water.',
   info: "The first printed reference to 'fizz' is in the 1887 edition of Jerry Thomas's Bartender's Guide, which contains six such recipes. The fizz became widely popular in America between 1900 and the 1940s. Known as a hometown specialty of New Orleans, the gin fizz was so popular that bars would employ teams of bartenders that would take turns shaking the drinks.",
   glass: rock, 
+  base: gin_base,
   tastes: [fresh, sweet],
   garnishes: [lemon_slice],
   user: library})
@@ -1039,6 +1106,7 @@ horses_neck = Cocktail.create({
   instructions: 'Pour brandy and ginger ale directly into highball glass with ice cubes. Stir gently. Garnish with lemon zest. If desired, add dashes of Angostura Bitters.',
   info: "Dating back to the 1890s, it was a non-alcoholic mixture of ginger ale, ice and lemon peel. By the 1910s, brandy, or bourbon would be added for a 'Horse's Neck with a Kick' or a 'Stiff Horse's Neck'. The non-alcoholic version was still served in upstate New York in the late 1950s and early 60s, but eventually it was phased out.",
   glass: highball, 
+  base: grape_base,
   tastes: [spicy, bitter],
   garnishes: [lemon_slice, angostura_bitters_drops],
   user: library})
@@ -1052,6 +1120,7 @@ john_collins = Cocktail.create({
   instructions: 'Pour all ingredients directly into highball glass filled with ice. Stir gently. Garnish. Add a dash of Angostura bitters.',
   info: "A John Collins is a cocktail which was attested to in 1869, but may be older. It is believed to have originated with a headwaiter of that name who worked at Limmer's Old House in Conduit Street in Mayfair, which was a popular London hotel and coffee house around 1790–1817.",
   glass: highball, 
+  base: gin_base,
   tastes: [fresh, sweet],
   garnishes: [lemon_slice, cherry, angostura_bitters_drops],
   user: library})
@@ -1067,7 +1136,8 @@ long_island_iced_tea = Cocktail.create({
   name: 'Long Island Iced Tea', 
   instructions: 'Add all ingredients into highball glass filled with ice. Stir gently. Garnish with lemon spiral and a dash of Cola. Serve with straw',
   info: "Robert 'Rosebud' Butt claims to have invented the Long Island Iced Tea as an entry in a contest to create a new mixed drink with triple sec in 1972 while he worked at the Oak Beach Inn on Long Island, New York.",
-  glass: highball, 
+  glass: highball,
+  base: other_base, 
   tastes: [strong, fresh],
   garnishes: [cola_drops],
   user: library})
@@ -1086,6 +1156,7 @@ mai_tai = Cocktail.create({
   instructions: 'Shake all ingredients with ice. Strain into glass. Garnish and serve with straw.',
   info: "Victor J. Bergeron claimed to have invented the Mai Tai in 1944 at his restaurant, Trader Vic's, in Oakland, California. The name was allegedly taken from maita'i, the Tahitian word for 'good' or 'excellence', although the drink is usually spelled as two words, sometimes hyphenated or capitalized.",
   glass: highball, 
+  base: rum_base,
   tastes: [strong, sour],
   garnishes: [mint_leaves, lime_slice],
   user: library})
@@ -1102,6 +1173,7 @@ mint_julep = Cocktail.create({
   instructions: 'In a highball glass gently muddle the mint, sugar and water. Fill the glass with cracked ice, add Bourbon and stir well until the glass is well frosted. Garnish with a mint sprig.',
   info: "The mint julep originated in the southern United States, probably during the eighteenth century. Senator Henry Clay of Kentucky introduced the drink to Washington, at the Round Robin Bar in the famous Willard Hotel during his residence in the city. The term 'julep' is generally defined as a sweet drink, particularly one used as a vehicle for medicine.",
   glass: highball, 
+  base: whiskey_base,
   tastes: [strong, smoky, sweet],
   garnishes: [mint_leaves, sugar_spoon],
   user: library})
@@ -1115,6 +1187,7 @@ mojito = Cocktail.create({
   instructions: 'Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish with sprig of mint leaves and lemon slice. Serve with straw.',
   info: "Havana, Cuba, is the birthplace of the Mojito, although the exact origin of this classic cocktail is the subject of debate. One story traces the Mojito to a similar 16th century drink known as 'El Draque', after Sir Francis Drake. In 1586, after his successful raid at Cartagena de Indias Drake's ships sailed towards Havana but there was an epidemic of dysentery and scurvy on board. The drink was created to ease the side effects of these afflictions using local remedies and ingredients in combination.",
   glass: highball, 
+  base: rum_base,
   tastes: [fresh, sweet, aromatic],
   garnishes: [mint_leaves, lime_slice, sugar_spoon],
   user: library})
@@ -1130,6 +1203,7 @@ moscow_mule = Cocktail.create({
   instructions: 'Combine vodka and ginger beer in a highball glass filled with ice. Add lime juice. Stir gently. Garnish.',
   info: "The mule was born in Manhattan but 'stalled' on the West Coast for the duration. The birthplace of 'Little Moscow' was in New York's Chatham Hotel. That was back in 1941 when the first carload of Jack Morgan's Cock 'n' Bull ginger beer was railing over the plains to give New Yorkers a happy surprise…",
   glass: highball, 
+  base: vodka_base,
   tastes: [spicy, sweet],
   garnishes: [lime_slice],
   user: library})
@@ -1144,6 +1218,7 @@ pina_colada = Cocktail.create({
   instructions: 'mixed with crushed ice in blender until smooth, then poured into a chilled glass, garnished and served. Alternately, the three main components can simply be added to a cocktail glass with ice cubes.',
   info: "The earliest known story states that in the 19th century, Puerto Rican pirate Roberto Cofresí, to boost his crew's morale, gave them a beverage or cocktail that contained coconut, pineapple and white rum. This was what would be later known as the famous piña colada. With his death in 1825, the orignial recipe for the piña colada was lost.",
   glass: hurricane, 
+  base: rum_base,
   tastes: [sweet, fruity, creamy],
   garnishes: [cherry, pineapple_slice],
   user: library})
@@ -1158,6 +1233,7 @@ planters_punch = Cocktail.create({
   instructions: 'Pour all ingredients, except the bitters, into shaker filled with ice. Shake well. Pour into large glass, filled with ice. Add Angostura bitters, "on top". Garnish with cocktail cherry and pineapple.',
   info: "The cocktail has been said to have originated at the Planters Hotel in Charleston, South Carolina in the 1860's",
   glass: hurricane, 
+  base: rum_base,
   tastes: [sweet, fruity],
   garnishes: [angostura_bitters_drops, cherry, pineapple_slice],
   user: library})
@@ -1175,6 +1251,7 @@ ramos_fizz = Cocktail.create({
   instructions: 'All ingredients except the soda are poured in a mixing glass, dry shaken (no ice) for two minutes, then ice is added and shaken hard for another minute Strained into a highball glass without ice and topped with soda',
   info: "Henry C. Ramos invented the Ramos gin fizz in 1888 at his bar, the Imperial Cabinet Saloon on Gravier Street, New Orleans, Louisiana. It was originally called a 'New Orleans fizz', and is one of the city's most famous cocktails. Before Prohibition, the drink's popularity and exceptionally long 12-minute mixing time, had over 20 bartenders working at the Imperial at once making nothing but the Ramos gin fizz, and still struggling to keep up with demand.",
   glass: highball, 
+  base: gin_base,
   tastes: [sweet, creamy],
   garnishes: [soda_water_drops, vanilla_extract_drops, orange_flower_water_drops],
   user: library})
@@ -1190,7 +1267,8 @@ sea_breeze = Cocktail.create({
   name: 'Sea Breeze', 
   instructions: 'Build all ingredients in a highball glass filled with ice. Garnish with a lime slice.',
   info: "The cocktail was born in the late 1920s, but the recipe was different from the one used today, as gin and grenadine were used in the original Sea Breeze. This was near the end of the Prohibition era. In the 1930s, a Sea Breeze had gin, apricot brandy, grenadine, and lemon juice. Later, a Sea Breeze recipe would contain vodka, dry vermouth, Galliano, and blue Curaçao.",
-  glass: highball, 
+  glass: highball,
+  base: vodka_base, 
   tastes: [fruity, sweet, fresh],
   garnishes: [lime_slice],
   user: library})
@@ -1204,7 +1282,8 @@ sex_on_the_beach = Cocktail.create({
   name: 'Sex On The Beach', 
   instructions: 'Build all ingredients in a highball glass filled with ice. Garnish with an orange slice.',
   info: "The cocktail originated in Florida, USA in the spring of 1987 coinciding with the introduction of peach schnapps. A bartender at Confetti's Bar devised the drink and gave it the name in a nod to the many tourists visiting Florida's beaches each spring.",
-  glass: highball, 
+  glass: highball,
+  base: vodka_base, 
   tastes: [fruity, fresh, sweet],
   garnishes: [orange_slice],
   user: library})
@@ -1220,6 +1299,7 @@ singapore_sling = Cocktail.create({
   instructions: 'Pour all ingredients into cocktail shaker filled with ice cubes. Shake well. Strain into a hurricane glass. Garnish with pineapple and a cocktail cherry.',
   info: "By the 1980s, the Singapore Sling was often little more than gin, bottled sweet and sour, and grenadine. With the move towards fresh juices and the re-emergence of quality products like Cherry Heering, the cocktail has begun to resemble its original version.",
   glass: hurricane, 
+  base: other_base,
   tastes: [fresh, sour, sweet],
   garnishes: [cherry, pineapple_slice],
   user: library})
@@ -1237,6 +1317,7 @@ tequila_sunrise = Cocktail.create({
   instructions: 'Pour the tequila and orange juice into glass over ice. Add the grenadine, which will sink to the bottom. Stir gently to create the sunrise effect. Garnish and serve.',
   info: "Created by Bobby Lozoff and Billy Rice in the early 1970s while working as young bartenders at the Trident in Sausalito, California north of San Francisco. In 1972, at a private party at the Trident organized by Bill Graham to kick off the Rolling Stones' 1972 tour in America, Mick Jagger had one of the cocktails, liked it, and he and his entourage started drinking them. They later ordered them all across America, even dubbing the tour itself their 'cocaine and tequila sunrise tour'.",
   glass: highball, 
+  base: tequila_base,
   tastes: [sweet, fruity],
   garnishes: [orange_slice, cherry],
   user: library})
@@ -1251,6 +1332,7 @@ vampiro = Cocktail.create({
   instructions: 'Pour ingredients into glass rimmed with salt. Stir.',
   info: "The Vampiro is popular in Mexico and is the national drink. Mexicans named the cocktail Vampiro ('vampire') because the Viuda de Sanchez juice mixer's red colour is reminiscent of blood.",
   glass: highball, 
+  base: tequila_base,
   tastes: [spicy, savory],
   garnishes: [honey_spoon, worcestershire_sauce_drops, onion_sprinkle, salt_rim, chilli],
   user: library})
@@ -1266,6 +1348,7 @@ champagne_cocktail = Cocktail.create({
   instructions: 'Add dash of Angostura bitter onto sugar cube and drop it into champagne flute. Add cognac followed by gently pouring chilled champagne. Garnish with orange slice and maraschino cherry.',
   info: "A recipe for the cocktail appears as early as 'Professor' Jerry Thomas' Bon Vivant's Companion (1862), which omits the brandy or cognac and is considered to be the 'classic' American version. Harry Johnson was one of the bartenders who revved the model by adding other fruit to the mix.",
   glass: flute, 
+  base: grape_base,
   tastes: [sweet, fresh],
   garnishes: [sugar_cube, angostura_bitters_drops, cherry, orange_slice],
   user: library})
@@ -1279,6 +1362,7 @@ barracuda = Cocktail.create({
   instructions: 'Shake ingredients with ice. Strain into glass, top with prosecco.',
   info: "The Barracuda is an alcoholic cocktail based on Gold rum, Galliano liqueur, pineapple juice, fresh lime juice and top with Prosecco, per IBA specified ingredients.",
   glass: margarita_glass, 
+  base: rum_base,
   tastes: [sweet, fruity],
   garnishes: [lime_drops, prosecco_drops],
   user: library})
@@ -1293,6 +1377,7 @@ bellini = Cocktail.create({
   instructions: 'Pour peach purée into chilled glass, add sparkling wine. Stir gently.',
   info: "The Bellini was invented sometime between 1934 and 1948 by Giuseppe Cipriani, founder of Harry's Bar in Venice, Italy. He named the drink the Bellini because its unique pink color reminded him of the toga of a saint in a painting by 15th-century Venetian artist Giovanni Bellini.",
   glass: flute, 
+  base: grape_base,
   tastes: [fruity, fresh],
   user: library})
 bellini.add_ingredients_with_parts([
@@ -1305,6 +1390,7 @@ french_75 = Cocktail.create({
   instructions: 'Combine gin, syrup, and lemon juice in a cocktail shaker filled with ice. Shake vigorously and strain into a chilled champagne flute. Top up with Champagne. Stir gently.',
   info: "The recipe took its now-classic form and 'French 75' name in Here’s How, by Judge Jr. (1927), consisting of gin, sugar, lemon juice, and champagne. This recipe was republished with the name French 75 in The Savoy Cocktail Book (1930), which helped popularize the drink.",
   glass: flute, 
+  base: grape_base,
   tastes: [sweet, fresh],
   garnishes: [sugar_syrup_drops],
   user: library})
@@ -1319,6 +1405,7 @@ mimosa = Cocktail.create({
   instructions: 'Ensure both ingredients are well chilled, then mix into the glass. Serve cold.',
   info: "This combination was used in Spain, centuries ago, especially in the east where orange and sparkling wines (cava and others) are typical.",
   glass: flute, 
+  base: grape_base,
   tastes: [fruity, fresh],
   garnishes: [orange_slice],
   user: library})
@@ -1332,6 +1419,7 @@ russian_spring_punch = Cocktail.create({
   instructions: 'Pour the ingredients into an highball glass, top with Sparkling wine.',
   info: "The Russian Spring Punch was created in London, England by Dick Bradsell in the 1980s. He claims not to remember which bar he was working at at the time, but tells the story of how he created the recipe for personal friends wishing to hold a cocktail party while minimizing the amount of money they had to spend on alcohol.",
   glass: highball, 
+  base: vodka_base,
   tastes: [ fresh, sweet],
   garnishes: [lemon_slice, blackberries, sparkling_wine_drops],
   user: library})
@@ -1360,6 +1448,7 @@ white_russian = Cocktail.create({
   instructions: 'Pour coffee liqueur and vodka into a rock glass filled with ice. Float fresh cream on top and stir slowly.',
   info: "The traditional cocktail known as a Black Russian, which first appeared in 1949, becomes a White Russian with the addition of cream. Neither drink is Russian in origin, but both are so named due to vodka being the primary ingredient. It is unclear which drink preceded the other.",
   glass: rock, 
+  base: vodka_base,
   tastes: [creamy, bitter],
   garnishes: [],
   user: library})
@@ -1369,21 +1458,6 @@ white_russian.add_ingredients_with_parts([
   {ingredient: cream, parts: 3}
 ])
 
-
-# xxx = Cocktail.create({
-#   name: 'xxx', 
-#   instructions: '',
-#   info: "",
-#   glass: , 
-#   tastes: [],
-#   garnishes: [],
-#   user: library})
-# xxx.add_ingredients_with_parts([
-#   {ingredient: gran , parts: 3 },
-#   {ingredient: apricot_brandy, parts: 3},
-#   {ingredient: gin, parts: 3},
-#   {ingredient: gin, parts: 3}
-# ])
 
 
 

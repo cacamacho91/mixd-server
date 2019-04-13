@@ -7,6 +7,7 @@ class Cocktail < ApplicationRecord
   has_many :garnishes, through: :cocktail_garnishes
   belongs_to :glass
   belongs_to :user
+  belongs_to :base
   has_many :starred
   has_many :users, through: :starred
 

@@ -10,10 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_12_083012) do
+ActiveRecord::Schema.define(version: 2019_04_13_100200) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "bases", force: :cascade do |t|
+    t.string "name"
+    t.string "img_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "cocktail_garnishes", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -52,6 +59,8 @@ ActiveRecord::Schema.define(version: 2019_04_12_083012) do
     t.string "info"
     t.bigint "user_id"
     t.bigint "glass_id"
+    t.bigint "base_id"
+    t.index ["base_id"], name: "index_cocktails_on_base_id"
     t.index ["glass_id"], name: "index_cocktails_on_glass_id"
     t.index ["user_id"], name: "index_cocktails_on_user_id"
   end
