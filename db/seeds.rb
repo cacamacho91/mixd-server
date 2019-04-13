@@ -263,7 +263,7 @@ chilli = Garnish.create({name: 'Chilli', img_url: chilli_image})
 
 
 ####=========  Add Users  =========####
-library = User.create({username: 'Library', password: 'password'})
+library = User.create({username: 'The International Bar Association', password: 'password'})
 camacho = User.create({username: 'Camacho', password: 'password'})
 
 ####=========  Cocktails  =========####
