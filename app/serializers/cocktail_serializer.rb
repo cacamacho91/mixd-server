@@ -11,4 +11,8 @@
   class GarnishSerializer < ActiveModel::Serializer
     attributes :name, :img_url
   end
+
+  class TasteSerializer < ActiveModel::Serializer
+    attributes  :name
+  end  
  end
