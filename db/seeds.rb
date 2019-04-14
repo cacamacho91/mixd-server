@@ -225,12 +225,12 @@ orange_wedge = Garnish.create({name: 'Orange (wedge)', img_url: orange_wedge_ima
 spoon_white_image = 'https://lh3.googleusercontent.com/wEdnGPiGvrXRnJKk5L1b3CFc08KGs5BOkzEOdNuvICygh-QRSMTX6r9poU48MKdaa7oxGEFL-r5SAtrFe_1JJX40GR-BwRPsbojmhndFit63dreMKaotoltNAIn-8M8o6qxV8yIU7hKSqoJqCZuppNQDWu15RUFlOoUJh0S_DhLTDxQFlxw5dHizNSati2dHy9sd5t0_l2iaaTmaZPdZ4-8RJ_Ue_2o98w2d1-NNsUqnDx9n0NnfCL6ulMcYnZ1nxRxlQ9aWR3UxL__qrzSS3pP6uE_Gh-ogCDCQLxaEklr2XAmsn9K_uxVvAbN2zew3Dtd8qxpuSR1-uitJdo5nXR-5cH5NDMGprTAD9Vjo5KPfjWKb8iLNJOD-TfFli1SbpJghZLGp79xYdpfywP6dSw2VevBEkRqE3zeQ_t5Q06QYZsAqabiK8FzmkCszxoMZ0sezUM6vDJHZIv7UDANVVlIg5D6SFeTsDMOPRkU80Tpfwrej-x8rjSFJer3pNTFE-ChC7uzGkfl6SHOGyTXc6aI039y6uDyK4NRy_UrV-oGHX19Hdw9Ki78bcQGhEKtRC2BSPWLLOO6d-aCWlKyeyidLXmP4R6TCqJjuBbX1HUI2wb-wiO4s1AbqjS5ZE81r1UsTXWN5FwtjyWp5cUe_RiyEyMXvccY=s512-no'
 spoon_green_image = 'https://lh3.googleusercontent.com/_5apEYcTnyQ7sX_Bjp3fLV9ieCEXZh7-UbdW8qTB2-viGW9SGABNZmRyFBJJNn5WYvtVPVEYhfyCjrzispXq5-3KqXw6kc3d9BEElMVjwEWuIRgrmmBGpCHRiy5mCrctrjHzAr7_ASrpk0E-TjIP06gWxzN2ETlF7zfMAevW8YI7w0h6_cNjxhFePI6eqAWAZZ9PwrbLh7rnOOUvl_A_MOlEcNr085O1Sx-e2dcMn0TZbmoUkDRetukfW7NzQ2bSDPCWZiFuqG2cTUysgkk1v94KjuQazTsIVAJWv3UFXMnD3CE8VyMHKiXJtyQUlAzFrxoOfbvHDW5_ymhCOnNw9YNQ0389jK_nvpmoa4cGxJ6mvA2_5Df7LTKkZk5nZL-FE5qoFCtJvetaICKZvy2U95mkeqosUbMrdVPfe08xiGAv8RJWQe2FuhiMrkBf41lniaDYlnbM-oc12wbl29e_6xRPy51tI__VA5Vc743mm4-EvrAO7y3jh8ZC7FjcjoL9OhXJ0_Z4Rkt3MXkYk2cifoiHFe65ZUjEYBsxun46vZLytdMrPlqWWrn61Hxu38vAi2iL5XTj-OfxqvHu0Hj4Ooi4cniPYFMwCJKJ4oZqhyEJeASE8VE5uUHPJxpwxGJHkX3xE0F8RmgOZl7ccvzXwhLegXnLV78=s512-no'
 spoon_yellow_image = 'https://lh3.googleusercontent.com/O10sga71yUXGfwUZdZLS19TOH_u2osfJB8eR9Z_QlDWrur-yHXgaMcT-nFPx4EI3_GZfvz7DPwlT2odlfBq40W0v-l6g2lG1njk4iues4b1YzlzicUv-c3Efp3IPDbHVaQzZMtvQhimnXGcRG5axWE6fiXZQceWyZn0pQj3rlvCgZ59WmLMpZT4gjWc63NiG4nxCecbMX45j_AmZetOkDHN-Q6eMppyc45A9OdF9t5rCtp7-n9AobnnIzd23jfATN7mmyV_WrFqyNBkFv-5Lh4yk-QnQP-8U2FGddpV8-QlkPG6DXfirg8MXZejy4jLXD5KGRvpoJVxKItZgKUyFevL7STwVMLvzsQoDBGdOGUFvE3UGtW6PHWROs39EyDwFmDx_UM572YUkgbFSC47Q1m6Bf-y0fX85FWlo2D0bVtcG1tldUewq9wdSYrmpTUQV4Mu2LjNhzvErsMaXsQNiVpAej1MjAb5PiCwwKiXDzcdnvm5tNY7-j8CqGJrtvKXNSjPAD2OfPSYA_4WCuKPh2uNttw6v0y0mt1Z4Fgfh2mPgcwVPqu-emGKiJpPzRasmpNx8qU1-3FggVHex_FYoun1_LiA3a2yeEMlEkki99F8tHtO_Be50wy3ytEBWkSVTQuGEt_F6s6wKR5mTSCQeYXOqf1v4uO4=s512-no'
-maraschino_spoon = Garnish.create({name: 'Maraschino', img_url: spoon_white_image})
-sugar_spoon = Garnish.create({name: 'Sugar', img_url: spoon_white_image})
+maraschino_spoon = Garnish.create({name: 'Maraschino (spoonful)', img_url: spoon_white_image})
+sugar_spoon = Garnish.create({name: 'Sugar (spoonful)', img_url: spoon_white_image})
 sugar_rim = Garnish.create({name: 'Sugar (rim)', img_url: spoon_white_image})
 absinthe_spoon = Garnish.create({name: 'Absinthe (spoon)', img_url: spoon_green_image})
-honey_spoon = Garnish.create({name: 'Honey', img_url: spoon_yellow_image })
-agave_nectar_spoon = Garnish.create({name: 'Agave Nectar', img_url: spoon_yellow_image})
+honey_spoon = Garnish.create({name: 'Honey (spoonful)', img_url: spoon_yellow_image })
+agave_nectar_spoon = Garnish.create({name: 'Agave Nectar (spoonful)', img_url: spoon_yellow_image})
 
 #Sprinkle
 salt_image = 'https://lh3.googleusercontent.com/WhxJm03Bs2kY-JCfIuZHb2dZSu_XOj4GXxo54e_pYHAVcIivGyOQIOYSFW1Bhr0agss2R50_SCBBUX8eB8QZVrKSVLSM1Af6LG_N7Q7CpEbrDzte0X5mUJZgRG5iaGI4eNUpyuS4GSXqxks97Y_n6m1XXRsb_vJ64T5lwxBXBqu44hRrVA0pzWPScT5jExDd1G2Y4xoBOeP2sy952fxdbrxmSc5l6xC3plB5aM5yAWGS864pe2_xCPL2kiXJnwwFezmAbIvDiJcEootpiyWJ28fsjncCmDZX3ElsUF6aPxm8hTWwVzrnmx4CpK9A9StO2hPoTQugP6bJDBNod6Mds-nnVSDqg56gbi7_gTn3vvY-AlQkt2MHqhao2_ry6DTItOBHQe4HLG9TleQ8OtJ04kjz1biIoutSvpcVyLz2x5hR_QjdmGjLNrHRo5XnN6QMrTQLsPUKUjtZIfp1bmurPYGo91MnpLZ5umijTMaO0r_Bi_l94UbrlJO3f5igiO3Xn_vW4SLKDSYittxPkOlm3wGSlDg7uKT0bFBJ4mdauy04jIM-kIb1yyqzaoyyrGrOmvkeSEHs7Y9tHDK2PPlPzo4PLL7L15spqXs-T5-vN00wzw8rsTZhxnn3OMFl2sAfkmiSMrvd-QrexTBplU8wNbbzc3n-ibw=s512-no'
@@ -286,7 +286,7 @@ camacho = User.create({username: 'Camacho', password: 'password'})
 angel_face = Cocktail.create({
   name: 'Angel Face', 
   instructions: 'Pour all ingredients into a shaker with ice. Shake. Strain into a coupe glass.',
-  info: 'The cocktail first appears in the Savoy Cocktail Book compiled by Harry Craddock in 1930.',
+  info: 'The cocktail first appears in the Savoy Cocktail Book, compiled by Harry Craddock in 1930.',
   glass: coupe, 
   base: gin_base,
   tastes: [strong, sweet], 
@@ -299,8 +299,8 @@ angel_face.add_ingredients_with_parts([
 
 aviation = Cocktail.create({
   name: 'Aviation', 
-  instructions: 'Add all ingredients into a shaker with ice and shake. Strain into a coupe glass. Garnish with a brandied cherry.',
-  info: 'The Aviation was created by Hugo Ensslin, head bartender at the Hotel Wallick in New York, in the early twentieth century.',
+  instructions: 'Add all ingredients into a shaker with ice. Shake. Strain into a coupe glass. Garnish with a brandied cherry.',
+  info: 'The Aviation was created in the early twentieth century by Hugo Ensslin, head bartender at the Hotel Wallick in New York.',
   glass: coupe, 
   base: gin_base,
   tastes: [fresh, dry, strong],
@@ -332,7 +332,7 @@ between_the_sheets.add_ingredients_with_parts([
 
 bramble = Cocktail.create({
   name: 'Bramble', 
-  instructions: 'Fill glass with crushed ice. Build gin, lemon juice and sugar syrup over. Stir, and then pour blackberry liqueur over in a circular fashion to create marbling effect. Garnish with two blackberries and lemon slice.',
+  instructions: 'Fill glass with crushed ice. Build gin, lemon juice and sugar syrup. Stir, and then pour blackberry liqueur over in a circular fashion to create marbling effect. Garnish with two blackberries and lemon slice.',
   info: "The Bramble was created in London, in 1984, by Dick Bradsell. At the time, Bradsell worked at a bar in Soho called Fred's Club, and he wanted to create a British cocktail. Memories of going blackberrying in his childhood on the Isle of Wight provided the inspiration for the Bramble.",
   glass: rock, 
   base: gin_base,
@@ -348,8 +348,8 @@ bramble.add_ingredients_with_parts([
 
 caipirinha = Cocktail.create({
   name: 'Caipirinha', 
-  instructions: 'Place lime and sugar into a rock glass and muddle (mash the two ingredients together using a muddler or a wooden spoon). Fill the glass with ice and add the Cachaça.',
-  info: "According to historians, the caipirinha, as it is known nowadays, was invented by landowning farmers in the region of Piracicaba, interior of the State of São Paulo, during the 19th century, as a local drink for high standard events and parties, being a reflection of the strong sugarcane culture in the region. The caipirinha is the strongest national cocktail of Brazil",
+  instructions: 'Place lime and sugar into a rock glass and muddle. Fill the glass with ice and add the Cachaça.',
+  info: "According to historians, the caipirinha, as it is known nowadays, was invented by landowning farmers in the region of Piracicaba, interior of the State of São Paulo, during the 19th century, as a local drink for high standard events and parties, being a reflection of the strong sugarcane culture in the region. The caipirinha is the national cocktail of Brazil",
   glass: rock, 
   base: other_base,
   tastes: [fresh, strong],
@@ -377,7 +377,7 @@ casino.add_ingredients_with_parts([
 
 clover_club = Cocktail.create({
   name: 'Clover Club', 
-  instructions: 'Dry shake ingredients to emulsify, add ice, shake and served straight up.',
+  instructions: 'Dry shake ingredients to emulsify, add ice. Shake and serve straight up.',
   info: "The Clover Club Cocktail is a drink that pre-dates Prohibition in the United States, and is named for the Philadelphia men's club of the same name, which met in the Bellevue-Stratford Hotel on South Broad Street.",
   glass: coupe,
   base: gin_base,
@@ -393,7 +393,7 @@ clover_club.add_ingredients_with_parts([
 
 cosmpolitan = Cocktail.create({
   name: 'Cosmpolitan', 
-  instructions: 'Shake all ingredients in cocktail shaker filled with ice. Strain into a large martini glass. Garnish with lime slice.',
+  instructions: 'Shake all ingredients in cocktail shaker filled with ice. Strain into a large martini glass. Garnish with a lime slice.',
   info: "While the cocktail is widely perceived to be a more modern creation, there is a strikingly similar recipe for a cosmopolitan which appears in Pioneers of Mixing at Elite Bars 1903-1933. The cosmopolitan gained popularity in the 1990s among young women, due to its frequent mention on the television series Sex and the City.",
   glass: martini, 
   base: vodka_base,
@@ -502,7 +502,7 @@ margarita.add_ingredients_with_parts([
 
 mary_pickford = Cocktail.create({
   name: 'Mary Pickford', 
-  instructions: 'Shake and strain into a chilled large coupe glass.',
+  instructions: 'Shake and strain into a large, chilled coupe glass.',
   info: "A Mary Pickford is a Prohibition Era cocktail, named for Canadian-American film actress Mary Pickford (1892–1979), it is said to have been created for her in the 1920s by either Eddie Woelke or Fred Kaufmann at the Hotel Nacional de Cuba.",
   glass: coupe, 
   base: rum_base,
@@ -518,7 +518,7 @@ mary_pickford.add_ingredients_with_parts([
 
 monkey_gland = Cocktail.create({
   name: 'Monkey Gland', 
-  instructions: 'Shake all ingredients and drops well over ice cubes, strain into a chilled martini glass.',
+  instructions: 'Shake all ingredients and drops well over ice cubes. Strain into a chilled martini glass.',
   info: "Named after the pseudo-scientific idea that grafting monkey testicle tissue into humans would increase longevity, the idea developed by the Russian doctor Serge Voronoff.",
   glass: martini, 
   base: gin_base,
@@ -547,7 +547,7 @@ paradise.add_ingredients_with_parts([
 
 pisco_sour = Cocktail.create({
   name: 'Pisco Sour', 
-  instructions: 'Vigorously shake contents in a cocktail shaker with ice cubes, then strain into a coupe glass and garnish with bitters',
+  instructions: 'Vigorously shake contents in a cocktail shaker with ice cubes, then strain into a coupe glass. Garnish with bitters',
   info: "Although the preparation of pisco-based mixed beverages possibly dates back to the 1700s, historians and drink experts agree that the cocktail as it is known today was invented in the early 1920s in Lima, the capital of Peru, by the American bartender Victor Vaughen Morris.",
   glass: coupe, 
   base: other_base,
@@ -650,7 +650,7 @@ yellow_bird.add_ingredients_with_parts([
 
 americano = Cocktail.create({
   name: 'Americano', 
-  instructions: 'Pour the Campari and vermouth over ice into a highball glass, add a splash of soda water and garnish with half orange slice and a lemon twist.',
+  instructions: 'Pour the Campari and vermouth over ice into a highball glass, add a splash of soda water and garnish with a half orange slice and a lemon twist.',
   info: "It is the first drink ordered by James Bond in the first novel in Ian Fleming's series, Casino Royale. In the short story 'From a View to a Kill' Bond chooses an Americano as an appropriate drink for a mere café; suggesting that 'in cafés you have to drink the least offensive of the musical comedy drinks'. Bond always stipulates Perrier, for in his opinion expensive soda water was the cheapest way to improve a poor drink.",
   glass: highball, 
   base: grape_base,
@@ -679,7 +679,7 @@ bacardi.add_ingredients_with_parts([
 
 daiquiri = Cocktail.create({
   name: 'Daiquiri', 
-  instructions: 'Pour all ingredients into shaker with ice cubes. Shake well. Double Strain in chilled martini glass.',
+  instructions: 'Pour all ingredients into shaker with ice cubes. Shake well. Double Strain into a chilled martini glass.',
   info: "The drink was supposedly invented by an American mining engineer, named Jennings Cox, who was in Cuba at the time of the Spanish–American War. It is also possible that William A. Chanler, a US congressman who purchased the Santiago iron mines in 1902, introduced the daiquiri to clubs in New York in that year.",
   glass: martini,
   base: rum_base, 
@@ -815,7 +815,7 @@ vesper.add_ingredients_with_parts([
 
 whiskey_sour = Cocktail.create({
   name: 'Whiskey Sour', 
-  instructions: 'Shake with ice. Strain into chilled glass, garnish and serve. Can be served on the rocks (in a rock glass) or straight up (in a martini glass).',
+  instructions: 'Shake with ice. Strain into chilled glass, garnish and serve. Can be served on the rocks or straight up.',
   info: "The oldest historical mention of a whiskey sour was published in the Wisconsin newspaper, Waukesha Plain Dealer, in 1870.",
   glass: rock, 
   base: whiskey_base,
@@ -862,7 +862,7 @@ b52.add_ingredients_with_parts([
 
 black_russian = Cocktail.create({
   name: 'Black Russian', 
-  instructions: '	Pour the ingredients into a rock glass filled with ice cubes. Stir gently.',
+  instructions: 'Pour the ingredients into a rock glass filled with ice cubes. Stir gently.',
   info: "This combination first appeared in 1949 and is ascribed to Gustave Tops, a Belgian barman, who created it at the Hotel Metropole in Brussels in honor of Perle Mesta, then United States Ambassador to Luxembourg.",
   glass: rock, 
   base: vodka_base,
@@ -1028,7 +1028,7 @@ stinger.add_ingredients_with_parts([
 
 irish_coffee = Cocktail.create({
   name: 'Irish Coffee', 
-  instructions: 'Heat the coffee, whiskey and sugar; do not boil. Pour into glass (ideally an irish coffee mug) and top with cream; serve hot.',
+  instructions: 'Heat the coffee, whiskey and sugar. Do not boil. Pour into glass (ideally an irish coffee mug) and top with cream. Serve hot.',
   info: "Attributed to Joe Sheridan, head chef at the restaurant and coffee shop in the Foynes Airbase Flying boat terminal building, County Limerick. In 1942 or 1943, he added whiskey to the coffee of some disembarking passengers.",
   glass: highball, 
   base: whiskey_base,
@@ -1153,7 +1153,7 @@ long_island_iced_tea.add_ingredients_with_parts([
 
 mai_tai = Cocktail.create({
   name: 'Mai Tai', 
-  instructions: 'Shake all ingredients with ice. Strain into glass. Garnish and serve with straw.',
+  instructions: 'Shake all ingredients with ice. Strain into glass. Garnish and serve with a straw.',
   info: "Victor J. Bergeron claimed to have invented the Mai Tai in 1944 at his restaurant, Trader Vic's, in Oakland, California. The name was allegedly taken from maita'i, the Tahitian word for 'good' or 'excellence', although the drink is usually spelled as two words, sometimes hyphenated or capitalized.",
   glass: highball, 
   base: rum_base,
@@ -1184,7 +1184,7 @@ mint_julep.add_ingredients_with_parts([
 
 mojito = Cocktail.create({
   name: 'Mojito', 
-  instructions: 'Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish with sprig of mint leaves and lemon slice. Serve with straw.',
+  instructions: 'Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish with sprig of mint and a lemon slice. Serve with a straw.',
   info: "Havana, Cuba, is the birthplace of the Mojito, although the exact origin of this classic cocktail is the subject of debate. One story traces the Mojito to a similar 16th century drink known as 'El Draque', after Sir Francis Drake. In 1586, after his successful raid at Cartagena de Indias Drake's ships sailed towards Havana but there was an epidemic of dysentery and scurvy on board. The drink was created to ease the side effects of these afflictions using local remedies and ingredients in combination.",
   glass: highball, 
   base: rum_base,
@@ -1215,7 +1215,7 @@ moscow_mule.add_ingredients_with_parts([
 
 pina_colada = Cocktail.create({
   name: 'Pina Colada', 
-  instructions: 'mixed with crushed ice in blender until smooth, then poured into a chilled glass, garnished and served. Alternately, the three main components can simply be added to a cocktail glass with ice cubes.',
+  instructions: 'Mix with crushed ice in blender until smooth, then pour into a chilled glass. Garnish and serve. Alternately, the three main components can simply be added to a cocktail glass with ice cubes.',
   info: "The earliest known story states that in the 19th century, Puerto Rican pirate Roberto Cofresí, to boost his crew's morale, gave them a beverage or cocktail that contained coconut, pineapple and white rum. This was what would be later known as the famous piña colada. With his death in 1825, the orignial recipe for the piña colada was lost.",
   glass: hurricane, 
   base: rum_base,
@@ -1248,7 +1248,7 @@ planters_punch.add_ingredients_with_parts([
 
 ramos_fizz = Cocktail.create({
   name: 'Ramos Fizz', 
-  instructions: 'All ingredients except the soda are poured in a mixing glass, dry shaken (no ice) for two minutes, then ice is added and shaken hard for another minute Strained into a highball glass without ice and topped with soda',
+  instructions: 'All ingredients except the soda in to a mixing glass, dry shaken (no ice) for two minutes. Then ice is added and shaken hard for another minute. Strain into a highball glass without ice and top with soda',
   info: "Henry C. Ramos invented the Ramos gin fizz in 1888 at his bar, the Imperial Cabinet Saloon on Gravier Street, New Orleans, Louisiana. It was originally called a 'New Orleans fizz', and is one of the city's most famous cocktails. Before Prohibition, the drink's popularity and exceptionally long 12-minute mixing time, had over 20 bartenders working at the Imperial at once making nothing but the Ramos gin fizz, and still struggling to keep up with demand.",
   glass: highball, 
   base: gin_base,
@@ -1359,7 +1359,7 @@ champagne_cocktail.add_ingredients_with_parts([
 
 barracuda = Cocktail.create({
   name: 'Barracuda', 
-  instructions: 'Shake ingredients with ice. Strain into glass, top with prosecco.',
+  instructions: 'Shake ingredients with ice. Strain into glass. Top with prosecco.',
   info: "The Barracuda is an alcoholic cocktail based on Gold rum, Galliano liqueur, pineapple juice, fresh lime juice and top with Prosecco, per IBA specified ingredients.",
   glass: margarita_glass, 
   base: rum_base,
@@ -1416,7 +1416,7 @@ mimosa.add_ingredients_with_parts([
 
 russian_spring_punch = Cocktail.create({
   name: 'Russian Spring Punch', 
-  instructions: 'Pour the ingredients into an highball glass, top with Sparkling wine.',
+  instructions: 'Pour the ingredients into an highball glass, top with sparkling wine.',
   info: "The Russian Spring Punch was created in London, England by Dick Bradsell in the 1980s. He claims not to remember which bar he was working at at the time, but tells the story of how he created the recipe for personal friends wishing to hold a cocktail party while minimizing the amount of money they had to spend on alcohol.",
   glass: highball, 
   base: vodka_base,
@@ -1432,7 +1432,7 @@ russian_spring_punch.add_ingredients_with_parts([
 
 spritz_veneziano = Cocktail.create({
   name: 'Spritz Veneziano', 
-  instructions: 'Build into glass over ice, garnish and serve.',
+  instructions: 'Build into glass over ice. Garnish and serve.',
   info: "The drink originated in Venice while it was part of the Austrian Empire (see Kingdom of Lombardy–Venetia), and is based on the Austrian spritzer, a combination of equal parts white wine and soda water.",
   glass: rock, 
   tastes: [sweet, bitter, fresh],
