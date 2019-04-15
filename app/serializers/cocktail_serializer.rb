@@ -15,4 +15,12 @@
   class TasteSerializer < ActiveModel::Serializer
     attributes  :name
   end  
+
+  class GlassSerializer < ActiveModel::Serializer
+    attributes :name
+  end
+
+  class BaseSerializer < ActiveModel::Serializer
+    attributes :name, :img_url
+  end
  end

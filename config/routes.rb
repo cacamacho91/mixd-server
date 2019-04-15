@@ -7,6 +7,8 @@ Rails.application.routes.draw do
       resources :garnishes, only: [:index]
       resources :ingredients, only: [:index]
       resources :tastes, only: [:index]
+      resources :bases, only: [:index]
+      resources :glasses, only: [:index]
       resources :users, only: [:index, :create]
       
       #Custom Routes
@@ -16,7 +18,6 @@ Rails.application.routes.draw do
       get 'my-creations', to: 'users#my_creations'
       get 'my-starred', to: 'users#my_starred'
 
-      get 'ingredients/all-attributes',  to: 'ingredients#all_attributes' 
 
     end
   end
