@@ -1,12 +1,18 @@
 # When seeding DB first drop exising records (if any exisit)
 Cocktail.destroy_all
+CocktailIngredient.destroy_all
+CocktailGarnish.destroy_all
+CocktailTaste.destroy_all
 Glass.destroy_all
 Ingredient.destroy_all
-CocktailIngredient.destroy_all
+Starred.destroy_all
 User.destroy_all
 Taste.destroy_all
-CocktailTaste.destroy_all
 Garnish.destroy_all
+Base.destroy_all
+
+
+
 
 ####=========  Glasses  =========####
 ##  TEMPLATE  ##
