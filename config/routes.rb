@@ -15,10 +15,8 @@ Rails.application.routes.draw do
       post 'login', to: 'users#login'
       post 'signup', to: 'users#create'
       get 'validate', to: 'users#validate'
-      get 'my-creations', to: 'users#my_creations'
       get 'my-starred', to: 'users#my_starred'
-
-
+      post 'cocktails/star-cocktail', to: 'cocktails#star_cocktail'
     end
   end
 end

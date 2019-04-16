@@ -4,27 +4,6 @@ class Api::V1::UsersController < ApplicationController
       render json: @users
   end 
 
-  def my_creations 
-    @user = get_current_user
-    if @user
-      render json: @user.creations
-    else
-      render json: {error: "Not a valid user."}, status: 401
-    end
-  end
-
-  def my_starred
-    @user = get_current_user
-    if @user
-      render json: @user.cocktails
-    else
-      render json: {error: "Not a valid user."}, status: 401
-    end
-  end
-
-  def star_cocktail
-
-  end
 
   def login
     @user = User.find_by(username: params[:username])
@@ -33,7 +12,7 @@ class Api::V1::UsersController < ApplicationController
         id: @user.id, 
         username: @user.username, 
         token: issue_token({id: @user.id}),
-        myStarredIds: @user.starred_ids
+        myStarredIds: @user.cocktail_ids
       }
     else
       render json: {error: "Username/Password combination invalid."}, status: 401
@@ -47,7 +26,7 @@ class Api::V1::UsersController < ApplicationController
         id: @user.id, 
         username: @user.username, 
         token: issue_token({id: @user.id}),
-        myStarredIds: @user.starred_ids
+        myStarredIds: @user.cocktail_ids
       }
     else
       render json: {error: "Username/password combination invalid."}, status: 401

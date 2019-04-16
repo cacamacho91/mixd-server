@@ -9,6 +9,30 @@ class Api::V1::CocktailsController < ApplicationController
     render json: @cocktails
   end
 
+  def star_cocktail
+    @cocktail = Cocktail.find(params[:cocktail_id])
+    @user = get_current_user
+    @existing_star = Starred.find_by({user_id: @user.id, cocktail_id: params[:cocktail_id]})
+
+    #user has already starred this cocktail
+    if @existing_star
+      @existing_star.destroy
+      render json: {cocktail_id: params[:cocktail_id]}
+    #user would like to star
+    else
+      @new_star = Starred.new({user: @user, cocktail: @cocktail})
+      if @new_star.save
+        render json: {cocktail_id: params[:cocktail_id]}
+      else
+        render json: {error: 'Cocktail could not be starred'}, status: 401
+      end
+    end
+
+    #ensure star count for cocktail is accurate
+    new_star_count = Starred.all.count {|star| star.cocktail_id == params[:cocktail_id]} 
+    @cocktail.update({star_count: new_star_count})
+  end
+
   def create
     @cocktail = Cocktail.new
     @cocktail.update({user: User.second})

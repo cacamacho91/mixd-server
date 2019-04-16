@@ -6,7 +6,7 @@
   has_many :tastes
   has_many :garnishes
 
-  attributes :id, :name, :instructions, :published, :info
+  attributes :id, :name, :instructions, :published, :info, :star_count
 
   class GarnishSerializer < ActiveModel::Serializer
     attributes :name, :img_url
