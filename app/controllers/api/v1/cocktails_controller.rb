@@ -17,12 +17,12 @@ class Api::V1::CocktailsController < ApplicationController
     #user has already starred this cocktail
     if @existing_star
       @existing_star.destroy
-      render json: {cocktail_id: params[:cocktail_id]}
+      render json: params[:cocktail_id]
     #user would like to star
     else
       @new_star = Starred.new({user: @user, cocktail: @cocktail})
       if @new_star.save
-        render json: {cocktail_id: params[:cocktail_id]}
+        render json: params[:cocktail_id]
       else
         render json: {error: 'Cocktail could not be starred'}, status: 401
       end
