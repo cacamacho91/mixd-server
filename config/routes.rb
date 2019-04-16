@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       #Standard Routes
-      resources :cocktails, only: [:index]
+      resources :cocktails, only: [:index, :create]
       resources :garnishes, only: [:index]
       resources :ingredients, only: [:index]
       resources :tastes, only: [:index]
