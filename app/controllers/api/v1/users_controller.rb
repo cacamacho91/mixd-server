@@ -33,7 +33,6 @@ class Api::V1::UsersController < ApplicationController
         id: @user.id, 
         username: @user.username, 
         token: issue_token({id: @user.id}),
-        myCreationIds: @user.creation_ids,
         myStarredIds: @user.starred_ids
       }
     else
@@ -44,7 +43,12 @@ class Api::V1::UsersController < ApplicationController
   def validate
     @user = get_current_user
     if @user
-      render json: {id: @user.id, username: @user.username, token: issue_token({id: @user.id})}
+       render json: {
+        id: @user.id, 
+        username: @user.username, 
+        token: issue_token({id: @user.id}),
+        myStarredIds: @user.starred_ids
+      }
     else
       render json: {error: "Username/password combination invalid."}, status: 401
     end
