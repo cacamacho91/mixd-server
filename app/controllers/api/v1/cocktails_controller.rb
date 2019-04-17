@@ -35,7 +35,7 @@ class Api::V1::CocktailsController < ApplicationController
 
   def create
     @cocktail = Cocktail.new
-    @cocktail.update({user: User.second})
+    @cocktail.update({user: get_current_user})
     @cocktail.update(cocktail_params)
 
     if @cocktail.valid?
@@ -49,7 +49,7 @@ class Api::V1::CocktailsController < ApplicationController
         render json: {error: 'Cocktail could not be created'}, status: 401
       end
     else 
-      render json: @cocktail.errors.full_messages, status: 400
+      render json: {error: 'Cocktail could not be created'}, status: 400
     end
   end
   
