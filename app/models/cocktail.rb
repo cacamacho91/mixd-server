@@ -15,9 +15,7 @@ class Cocktail < ApplicationRecord
 
   validates :name,
             uniqueness: {message: "This cocktail name is already taken, try another"},
-            length: { in: 3..30 }
-  validates :instructions, length: { in: 3..140 }
-  validates :info, length: { in: 3..400 }
+            length: { in: 3..50 }
 
   #INGREDIENTS COME IN FORMAT ([{ingredient, part}])
   def add_ingredients_with_parts(cocktail_ingredients)

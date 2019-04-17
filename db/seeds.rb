@@ -289,6 +289,21 @@ camacho = User.create({username: 'Camacho', password: 'password'})
 # ])
 
 ## Source: IBA Offical Cocktails
+
+americano = Cocktail.create({
+  name: 'Americano', 
+  instructions: 'Pour the Campari and vermouth over ice into a highball glass, add a splash of soda water and garnish with a half orange slice and a lemon twist.',
+  info: "It is the first drink ordered by James Bond in the first novel in Ian Fleming's series, Casino Royale. In the short story 'From a View to a Kill' Bond chooses an Americano as an appropriate drink for a mere café; suggesting that 'in cafés you have to drink the least offensive of the musical comedy drinks'. Bond always stipulates Perrier, for in his opinion expensive soda water was the cheapest way to improve a poor drink.",
+  glass: highball, 
+  base: grape_base,
+  tastes: [strong, sweet, fresh],
+  garnishes: [orange_slice, lemon_slice, soda_water_drops],
+  user: library})
+americano.add_ingredients_with_parts([
+  {ingredient: campari , parts: 3 },
+  {ingredient: red_vermouth, parts: 3}
+])
+
 angel_face = Cocktail.create({
   name: 'Angel Face', 
   instructions: 'Pour all ingredients into a shaker with ice. Shake. Strain into a coupe glass.',
@@ -650,20 +665,6 @@ yellow_bird.add_ingredients_with_parts([
   {ingredient: galliano, parts: 2},
   {ingredient: triple_sec, parts: 2},
   {ingredient: lime_juice, parts: 2}
-])
-
-americano = Cocktail.create({
-  name: 'Americano', 
-  instructions: 'Pour the Campari and vermouth over ice into a highball glass, add a splash of soda water and garnish with a half orange slice and a lemon twist.',
-  info: "It is the first drink ordered by James Bond in the first novel in Ian Fleming's series, Casino Royale. In the short story 'From a View to a Kill' Bond chooses an Americano as an appropriate drink for a mere café; suggesting that 'in cafés you have to drink the least offensive of the musical comedy drinks'. Bond always stipulates Perrier, for in his opinion expensive soda water was the cheapest way to improve a poor drink.",
-  glass: highball, 
-  base: grape_base,
-  tastes: [strong, sweet, fresh],
-  garnishes: [orange_slice, lemon_slice, soda_water_drops],
-  user: library})
-americano.add_ingredients_with_parts([
-  {ingredient: campari , parts: 3 },
-  {ingredient: red_vermouth, parts: 3}
 ])
 
 bacardi = Cocktail.create({

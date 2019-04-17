@@ -37,7 +37,12 @@ class Api::V1::UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      render json: {id: @user.id, username: @user.username, token: issue_token({id: @user.id})}
+      render json: {
+        id: @user.id, 
+        username: @user.username, 
+        token: issue_token({id: @user.id}),
+        myStarredIds: @user.cocktail_ids
+      }
     else 
       render json: {error:"User cannot be created"}, status: 400
     end 
